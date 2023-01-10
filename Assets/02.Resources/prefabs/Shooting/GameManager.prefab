@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1541096205174582745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1541096205174582743}
+  - component: {fileID: 1541096205174582742}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541096205174582743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541096205174582745}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.66892, y: -17.96831, z: 4.8240876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541096205174582742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541096205174582745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcbab1f726b80148b31db450393252a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyObjs:
+  - {fileID: 1591324043704668888, guid: 0105a04cce2d6d04194baf8cd675edfd, type: 3}
+  - {fileID: 4954700240823301898, guid: a0e7a810649029549b4f4ccf04c75898, type: 3}
+  - {fileID: 3687131615485055937, guid: 8d8f6b6f79e63704cbc79d84a6ce9d7d, type: 3}
+  - {fileID: 265375698717870693, guid: 013f104587eb3e84daddcd7ee3fe19a3, type: 3}
+  - {fileID: 3824417878074809198, guid: 148a919a615ce2d4ba2b24a9356fc340, type: 3}
+  - {fileID: 4555486948689521955, guid: 2e39503dfbc43534399a28064bfdf0d0, type: 3}
+  - {fileID: 7072364215839743696, guid: 99b0b862f587ece498ab9d4ac81ce4b4, type: 3}
+  ItemObjs:
+  - {fileID: 365227216912482903, guid: 60ed1d5524dee084d9d59bb3eea24d3f, type: 3}
+  - {fileID: 700457918504483606, guid: 656f03afe1b84634aba7952591fc7e08, type: 3}
+  - {fileID: 7608538598020564399, guid: 784087794b737fa4a8143d5d33c52aa2, type: 3}
+  - {fileID: 4912636729880319984, guid: fbfb73278d2f4b54380b424799648af8, type: 3}
+  - {fileID: 2165783441908996282, guid: 421232f26633aa44c84fba06423b78b0, type: 3}
+  - {fileID: 1658981778182265644, guid: 82bf94f3975fde6478ca6d53e7c19286, type: 3}
+  - {fileID: 8406476688942382384, guid: 026ee1457c82138498c6bd7e053a9dc3, type: 3}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  kind: 7
+  maxSpawnDelay: 0.1
+  curSpawnDelay: 0
+  player: {fileID: 0}
+  lifeImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 304de07595a9deb4c90ea763743938b8, type: 3}
+  - {fileID: 21300000, guid: 645b9f939bb40814b8ee116372fef723, type: 3}
+  gameOverSet: {fileID: 0}
+  gameClearSet: {fileID: 0}
+  transition: {fileID: 0}
