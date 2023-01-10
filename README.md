@@ -1,2 +1,2 @@
 # CrazyDuckGame
-팬게임 개발
+미친오리게임
