@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: getItem
+    m_ConditionEvent: Get_Note
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4987705282218560903}
@@ -112,7 +112,7 @@ AnimatorController:
   m_Name: Item_S
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: getItem
+  - m_Name: Get_Note
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
