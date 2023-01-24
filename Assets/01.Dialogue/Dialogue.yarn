@@ -10,6 +10,8 @@ position: -212,-1019
 //<<walk MyOtherCharacter StageRight>> // walk to StageRight
 //<<playTimeline name>>
 //Load scene: <<>>
+금한: 1:웃음, 2:
+
 ===
 //#1-5 게임시작분기
 title: WorrierDuck
@@ -270,7 +272,7 @@ Rabbit: 거기가 어디죠?
 <<StopSpeak C_Rabbit>>
 <<one_Off C_Saso>> <<Speak C_Saso>>
 Saso: 음표들의 흔적을 따라가...
-Saso: 음표들의... 흔적... 흔적을... //animation smile
+Saso: 음표들의 흔적... 흔적을... //animation smile
 <<StopSpeak C_Saso>> <<Disappear C_Saso>>
 //Saso gone, note animatino
 <<play #6NoteRoad>>
@@ -300,7 +302,7 @@ Rabbit:혹시 여기서 전설의 리코더를 연주한다면, 음표들이 반
 //<<reorder>>
 ===
 title: totheQuestMap
-position: 550,-698
+position: 553,-697
 ---
 <<wait 1>>
 <<play #7.01recorderLight>>
@@ -366,6 +368,7 @@ Rabbit: 슈크림님에게 노래를 연주해드리자!
 ===
 //오리 슈 노래 연주 애니메이션
 title: PlaySueSong
+position: 342,-592
 ---
 <<wait 3>>
 <<play 01PlaySue>>
@@ -376,7 +379,7 @@ title: PlaySueSong
 <<Load SueBackery>>
 ===
 title: BakeryAward
-position: 334,-588
+position: 543,-591
 ---
 //슈 요술봉 변신 애니메이션
 <<play fade>>
@@ -384,7 +387,7 @@ position: 334,-588
 Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어!
 <<two_On Sue>>
 <<flip Sue>>
-Sue: 보답으로 이걸 줄게.
+Sue: 보답으로 이걸 줄게
 빵 아이템 획득
 <<Speak C_Rabbit>>
 Rabbit: 우와아! 슈크림님의 빵...!
@@ -392,7 +395,7 @@ Rabbit: 감사합니다 슈크림님!
 <<StopSpeak C_Rabbit>>
 <<reflip Sue>>
 <<two_Off Sue>>
-Sue: 아 참, 그리고 또 줄 게 있어.
+Sue: 아 참, 그리고 또 줄 게 있어
 Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 필요할 것 같아서...
 악보조각1 아이템 획득
 <<two_On Sue>>
@@ -480,34 +483,40 @@ title: QuestNpc2
 position: 137,-353
 ---
 <<Speak C_Rabbit>>
-Rabbit: 엣헴, 노래 찾아왔어요!
+Rabbit: 노래 찾아왔어요!
 <<StopSpeak C_Rabbit>>
-StopCry: 오, 드디어...!
-StopCry: 기다리고 있었어요...
+<<Speak C_Geumhan>>
+Geumhan: 오, 드디어...!
+<<StopSpeak C_Geumhan>>
 <<Speak C_Rabbit>>
-Rabbit: 울자님에게 노래를 연주해드리자!
+Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
+===
 //playquestsong
-StopCry: 맞아... 
-StopCry: 바로 이거였어...
-StopCry: 우리엘레강스하고고져스한엘리자베스5세같은...
-StopCry: 감사합니다...
-StopCry: 보답으로... 이것을 드릴게요...
-<<get paper2>>
-StopCry: 용도는 모르지만... 분명히 도움이 될 거예요...
-StopCry: 그건 그렇고… 커피 한 잔 사주실 수 있나요…?
-StopCry: 카페에 가서 진지하게 대화 나눠보시죠...
-StopCry: 제 마음 속의 엉두님께서 당신들을 원하시네요...
-Rabbit: 어...저희는...괜찮아요…
-StopCry: 아니요! 사양하지 마세요... 엉두님께서 여러분을 구원해 주실 거예요!!!!
+title: QuestNpc2clear
+position: 335,-361
+---
+Geumhan: 맞아... 바로 이거였어...!
+Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!!
+Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
+악보조각2 아이템 획득
+Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
+Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
+Geumhan: 카페에 가서 진지하게 얘기 나눠보시죠...
+Geumhan: 제 마음 속의 엉두님께서 당신들을 원하시네요...
+Rabbit: 어...저희는...괜찮아요...
+Geumhan: 아니요! 사양하지 마세요... 엉두님께서 여러분을 구원해 주실 거예요!!!
 Rabbit: ...튀어!!!
-<<sosaScene>>
-StopCry: 엉덩이는 두 개...
-StopCry: 엉덩이는 두 개...
-StopCry: 엉덩이는 두 개...
-StopCry: 엉덩이는 두 개...
-StopCry: 엉덩이는 두 개...
-StopCry: 엉덩이는 두 개...
+===
+title: twohip
+position: 532,-364
+---
+Geumhan: 엉덩이는 두 개...
+Geumhan: 엉덩이는 두 개...
+Geumhan: 엉덩이는 두 개...
+Geumhan: 엉덩이는 두 개...
+Geumhan: 엉덩이는 두 개...
+Geumhan: 엉덩이는 두 개...
 //fadeOut
 ===
 title: Party
