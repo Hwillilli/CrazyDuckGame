@@ -10,7 +10,8 @@ position: -212,-1019
 //<<walk MyOtherCharacter StageRight>> // walk to StageRight
 //<<playTimeline name>>
 //Load scene: <<>>
-금한: 1:웃음, 2:
+//퀘스트 음악 재생 <<Splay songName>>
+//금한: 1:눈물, 2:웃음, 3:공포, 4:당황..
 
 ===
 //#1-5 게임시작분기
@@ -372,17 +373,18 @@ position: 342,-592
 ---
 <<wait 3>>
 <<play 01PlaySue>>
-<<wait 4>>
-<<play fade>>
+<<Splay SueSong>>
+<<wait 28>>
+<<play fadeIn>>
 <<stop 01PlaySue>>
-<<play fade>>
+<<wait 2>>
 <<Load SueBackery>>
 ===
 title: BakeryAward
 position: 543,-591
 ---
 //슈 요술봉 변신 애니메이션
-<<play fade>>
+<<play fadeOut>>
 <<wait 1>>
 Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어!
 <<two_On Sue>>
@@ -439,8 +441,8 @@ Rabbit: 헉..! 어떤 노래인데요?
 <<StopSpeak C_Rabbit>>
 <<Speak C_Geumhan>>
 Geumhan: 그 노래는 정말... 
-Geumhan: 정말신성하고엘레강스하고퍼펙트한이세상에단하나뿐인노래예요... 흑흑!
 <<StopSpeak C_Geumhan>>
+Geumhan: 정말신성하고엘레강스하고퍼펙트한이세상에단하나뿐인노래예요... 흑흑!
 <<Speak C_Rabbit>>
 Rabbit: 진정하시고, 노래에 대해 설명해주시면 저희가 도와드릴게요!
 <<StopSpeak C_Rabbit>>
@@ -521,15 +523,20 @@ position: 335,-361
 <<wait 1>>
 Geumhan: 맞아... 바로 이거였어...!
 Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!!
+<<two_On C_Geumhan>>
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
 악보조각2 아이템 획득
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
 Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
+<<two_Off C_Geumhan>>
 Geumhan: 카페에 가서 진지하게 얘기 나눠보시죠...
 Geumhan: 제 마음 속의 엉두님께서 당신들을 원하시네요...
 Rabbit: 어...저희는...괜찮아요...
+<<thr_On C_Geumhan>>
 Geumhan: 아니요! 사양하지 마세요... 엉두님께서 여러분을 구원해 주실 거예요!!!
 Rabbit: ...튀어!!!
+<<play #12ComeHip>>
+<<thr_Off C_Geumhan>>
 ===
 title: twohip
 position: 532,-364
