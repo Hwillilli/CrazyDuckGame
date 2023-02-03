@@ -11,7 +11,7 @@ position: -212,-1019
 //<<playTimeline name>>
 //Load scene: <<>>
 //퀘스트 음악 재생 <<Splay songName>>
-//버치: 1반짝, 2진지, 3당황, 4신남, 5당당, 6과장, 7당황, 8눈물, 9음침, 10미소
+//버치: 1반짝, 2진지, 3놀람, 4신남, 5당당, 6과장, 7당황, 8눈물, 9음침, 10미소
 //금한: 1눈물, 2웃음, 3공포, 4당황..
 
 ===
@@ -71,10 +71,13 @@ Rabbit: 분명 들었는데...
 Rabbit: 앗, 안녕!
 Rabbit: 여기서 리코더 부른 거, 너 맞지?
 Rabbit: 듣자마자 느껴졌어... 영재의 기운...!!
+<<one_On C_Rabbit>>
 Rabbit: 너... 리코더 아카데미에 들어오지 않을래?
 <<StopSpeak C_Rabbit>>
 ->Player: 좋아
 ->Player: 싫어
+<<one_Off C_Rabbit>>
+<<for_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 뭐어? 좋다고? 아싸, 성공이다!!
 Rabbit: 좋아! 날 따라와!
@@ -91,12 +94,19 @@ position: -200,-814
 Rabbit: 여기가 리코더 아카데미야. 아주 근사하지?
 <<StopSpeak C_Rabbit>>
 ->Player: 정말 멋지다!
+    <<for_On C_Rabbit>>
     <<Speak C_Rabbit>>
     Rabbit: 그렇지?! 내가 전부 만들었어!
+    <<for_Off C_Rabbit>>
 ->Player: 별론데...
+    <<two_On C_Rabbit>>
     <<Speak C_Rabbit>>
     Rabbit: 뭐? 지금보다 훠얼씬 근사해질 거야!
-    Player: 내 마음에 별로...★☆★☆
+    <<StopSpeak C_Rabbit>>
+    <<two_Off C_Rabbit>>
+    Player: 내 마음 속에 별로...★☆★☆
+    <<two_Off C_Rabbit>>
+<<Speak C_Rabbit>>
 Rabbit: [nomarkup]...흠흠. 우선 우리 [리코더 아카데미]는 마을의 저주를 풀기 위해서 탄생했어![/nomarkup]
 <<StopSpeak C_Rabbit>>
 //Fade In,out
@@ -120,10 +130,14 @@ title:BackToRecorderAcademy
 position: 193,-814
 ---
 //버치, 오리 기본으로 돌아오는 애니메이션
-<<Speak C_Rabbit>>
+<<six_On C_Rabbit>>
 Rabbit: 마을이 잃어버린 노래를 찾아!!
+<<six_Off C_Rabbit>>
+<<Speak C_Rabbit>>
 Rabbit: 평소 리코더에 관심이 많았던 난 바로 알 수 있었어.
+<<two_On C_Rabbit>>
 Rabbit: 이건... 리코더 아카데미를 세워서 마을의 저주를 풀라는 신의 계시다!!!
+<<two_Off C_Rabbit>>
 Rabbit: 큼큼... 어쨌든, 리코더를 꺼내볼래?
 <<StopSpeak C_Rabbit>>
 //player input "R"
@@ -132,12 +146,14 @@ title:LearnRecorder
 position: 392,-817
 ---
 <<wait 1>>
+<<thr_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 아니... 그건?!
 <<StopSpeak C_Rabbit>>
 ->Player: 크큭... 맞아.
     //Player: [nomarkup]크큭... 맞아. 이것이 바로 [전설의 리코더] 다...[/nomarkup]
     Player: 크큭... 맞아. 이것이 바로 「전설의 리코더」다...
+    <<thr_Off C_Rabbit>>
     Rabbit: ...
     Player: ...
     <<Speak C_Rabbit>>
@@ -145,8 +161,10 @@ Rabbit: 아니... 그건?!
 ->Player: 내 리코더야!
     Rabbit: 곧게 뻗은 직선... 일정한 크기의 구멍... 그리고 아리따운 빛깔...!
     Rabbit: 전설의 리코더야!!!
+<<thr_Off C_Rabbit>>
 Rabbit: 이미 알고 있겠지만, 오늘은 첫 시간이니까 연주법을 배워보자!
 Rabbit: 숫자 버튼을 누르거나 리코더 구멍을 손가락으로 막으면 연주를 할 수 있어.
+<<one_On C_Rabbit>>
 Rabbit: [nomarkup]들려줘! 너의 연주를~♬[/nomarkup]
 <<StopSpeak C_Rabbit>>
 <<jump PlayAgain>>
@@ -157,12 +175,18 @@ position: 579,-818
 // player play recorder
 <<wait 5>>
 ->Player: 어때?
+    <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
     <<Speak C_Rabbit>>
     Rabbit: 완벽해! 너 정말 재능있구나?
+    <<for_Off C_Rabbit>>
+    <<two_On C_Rabbit>>
     Rabbit: 분명 리코더를 한두 번 연주해 본 솜씨가 아니야...
     Rabbit: 아니면 오카리나라든지...
+    <<two_Off C_Rabbit>>
+    <<for_On C_Rabbit>>
     Rabbit: 어쨌든, 오늘 수업은 끝!
-    Rabbit: 이제 마을 소개를 해줄게.
+    <<for_Off C_Rabbit>>
+    Rabbit: 이제 마을 소개를 해줄게
     Rabbit: 마을로 가자!
     <<StopSpeak C_Rabbit>> <<stop>>
 ->Player: 지금부터가 시작
@@ -175,14 +199,20 @@ position: -217,-697
 ---
 <<Speak C_Rabbit>>
 Rabbit: 여기는 잠깐만! 기다료~빵집이야.
+<<two_On C_Rabbit>>
 Rabbit: 이곳의 주인인 슈크림님이 만드는 빵은 아주아주아주......
+<<two_Off C_Rabbit>>
+<<one_On C_Rabbit>>
 Rabbit: 맛있어!!!!!!
+<<one_Off C_Rabbit>>
+<<for_On C_Rabbit>>
 Rabbit: 치즈 마을의 명물이지~ 아주 유우명한~...
+<<for_Off C_Rabbit>>
 Rabbit: ...그런데 가게가 왜 이렇게 어둡지?
 Rabbit: 슈크림님은 또 어디가셨고...
-<<flip C_Rabbit>>
+<<play flipRabbit>>
 Rabbit: 슈크림님?
-<<reflip C_Rabbit>>
+<<play reflipRabbit>>
 Rabbit: 슈크림님!!!
 <<StopSpeak C_Rabbit>> <<play #5SueAppear>>
 <<jump SueAppear>>
@@ -192,8 +222,10 @@ position: -6,-697
 ---
 <<wait 2>>
 Sue: 아.. 버치 왔구나...
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 슈크림님 무슨 일이에요!
+<<StopSpeak C_Rabbit>>
+<<play flipRabbit>> <<wait 1>> <<play reflipRabbit>> <<Speak C_Rabbit>>
 Rabbit: 빵들은... 다 어디간거죠?
 <<StopSpeak C_Rabbit>>
 Sue: 없어...
@@ -201,6 +233,7 @@ Sue: 없어...
 Rabbit: 네??
 <<StopSpeak C_Rabbit>>
 Sue: 만들 수 없어 이제...
+<<thr_Off C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 하지만 얼마 전까지만 해도...
 <<StopSpeak C_Rabbit>>
@@ -224,6 +257,7 @@ Rabbit: 노래만 있다면 빵을 다시 만들 수 있는 건가요?
 <<one_Off Sue>>
 Sue: 맞아... 하지만 노래는...
 Sue: 노래는 요술봉만이 알고 있는 걸?
+<<two_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 저희가 노래를 꼭 찾아드릴게요!
 <<StopSpeak C_Rabbit>>
@@ -233,6 +267,8 @@ Sue: 고마워... 고마워... 너무너무 고마워..!!
 <<Speak C_Rabbit>>
 Rabbit: 저희에게 맡겨주세요!
 <<StopSpeak C_Rabbit>>
+<<two_Off C_Rabbit>>
+<<fiv_On C_Rabbit>>
 <<one_Off Sue>>
 //Rabbit out
 ===
@@ -247,7 +283,7 @@ Saso: 노래를 찾는다고?
 <<Appear C_Saso>>
 // animation Saso Poped up
 <<wait 1>>
-<<reflip C_Rabbit>>
+<<play flipRabbit>>
 <<one_On C_Saso>> <<Speak C_Saso>>
 Saso: 누가... 노래를 찾는다고 했지?
 <<StopSpeak C_Saso>>
@@ -260,11 +296,11 @@ Saso: 잘 알지... 아주 잘 알고 있어...
 <<Speak C_Rabbit>>
 Rabbit: 어떻게 해야하ㅈ //no input
 <<StopSpeak C_Rabbit>>
-<<one_On C_Saso>> <<Speak C_Saso>>
+<<one_On C_Saso>> <<Speak C_Saso>> 
 Saso: 음표들의 고향!!!
-<<StopSpeak C_Saso>>
-//animation surprised
+<<thr_On C_Rabbit>> <<StopSpeak C_Saso>>
 <<wait 1>>
+<<thr_Off C_Rabbit>>
 <<Speak C_Saso>>
 Saso: 음표들의 고향으로 가면... 노래를 찾을 수 있지...
 <<StopSpeak C_Saso>>
@@ -278,7 +314,7 @@ Saso: 음표들의 흔적... 흔적을... //animation smile
 <<StopSpeak C_Saso>> <<Disappear C_Saso>>
 //Saso gone, note animatino
 <<play #6NoteRoad>>
-<<flip C_Rabbit>>
+<<play reflipRabbit>>
 <<wait 1>>
 <<Speak C_Rabbit>>
 Rabbit: 우와! 길에 흔적이 나타났어!
@@ -290,14 +326,16 @@ Rabbit: 따라가보자!
 title: ToTheHomeOfMusicNote
 position: 366,-704
 ---
-<<Speak C_Rabbit>>
+<<one_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 우와... 이것 좀 봐~ 아름다워!
 Rabbit: 치즈마을에 이런 곳이 있었다니!
 <<StopSpeak C_Rabbit>>
 //음표들 도도돗도도 레레렐레레 미밈밈미미미
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<one_Off C_Rabbit>>
 Rabbit: 이제 여기서 음표를 찾으면 되는 걸까?
+<<two_On C_Rabbit>>
 Rabbit: 음... 어떤 음표가 맞는 음표인지 모르겠어..
+<<two_Off C_Rabbit>>
 Rabbit:혹시 여기서 전설의 리코더를 연주한다면, 음표들이 반응해 주지 않을까?!
 <<StopSpeak C_Rabbit>>
 //recorder lights
@@ -308,7 +346,7 @@ position: 553,-697
 ---
 <<wait 1>>
 <<play #7.01recorderLight>>
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 어라..? 리코더에서 빛이...!
 <<play #7.02GoingToShooting>>
 Rabbit: 으아아아아...!
@@ -335,7 +373,7 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 title: Quest1Clear
 position: -30,-589
 ---
-<<wait 1>>
+<<thr_On C_Rabbit>> <<wait 1>> <<thr_Off C_Rabbit>>
 Rabbit: 헉...
 <<Speak C_Rabbit>>
 Rabbit: 갑자기 빛이 번쩍하더니... 
@@ -343,9 +381,11 @@ Rabbit: 무슨 일이 일어난 거지?! //animaiton blink
 <<StopSpeak C_Rabbit>>
 //<<if $Quest1 is 1>>
 player: 노래를 알아냈어!!!
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 뭐? 정말?!
+<<thr_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 역시 네가 해낼 줄 알았어! 내 안목은 정확하다니까~!
+<<for_Off C_Rabbit>>
 Rabbit: 이제 노래를 들려주러 가자!
 <<StopSpeak C_Rabbit>>
 <<MoveAgain Player>>

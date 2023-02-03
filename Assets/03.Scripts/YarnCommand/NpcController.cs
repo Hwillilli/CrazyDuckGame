@@ -25,12 +25,22 @@ public class NpcController : MonoBehaviour
     public void flip()
     {
         rend.flipX = true;
+        //if (rend = null;)
+        //{
+        //    animator.SetBool("isFlip", true);
+        //}
+  
         Debug.Log($"{name} is Speaking");
+        
     }
     [YarnCommand("reflip")]
     public void reflip()
     {
         rend.flipX = false;
+        //if (rend = null;)
+        //{
+        //    animator.SetBool("isFlip", false);
+        //}
         Debug.Log($"{name} is Speaking");
     }
 
@@ -97,6 +107,76 @@ public class NpcController : MonoBehaviour
     public void thrOff()
     {
         animator.SetBool("isThr", false);
+    }
+    [YarnCommand("for_On")]
+    public void forOn()
+    {
+        animator.SetBool("isFor", true);
+    }
+    [YarnCommand("for_Off")]
+    public void forOff()
+    {
+        animator.SetBool("isFor", false);
+    }
+    [YarnCommand("fiv_On")]
+    public void fivOn()
+    {
+        animator.SetBool("isFiv", true);
+    }
+    [YarnCommand("fiv_Off")]
+    public void fivOff()
+    {
+        animator.SetBool("isFiv", false);
+    }
+    [YarnCommand("six_On")]
+    public void sixOn()
+    {
+        animator.SetBool("isSix", true);
+    }
+    [YarnCommand("six_Off")]
+    public void sixOff()
+    {
+        animator.SetBool("isSix", false);
+    }
+    [YarnCommand("sev_On")]
+    public void sevOn()
+    {
+        animator.SetBool("isSev", true);
+    }
+    [YarnCommand("sev_Off")]
+    public void sevOff()
+    {
+        animator.SetBool("isSev", false);
+    }
+    [YarnCommand("eig_On")]
+    public void eigOn()
+    {
+        animator.SetBool("isEig", true);
+    }
+    [YarnCommand("eig_Off")]
+    public void eigOff()
+    {
+        animator.SetBool("isEig", false);
+    }
+    [YarnCommand("nin_On")]
+    public void ninOn()
+    {
+        animator.SetBool("isNin", true);
+    }
+    [YarnCommand("nin_Off")]
+    public void ninOff()
+    {
+        animator.SetBool("isNin", false);
+    }
+    [YarnCommand("ten_On")]
+    public void tenOn()
+    {
+        animator.SetBool("isTen", true);
+    }
+    [YarnCommand("ten_Off")]
+    public void tenOff()
+    {
+        animator.SetBool("isTen", false);
     }
 
     //IEnumerator Speak()
