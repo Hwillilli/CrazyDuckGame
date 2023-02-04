@@ -8,10 +8,15 @@ public class TimelineController : MonoBehaviour
 {
     private DialogueRunner dialogueRunner = null;
     public PlayableDirector Timeline;
+    public bool isUI;
 
     void Awake()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
+        if (isUI)
+        {
+            Invoke("OffTimeline", 1.2f);
+        }
     }
 
     [YarnCommand("play")] //play Timeline
@@ -25,21 +30,26 @@ public class TimelineController : MonoBehaviour
         Timeline.Play();
     }
     
-    [YarnCommand("CamChange")] // change cam
+    [YarnCommand("CamChange")] 
     public void CamChange()
     {
         gameObject.SetActive(true);
     }
 
-    [YarnCommand("pause")] // change cam
+    [YarnCommand("pause")] 
     public void pauseTimeline()
     {
         Timeline.Pause();
     }
 
-    [YarnCommand("stop")] // change cam
+    [YarnCommand("stop")]
     public void stopTimeline()
     {
         Timeline.Stop();
+    }
+    
+    public void OffTimeline()
+    {
+        Destroy(gameObject);
     }
 }

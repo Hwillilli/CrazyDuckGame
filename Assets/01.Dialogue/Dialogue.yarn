@@ -48,6 +48,7 @@ position: -5,-926
 title:FairyBirth
 position: 194,-926
 ---
+<<wait 1>>
 <<Speak C_Fairy>>
 Fairy: S를 누르면 다음 대화로 넘어가요.
 Fairy: A, D로 이동할 수 있어요.
@@ -159,6 +160,7 @@ Rabbit: 아니... 그건?!
     <<Speak C_Rabbit>>
     Rabbit: ..그렇...구나...
 ->Player: 내 리코더야!
+    <<Speak C_Rabbit>>
     Rabbit: 곧게 뻗은 직선... 일정한 크기의 구멍... 그리고 아리따운 빛깔...!
     Rabbit: 전설의 리코더야!!!
 <<thr_Off C_Rabbit>>
@@ -197,6 +199,7 @@ position: 579,-818
 title: SadBakery
 position: -217,-697
 ---
+<<wait 1>>
 <<Speak C_Rabbit>>
 Rabbit: 여기는 잠깐만! 기다료~빵집이야.
 <<two_On C_Rabbit>>
@@ -276,6 +279,7 @@ Rabbit: 저희에게 맡겨주세요!
 title: TheWayTofindASong
 position: 183,-711
 ---
+<<wait 1>>
 <<Speak C_Rabbit>>
 Rabbit: 그런데... 노래를 어디서 찾지?
 <<StopSpeak C_Rabbit>>
@@ -351,7 +355,7 @@ Rabbit: 어라..? 리코더에서 빛이...!
 <<play #7.02GoingToShooting>>
 Rabbit: 으아아아아...!
 <<StopSpeak C_Rabbit>>
-//<<Load QuestGame>>
+<<Load QuestGame>>
 //fade.out white
 ===
 title: QuesetPlay1
@@ -373,6 +377,7 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 title: Quest1Clear
 position: -30,-589
 ---
+<<wait 1>>
 <<thr_On C_Rabbit>> <<wait 1>> <<thr_Off C_Rabbit>>
 Rabbit: 헉...
 <<Speak C_Rabbit>>
@@ -395,11 +400,14 @@ Rabbit: 이제 노래를 들려주러 가자!
 title: ReadyBakery
 position: 156,-591
 ---
+<<wait 1>>
+<<for_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 슈크림 씨! 노래 찾았어요~!!
 <<StopSpeak C_Rabbit>>
 <<one_On Sue>>
 Sue: 고마워... 정말 고마워...!
+<<for_Off C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 슈크림님에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
@@ -425,17 +433,19 @@ title: BakeryAward
 position: 543,-591
 ---
 //슈 요술봉 변신 애니메이션
-<<play fadeOut>>
 <<wait 1>>
 Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어!
 <<two_On Sue>>
 <<flip Sue>>
 Sue: 보답으로 이걸 줄게
 빵 아이템 획득
+<<one_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 우와아! 슈크림님의 빵...!
+<<one_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 감사합니다 슈크림님!
 <<StopSpeak C_Rabbit>>
+<<for_Off C_Rabbit>>
 <<reflip Sue>>
 <<two_Off Sue>>
 Sue: 아 참, 그리고 또 줄 게 있어
@@ -443,24 +453,29 @@ Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 �
 악보조각1 아이템 획득
 <<two_On Sue>>
 Sue: 그럼, 조심히 가!
+<<for_On C_Rabbit>>
 <<Speak C_Rabbit>>
 Rabbit: 안녕히계세요 슈크림님!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>>
 <<two_Off Sue>>
 ===
 //#9 강아지 등장
 title: GottongIn
 position: -220,-443
 ---
+<<wait 1>>
 //Gottong: 멍멍!
 //곳동 이동
 곳동 등장
 <<Speak C_Rabbit>>
 Rabbit: 어라... 저 분은...!
+<<two_On C_Rabbit>>
 Rabbit: 어딘가 익숙한데...
+<<two_Off C_Rabbit>>
 Rabbit: 따라가보자!
 <<StopSpeak C_Rabbit>>
 <<play #9RabbitGo>>
+<<wait 1>>
 //animation
 ===
 //#9-1 횟집 앞
@@ -470,37 +485,30 @@ position: -38,-442
 <<one_On C_Geumhan>>
 <<Speak C_Geumhan>>
 Geumhan: 흑흑흑.... 흑흑..!!
-<<StopSpeak C_Geumhan>>
 <<Speak C_Rabbit>>
 Rabbit: 저기... 괜찮으세요? 무슨 일 있으신가요?
 <<StopSpeak C_Rabbit>>
-<<Speak C_Geumhan>>
 Geumhan: 노래를... 아주 중요한 노래를 잃어버렸어요...! 흑흑...
-<<StopSpeak C_Geumhan>>
-<<Speak C_Rabbit>>
+<<thr_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 헉..! 어떤 노래인데요?
 <<StopSpeak C_Rabbit>>
-<<Speak C_Geumhan>>
+<<thr_Off C_Rabbit>>
 Geumhan: 그 노래는 정말... 
 <<StopSpeak C_Geumhan>>
 Geumhan: 정말신성하고엘레강스하고퍼펙트한이세상에단하나뿐인노래예요... 흑흑!
-<<Speak C_Rabbit>>
+<<Speak C_Geumhan>> <<Speak C_Rabbit>>
 Rabbit: 진정하시고, 노래에 대해 설명해주시면 저희가 도와드릴게요!
 <<StopSpeak C_Rabbit>>
-<<one_Off C_Geumhan>>
-<<Speak C_Geumhan>>
+<<StopSpeak C_Geumhan>> <<one_Off C_Geumhan>>
 Geumhan: 후… 감사합니다… 금한울자, 그만 울자!
 Geumhan: 그 노래의 대부분의 내용은 기억이 나지 않아요..
 Geumhan: 단지 노래 가사가… 둑왜, 둑왜, 했다는 것밖에…
-<<StopSpeak C_Geumhan>>
-<<Speak C_Rabbit>>
+<<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 음~ 좋아요! 저희가 도와드릴게요
 Rabbit: 이래봬도 저희 경력직이거든요~
 <<StopSpeak C_Rabbit>>
-<<Speak C_Geumhan>>
 Geumhan: 잘 부탁드려요...!
-<<StopSpeak C_Geumhan>>
-<<Speak C_Rabbit>>
+<<for_Off C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 그럼 가보자고~!
 <<StopSpeak C_Rabbit>>
 <<play #9RabbitGo~>>
@@ -539,9 +547,7 @@ position: 137,-353
 <<Speak C_Rabbit>>
 Rabbit: 노래를 찾아왔어요!
 <<StopSpeak C_Rabbit>>
-<<Speak C_Geumhan>>
 Geumhan: 오, 드디어...!
-<<StopSpeak C_Geumhan>>
 <<Speak C_Rabbit>>
 Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
@@ -560,7 +566,6 @@ position: 342,-592
 title: QuestNpc2clear
 position: 335,-361
 ---
-<<play fade>>
 <<wait 1>>
 Geumhan: 맞아... 바로 이거였어...!
 Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!!
@@ -568,27 +573,32 @@ Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
 악보조각2 아이템 획득
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
+<<thr_On C_Rabbit>>
 Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
 <<two_Off C_Geumhan>>
 Geumhan: 카페에 가서 진지하게 얘기 나눠보시죠...
 Geumhan: 제 마음 속의 엉두님께서 당신들을 원하시네요...
+<<sev_On C_Rabbit>> <<thr_Off C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 어...저희는...괜찮아요...
-<<thr_On C_Geumhan>>
+<<StopSpeak C_Rabbit>> <<thr_On C_Geumhan>>
 Geumhan: 아니요! 사양하지 마세요... 엉두님께서 여러분을 구원해 주실 거예요!!!
+<<sev_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: ...튀어!!!
+<<StopSpeak C_Rabbit>>
 <<play #12ComeHip>>
 <<thr_Off C_Geumhan>>
 ===
 title: twohip
 position: 532,-364
 ---
+<<Speak C_Geumhan>>
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
-//fadeOut
+<<StopSpeak C_Geumhan>>
 ===
 title: Party
 position: -226,-236
