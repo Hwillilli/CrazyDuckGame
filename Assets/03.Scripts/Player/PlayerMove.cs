@@ -6,7 +6,6 @@ using Yarn.Unity;
 public class PlayerMove : MonoBehaviour
 {
     //static public PlayerMove instance;
-    public string currentMapName;//
     private DialogueRunner dialogueRunner = null;
     public float maxSpeed;
     Rigidbody2D rigid;
