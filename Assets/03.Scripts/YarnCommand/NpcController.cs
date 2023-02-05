@@ -77,6 +77,16 @@ public class NpcController : MonoBehaviour
     {
         animator.SetBool("isWaking", false);
     }
+    [YarnCommand("zer_On")]
+    public void zerOn()
+    {
+        animator.SetBool("isZer", true);
+    }
+    [YarnCommand("zer_Off")]
+    public void zerOff()
+    {
+        animator.SetBool("isZer", false);
+    }
 
     [YarnCommand("one_On")]
     public void oneOn()

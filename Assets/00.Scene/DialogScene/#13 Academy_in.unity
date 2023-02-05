@@ -1627,7 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4798118632915597356, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 4798118632915597356, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1922,7 +1922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364892, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.87
+      value: -3.02
       objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364892, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3128,6 +3128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: C_Nico
       objectReference: {fileID: 0}
+    - target: {fileID: 425786519740060227, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 425786519740060228, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -3192,6 +3196,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 425786519740060227, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
   m_PrefabInstance: {fileID: 3291888902221664387}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3291888902221664390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 131653524003159109, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
+  m_PrefabInstance: {fileID: 3291888902221664387}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291888902221664389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &3384589630798169723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5091,7 +5106,7 @@ PrefabInstance:
       objectReference: {fileID: 1262338948}
     - target: {fileID: 7500421320617095838, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: allCharacters.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7500421320617095838, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: allCharacters.Array.data[0]
@@ -5101,6 +5116,10 @@ PrefabInstance:
       propertyPath: allCharacters.Array.data[1]
       value: 
       objectReference: {fileID: 1262338948}
+    - target: {fileID: 7500421320617095838, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
+      propertyPath: allCharacters.Array.data[2]
+      value: 
+      objectReference: {fileID: 3291888902221664390}
     - target: {fileID: 7839270539789787811, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: m_Name
       value: 3D Dialogue Custom

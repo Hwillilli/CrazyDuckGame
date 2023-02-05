@@ -288,34 +288,30 @@ Saso: 노래를 찾는다고?
 // animation Saso Poped up
 <<wait 1>>
 <<play flipRabbit>>
-<<one_On C_Saso>> <<Speak C_Saso>>
+<<one_On C_Saso>>
 Saso: 누가... 노래를 찾는다고 했지?
-<<StopSpeak C_Saso>>
 <<Speak C_Rabbit>>
 Rabbit: 앗, 안녕하세요! 혹시 노래를 찾는 방법을 아시나요?
 <<StopSpeak C_Rabbit>>
-<<one_Off C_Saso>> <<Speak C_Saso>>
+<<one_Off C_Saso>>
 Saso: 잘 알지... 아주 잘 알고 있어...
-<<StopSpeak C_Saso>>
 <<Speak C_Rabbit>>
 Rabbit: 어떻게 해야하ㅈ //no input
 <<StopSpeak C_Rabbit>>
-<<one_On C_Saso>> <<Speak C_Saso>> 
+<<one_On C_Saso>>
 Saso: 음표들의 고향!!!
-<<thr_On C_Rabbit>> <<StopSpeak C_Saso>>
+<<thr_On C_Rabbit>>
 <<wait 1>>
 <<thr_Off C_Rabbit>>
-<<Speak C_Saso>>
 Saso: 음표들의 고향으로 가면... 노래를 찾을 수 있지...
-<<StopSpeak C_Saso>>
 <<Speak C_Rabbit>>
 Rabbit: 음표들의 고향...!
 Rabbit: 거기가 어디죠?
 <<StopSpeak C_Rabbit>>
-<<one_Off C_Saso>> <<Speak C_Saso>>
+<<one_Off C_Saso>>
 Saso: 음표들의 흔적을 따라가...
 Saso: 음표들의 흔적... 흔적을... //animation smile
-<<StopSpeak C_Saso>> <<Disappear C_Saso>>
+<<Disappear C_Saso>>
 //Saso gone, note animatino
 <<play #6NoteRoad>>
 <<play reflipRabbit>>
@@ -603,29 +599,34 @@ Geumhan: 엉덩이는 두 개...
 ===
 title: earhurt
 ---
+<<wait 1>>
 player: 귀에서 피가 나는 것 같아.....
+<<play eatingBread>>
 <<jump Party>>
 ===
 title: Party
 position: -226,-236
 ---
 <<wait 1>>
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<zer_Off C_Rabbit>>
 Rabbit: 휴.. 우리 이제 빵 먹으면서 좀 쉴까?
+<<thr_On C_Rabbit>> 
 Rabbit: 헉! 이... 이건...!
 Rabbit: "토끼를 위한 당근 햄치즈빵" 이잖아?!!
+<<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 슈크림 씨의 빵...
+<<zer_Off C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 정말... 부드럽구... 말랑말랑하구...
+<<one_Off C_Rabbit>><<two_On C_Rabbit>> <<two_Off C_Rabbit>>
 Rabbit: 그리고... 그리고...!
+<<StopSpeak C_Rabbit>> <<eig_On C_Rabbit>>
 Rabbit: 하늘... 땅!!!
 Rabbit: 하늘 땅땅땅만큼 맛있땅~!~!!!
-<<StopSpeak C_Rabbit>>
 ->Player: 안경잡이 소년이 그려진 빵
 ->Player: 역삼각형 몸매의 소년이 그려진 빵
 Player: 아니... 이 맛은?!
 Player: 너무 맛있다.....
-//빵먹는 애니메이션 ㅠㅠㅠㅠㅠㅠㅠ
-//네코 나타남, 빵먹음
+<<eig_Off C_Rabbit>> <<thr_On C_Rabbit>>
 <<play NicoPop>>
 Nico: 음~ 맛있다~! 잠깐만 기다료빵 다녀오셨어요?
 //<<flip Nico>>
@@ -635,42 +636,44 @@ Rabbit: 엇 ㄴ,넌 누구...
 <<StopSpeak C_Rabbit>>
 <<flip C_Nico>>
 Nico: 난 네코야! 여기가 리코더 아카데미 맞지?
-<<Speak C_Rabbit>>
+<<thr_Off C_Rabbit>> <<zer_On C_Rabbit>> <<Speak C_Rabbit>> 
 Rabbit: 맞아!
 <<StopSpeak C_Rabbit>>
 Nico: 휴! 제대로 찾아왔네. 
 Nico: 나, 의뢰할 게 있어!
 //애니메이션~,,
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<zer_Off C_Rabbit>>
 Rabbit: 냐세여~ 리코더 아카데미임다~ 편안하게 의뢰하세여~
 <<StopSpeak C_Rabbit>>
 Nico: 그... 너네 혹시... 릴리라고 알아?
-<<Speak C_Rabbit>>
+<<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 당연하지!! 릴리 팬이 아닌 사람은 없을 걸?
+<<for_Off C_Rabbit>> <<zer_On C_Rabbit>> 
 Rabbit: 근데 요즘엔 활동을 안 해서... 다들 잊어가고 있지...
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<zer_Off C_Rabbit>>
 Nico: 있지, 실은... 릴리가 망돌저주에 걸리고 말았어...
-<<Speak C_Rabbit>>
+<<thr_On C_Rabbit>> <<Speak C_Rabbit>> 
 Rabbit: 망돌저주?!
 <<StopSpeak C_Rabbit>>
-<<reflip C_Nico>>
+<<reflip C_Nico>> <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
 Nico: 릴리를 항상 질투하던 무명 아이돌이 있었어...
 Nico: 아무도 그의 이름은 모르지만 전해지는 말로는...
 Nico: 덩치가 아주 크고, 몸은 마치 삼각형을 뒤집은 것과 같은 모양인데다...
 Nico: 그 목소리를 들으면... 배가 고파진다고해...
+<<thr_On C_Rabbit>> <<two_Off C_Rabbit>>
 Nico: 심지어... 그 사람은 가위바위보를 하면 ‘보’만 낸대!!!!
 Nico: 그리고... 그리고... 삼겹살만 보면 미친듯이 달려드는...
-<<flip C_Nico>>
+<<flip C_Nico>> <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
 Nico: 그런 무시무시한 사람이랬어...
 ->Player: 그러니까...
     Player: 그러니까... 대충 삼겹살 집착광공이라는 거지? 하 설렌다...
 ->Player: 뭐야 그거...
     Player: 뭐야 그거... 그냥 내 이상형이잖아?
-<<reflip C_Nico>>
+<<reflip C_Nico>> <<thr_On C_Rabbit>>
 Nico: ???
 Rabbit: ???
 Player: ???
-<<flip C_Nico>>
+<<flip C_Nico>> <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
 Nico: 아무튼, 그 저주로 한순간에 망돌이 되어버린 릴리는 충격 때문에...
 Nico: 급격히 늙어버렸어...
 Nico: 게다가 이 마을의 저주까지 겹쳐서 하필 유전병이 있는 페르시안 고양이가 되어버려서...
@@ -690,6 +693,7 @@ Rabbit: 좋아. 가자!
 <<stop NicoPop>>
 <<stop eatingBread>>
 ===
+//릴리가 너희를 보고싶대
 title: LillyHouse14
 position: -47,-237
 ---
