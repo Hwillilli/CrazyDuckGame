@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class SgameManager : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class SgameManager : MonoBehaviour
 
     public GameObject gameOverSet;
     public GameObject gameClearSet;
-    public GameObject transition;
+    public PlayableDirector transition;
     public PlayerMovefly Splayer;
 
     public GameObject tutorial = null;
@@ -107,14 +108,10 @@ public class SgameManager : MonoBehaviour
 
     public void GameOver()
     {
-        transition.SetActive(true);
-        Invoke("ReButton", 0.5f);
+        transition.Play();
+        Invoke("GameRetry", 0.5f);
     }
 
-    public void ReButton()
-    {
-        gameOverSet.SetActive(true);
-    }
     public void GameRetry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -123,7 +120,7 @@ public class SgameManager : MonoBehaviour
     }
     public void GameClear()
     {
-        transition.SetActive(true);
+        transition.Play();
         Invoke("NextGame", 1f);
     }
     public void NextButton()

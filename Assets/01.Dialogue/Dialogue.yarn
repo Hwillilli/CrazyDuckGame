@@ -355,7 +355,7 @@ Rabbit: 어라..? 리코더에서 빛이...!
 <<play #7.02GoingToShooting>>
 Rabbit: 으아아아아...!
 <<StopSpeak C_Rabbit>>
-<<Load QuestGame>>
+//<<Load QuestGame>>
 //fade.out white
 ===
 title: QuesetPlay1
@@ -377,8 +377,9 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 title: Quest1Clear
 position: -30,-589
 ---
+<<thr_On C_Rabbit>>
 <<wait 1>>
-<<thr_On C_Rabbit>> <<wait 1>> <<thr_Off C_Rabbit>>
+<<thr_Off C_Rabbit>>
 Rabbit: 헉...
 <<Speak C_Rabbit>>
 Rabbit: 갑자기 빛이 번쩍하더니... 
@@ -412,9 +413,6 @@ Sue: 고마워... 정말 고마워...!
 Rabbit: 슈크림님에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
 <<one_Off Sue>>
-<<play fade>>
-<<wait 1>>
-<<Load 01PlaySue>>
 ===
 //오리 슈 노래 연주 애니메이션
 title: PlaySueSong
@@ -424,9 +422,9 @@ position: 342,-592
 <<play 01PlaySue>>
 <<Splay SueSong>>
 <<wait 28>>
-<<play fadeIn>>
+<<play fadeOut>>
 <<stop 01PlaySue>>
-<<wait 2>>
+<<wait 1>>
 <<Load SueBackery>>
 ===
 title: BakeryAward
@@ -551,25 +549,29 @@ Geumhan: 오, 드디어...!
 <<Speak C_Rabbit>>
 Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
-<<play fade>>
 <<wait 1>>
 ===
 //playquestsong
 title: PlayGeumSong
 position: 342,-592
 ---
+<<wait 1>>
+<<Splay eongSong>>
+<<wait 49>>
 <<play fadeOut>>
-<<wait 3>>
-<<play fadeIn>>
+<<wait 1>>
 <<Load GeumVillage>>
 ===
 title: QuestNpc2clear
 position: 335,-361
 ---
+<<one_On C_Geumhan>>
+<<Speak C_Geumhan>>
 <<wait 1>>
 Geumhan: 맞아... 바로 이거였어...!
 Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!!
-<<two_On C_Geumhan>>
+<<one_Off C_Geumhan>>
+<<StopSpeak C_Geumhan>> <<two_On C_Geumhan>>
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
 악보조각2 아이템 획득
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
@@ -591,14 +593,18 @@ Rabbit: ...튀어!!!
 title: twohip
 position: 532,-364
 ---
-<<Speak C_Geumhan>>
+<<stop #12ComeHip>>
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
-<<StopSpeak C_Geumhan>>
+===
+title: earhurt
+---
+player: 귀에서 피가 나는 것 같아.....
+<<jump Party>>
 ===
 title: Party
 position: -226,-236

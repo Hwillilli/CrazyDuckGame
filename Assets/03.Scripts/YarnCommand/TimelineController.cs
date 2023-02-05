@@ -22,11 +22,6 @@ public class TimelineController : MonoBehaviour
     [YarnCommand("play")] //play Timeline
     public void playTimeline()
     {
-        //var findTimeline = FindTimeline( timelineName );
-        //findTimeline.gameObject.SetActive(true);
-        //transform.GetChild[i]gameObject.SetActive(true);
-        //var gameObject = GameObject.Find(name);
-        //gameObject.SetActive(true);
         Timeline.Play();
     }
     
