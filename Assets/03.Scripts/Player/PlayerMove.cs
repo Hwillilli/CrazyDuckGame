@@ -20,24 +20,12 @@ public class PlayerMove : MonoBehaviour
     public bool notMove = false;
     public bool isRecOpen = false;
 
-
     void Awake()
     {
-        //if (instance == null)
-        //{
-            //DontDestroyOnLoad(this.gameObject);
-            rigid = GetComponent<Rigidbody2D>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            anim = GetComponent<Animator>();
-            dialogueRunner = FindObjectOfType<DialogueRunner>();
-            //instance = this;
-        //}
-        //else
-        //{
-        //    Destroy(this.gameObject);
-        //    //GameObject.SetActive(false);
-        //}
-
+        rigid = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
     void Update()
@@ -50,13 +38,92 @@ public class PlayerMove : MonoBehaviour
             {
                 anim.SetBool("isRecOpen", true);
                 isRecOpen = true;
-                NextScene.SetActive(true);
-                CurrScene.SetActive(false);
+                if((NextScene != null) && (CurrScene != null))
+                {
+                    NextScene.SetActive(true);
+                    CurrScene.SetActive(false);
+                }
+                    
             }
             else
             {
                 anim.SetBool("isRecOpen", false);
                 isRecOpen = false;
+            }
+        }
+
+        if (isRecOpen)
+        {
+            if (Input.GetKey(KeyCode.Alpha1))
+            {
+                anim.SetBool("1", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha1))
+            {
+                anim.SetBool("1", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2))
+            {
+                anim.SetBool("2", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha2))
+            {
+                anim.SetBool("2", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3))
+            {
+                anim.SetBool("3", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha3))
+            {
+                anim.SetBool("3", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha4))
+            {
+                anim.SetBool("4", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha4))
+            {
+                anim.SetBool("4", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha5))
+            {
+                anim.SetBool("5", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha5))
+            {
+                anim.SetBool("5", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha6))
+            {
+                anim.SetBool("6", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha6))
+            {
+                anim.SetBool("6", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha7))
+            {
+                anim.SetBool("7", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha7))
+            {
+                anim.SetBool("7", false);
+            }
+
+            if (Input.GetKey(KeyCode.Alpha8))
+            {
+                anim.SetBool("8", true);
+            }
+            if (!Input.GetKey(KeyCode.Alpha8))
+            {
+                anim.SetBool("8", false);
             }
         }
         

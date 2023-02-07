@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 7500421320617095838}
   - component: {fileID: 495159165610942720}
   - component: {fileID: 495159165610942726}
+  - component: {fileID: 3747015748949193818}
   m_Layer: 0
   m_Name: Dialogue Runner
   m_TagString: Untagged
@@ -384,6 +385,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showDebug: 0
   debugTextView: {fileID: 0}
+--- !u!114 &3747015748949193818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495159165610942725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1 &495159165875386112
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +644,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

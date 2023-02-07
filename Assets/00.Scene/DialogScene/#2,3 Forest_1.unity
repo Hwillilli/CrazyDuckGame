@@ -1437,11 +1437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Events:
-    m_Signals:
-    - {fileID: 0}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls: []
+    m_Signals: []
+    m_Events: []
 --- !u!1 &802142126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2538,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1759725604151872842, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604151872881, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604339026583, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604339026586, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604388461203, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604388461209, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604388461209, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604854940131, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604854940157, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604998565475, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725604998565478, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605058241908, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605058241915, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605105057304, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605105057311, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605989492386, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759725605989492393, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364888, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_Name
       value: Player(Main)
@@ -2589,7 +2654,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8082184763940428595, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: key
+      value: .Alpha8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8082184763940428595, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
 --- !u!1001 &3051370968737842016
 PrefabInstance:

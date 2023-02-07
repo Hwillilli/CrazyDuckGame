@@ -24,12 +24,7 @@ public class TimelineController : MonoBehaviour
     {
         Timeline.Play();
     }
-    
-    [YarnCommand("CamChange")] 
-    public void CamChange()
-    {
-        gameObject.SetActive(true);
-    }
+   
 
     [YarnCommand("pause")] 
     public void pauseTimeline()
