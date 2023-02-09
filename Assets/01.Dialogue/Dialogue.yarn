@@ -69,7 +69,7 @@ Rabbit: 분명 들었는데...
 <<play #2,3.02FirstSightR>>
 <<wait 3>>
 <<Speak C_Rabbit>> <<zer_Off C_Rabbit>>
-Rabbit: 앗, 안녕!
+Rabbit: 앗, 안녕! 내 이름은 버치야!
 Rabbit: 여기서 리코더 부른 거, 너 맞지?
 Rabbit: 듣자마자 느껴졌어... 영재의 기운...!!
 <<one_On C_Rabbit>>
@@ -150,7 +150,6 @@ position: 428,-828
 Rabbit: 아니... 그건?!
 <<StopSpeak C_Rabbit>>
 ->Player: 크큭... 맞아.
-    //Player: [nomarkup]크큭... 맞아. 이것이 바로 [전설의 리코더] 다...[/nomarkup]
     Player: 크큭... 맞아. 이것이 바로 「전설의 리코더」다...
     <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
     Rabbit: ...
@@ -160,7 +159,7 @@ Rabbit: 아니... 그건?!
 ->Player: 내 리코더야!
     <<Speak C_Rabbit>>
     Rabbit: 곧게 뻗은 직선... 일정한 크기의 구멍... 그리고 아리따운 빛깔...!
-    Rabbit: 전설의 리코더야!!!
+    Rabbit: 「전설의 리코더」야!!!
     <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 이미 알고 있겠지만, 오늘은 첫 시간이니까 연주법을 배워보자!
 Rabbit: 숫자 버튼을 누르거나 리코더 구멍을 손가락으로 막으면 연주를 할 수 있어.
@@ -201,7 +200,7 @@ position: -250,-671
 <<Speak C_Rabbit>>
 Rabbit: 여기는 잠깐만! 기다료~빵집이야.
 <<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
-Rabbit: 이곳의 주인인 슈크림님이 만드는 빵은 아주아주아주......
+Rabbit: 이곳의 주인인 슈크림 씨가 만드는 빵은 아주아주아주......
 <<two_Off C_Rabbit>>
 <<one_On C_Rabbit>>
 Rabbit: 맛있어!!!!!!
@@ -210,11 +209,11 @@ Rabbit: 맛있어!!!!!!
 Rabbit: 치즈 마을의 명물이지~ 아주 유우명한~...
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: ...그런데 가게가 왜 이렇게 어둡지?
-Rabbit: 슈크림님은 또 어디가셨고...
+Rabbit: 슈크림 씨는 또 어디가셨고...
 <<play flipRabbit>>
-Rabbit: 슈크림님?
+Rabbit: 슈크림 씨?
 <<play reflipRabbit>>
-Rabbit: 슈크림님!!!
+Rabbit: 슈크림 씨!!!
 <<StopSpeak C_Rabbit>> <<play #5SueAppear>>
 <<jump SueAppear>>
 ===
@@ -335,7 +334,7 @@ Rabbit: 이제 여기서 음표를 찾으면 되는 걸까?
 <<two_On C_Rabbit>>
 Rabbit: 음... 어떤 음표가 맞는 음표인지 모르겠어..
 <<two_Off C_Rabbit>>
-Rabbit:혹시 여기서 전설의 리코더를 연주한다면, 음표들이 반응해 주지 않을까?!
+Rabbit:혹시 여기서 「전설의 리코더」를 연주한다면, 음표들이 반응해 주지 않을까?!
 <<StopSpeak C_Rabbit>>
 //recorder lights
 //<<reorder>>
@@ -405,7 +404,7 @@ Rabbit: 슈크림 씨! 노래 찾았어요~!!
 Sue: 고마워... 정말 고마워...!
 <<for_Off C_Rabbit>>
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
-Rabbit: 슈크림님에게 노래를 연주해드리자!
+Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
 <<one_Off Sue>>
 ===
@@ -435,9 +434,9 @@ Sue: 보답으로 이걸 줄게
 <<zer_Off C_Rabbit>>
 <<one_On C_Rabbit>>
 <<Speak C_Rabbit>>
-Rabbit: 우와아! 슈크림님의 빵...!
+Rabbit: 우와아! 슈크림 씨의 빵...!
 <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
-Rabbit: 감사합니다 슈크림님!
+Rabbit: 감사합니다 슈크림 씨!
 <<StopSpeak C_Rabbit>>
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<reflip Sue>>
@@ -449,7 +448,7 @@ Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 �
 Sue: 그럼, 조심히 가!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
 <<Speak C_Rabbit>>
-Rabbit: 안녕히계세요 슈크림님!
+Rabbit: 안녕히계세요 슈크림 씨!
 <<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<thr_Off Sue>>
 ===
@@ -699,31 +698,71 @@ Rabbit: 좋아. 가자!
 <<StopSpeak C_Rabbit>> <<one_Off C_Nico>> <<one_Off Player(Main)>>
 <<play return>> <<stop NicoPop>>
 ===
-//릴리가 너희를 보고싶대
+//#14 릴리와의 만남 
 title: LillyHouse14
 position: 10,-54
 ---
-Nico: 잠깐만, 릴리 데리고 올게!
+Nico: 잠깐만, 릴리가 너희를 보고싶대!
+<<Speak C_Rabbit>>
 Rabbit: 헉... 나 릴리 처음 봐... 너무 떨린다...!
-Lilly: 안녕하세요. 절 도와주신다 하셨다고 들어서요..!
+<<StopSpeak C_Rabbit>>
+===
+title: ThankLilly
+---
+Lilly: 안녕하세요, 절 도와주신다고 들어서요..!
+<<Speak C_Rabbit>>
 Rabbit: 앗, 네!
+<<StopSpeak C_Rabbit>>
 Lilly: 정말.. 정말 감사해요!
+<<Speak C_Rabbit>>
 Rabbit: 맡겨만 주세요!
+<<StopSpeak C_Rabbit>>
 Nico: 부탁할게!
+===
+title: totheQuestMap3
+---
+<<Speak C_Rabbit>>
+Rabbit: 누군진 모르지만 릴리에게 저주를 내린 그 아이돌, 정말 못됐다...
+Rabbit: 그럼 이번에도 파이팅! 난 여기서 기다리고 있을게!
+Rabbit: 아자 아자 「전설의 리코더」~!
+<<StopSpeak C_Rabbit>>
 ===
 title: Find3
 position: 241,-53
 ---
 Player: 노래를 찾았어!
+<<Speak C_Rabbit>>
 Rabbit: 좋았어! 노래를 들려주러 가자!
+<<StopSpeak C_Rabbit>>
 ===
-title: play3Song
+title: QuestNpc3
 position: 471,-60
 ---
+<<Speak C_Rabbit>>
 Rabbit: 네코! 릴리! 노래를 찾았어요!
-Lilly: 정말요? 감사합니다!
+<<StopSpeak C_Rabbit>>
+Nico: 헉 정말?!
 Nico: 역시 리코더 아카데미에 맡기길 잘했어!
+Nico: 릴리는 2층에 있어. 올라가자!
+===
+title: Lilly
+---
+Lilly: 헉... 노래를 찾으셨다고요?
+Nico: 너무 잘 됐다 릴리!
+<<Speak C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
+<<StopSpeak C_Rabbit>>
+===
+title: PlayLillySong
+position: 210,-336
+---
+<<wait 1>>
+<<play 01PlaySue>>
+<<Splay LallaSong>>
+<<wait 31>>
+<<play fadeOut>>
+<<wait 1>>
+<<Load LallaHome>>
 ===
 title: ThisSong
 position: 683,-54
@@ -731,10 +770,12 @@ position: 683,-54
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
 //눈물 도르륵.
-Nico: 릴리..! 저주가 풀렸어!!
+Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
 Lilly: 오늘 일기에 꼭 써야겠어요!
-Rabbit: 아녜요. 저희는 할 일을 했을 뿐인 걸요!
+<<Speak C_Rabbit>>
+Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
+<<StopSpeak C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
@@ -744,11 +785,79 @@ Nico: 행운을 빌어!!
 title: Wait
 position: 916,-57
 ---
-Nico: 잠깐!!!!!!!!!!!!
+Nico: 잠깐만!!!!!!!!!!!!
 Nico: 깜빡하고 말 못 한 게 있어.
 Nico: 마을 주민들 중 가장 고요하고 지혜로운 동물... 그 동물을 찾아가면,
 Nico: 저주를 풀 단서를 얻는댔어!
 Nico: 제발... 마을의 저주를 풀어줘!
+NIco: 너희들이라면, 꼭 할 수 있을 거야!
+<<Speak C_Rabbit>>
+Rabbit: 고마워 네코! 
+Rabbit: 우리가 꼭 이 마을의 저주를 풀어낼게!!!
+<<StopSpeak C_Rabbit>>
+===
+title: WhoIsShe?
+position: 916,-57
+---
+<<Speak C_Rabbit>>
+Rabbit: 가장 고요하고 지혜로운 동물이라...
+<<StopSpeak C_Rabbit>>
+Player: 일단 릴리랑 네코는 별 얘기가 없었으니 아닌 것 같아
+<<Speak C_Rabbit>>
+Rabbit: 그럼 남은 주민은 슈크림, 금한울자, 사소크라테스, 나, 너까지 다섯 명인데..
+Rabbit: 여기서 가장 고요하고 지혜로운 동물이 누구일까?
+<<StopSpeak C_Rabbit>>
+->Player: 슈크림
+    Player: 슈크림 씨가 아닐까?
+    Rabbit: 으음.. 슈크림 씨는 스타니까, 가장 고요하지는 않을 것 같아.
+    ->Player:사소크라테스
+    ->Player: 금한울자
+    ->Player: 버치
+    ->Player: 나
+    ->Player: 잘 모르겠다
+->Player: 사소크라테스
+    Player: 왠지 사소크라테스님일 것 같은 느낌...!
+    Rabbit: 헉..!
+    Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스님이니까..
+    Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
+    Player: 좋았어! 그럼 음표들의 고향으로 가자!
+->Player: 금한울자
+    Player: 어딘가 범상치 않은 금한울자씨?
+    Rabbit: 헉...
+    Rabbit: 하지만 그분은 너무 무서운걸...
+    ->Player: 슈크림
+    ->Player:사소크라테스
+    ->Player: 버치
+    ->Player: 나
+    ->Player: 잘 모르겠다
+->Player: 버치
+    Player: 지금까지의 여정을 돌아봤을 때, 그런 동물은 너인 것 같아 버치.
+    Rabbit: 날 그렇게 생각했구나...!
+    Rabbit: 나...정말 감동이야...
+    Rabbit: 그렇지만 나, 저주를 푸는 방법은 몰라..
+    ->Player: 슈크림
+    ->Player: 사소크라테스
+    ->Player: 금한울자
+    ->Player: 나
+    ->Player: 잘 모르겠다
+->Player: 나
+    Player: 아무리 생각해 봐도 답은 하나, 바로 나야.
+    Rabbit: 헉...!
+    Rabbit: 그치만, 넌 「전설의 리코더 연주자」잖아...!
+    ->Player: 슈크림
+    ->Player:사소크라테스
+    ->Player: 금한울자
+    ->Player: 버치
+    ->Player: 잘 모르겠다
+->Player: 잘 모르겠다
+    Player: 잘... 모르겠는데...
+    Rabbit: 조금 더 고민해볼래?
+    Rabbit: 너라면 분명 알 수 있을 거야!
+    ->Player: 슈크림
+    ->Player: 사소크라테스
+    ->Player: 금한울자
+    ->Player: 버치
+    ->Player: 나
 ===
 title: Again
 position: -196,170
@@ -758,11 +867,12 @@ Saso: 이번엔 무슨 일이니...?
 <<Speak C_Rabbit>>
 Rabbit: 혹시... 마을에서 가장 고요하고 지혜로운 분을 아시나요?
 <<StopSpeak C_Rabbit>>
-Saso: 그럼! 그건 바로...
-Saso: ...
-Saso: 나!!!!
+Saso: 그럼! 그건 바로... 바로...
+Saso: ............
+Saso: ............나!!!!
 <<Speak C_Rabbit>>
-Rabbit: 헉...! 그럼, 마을의 저주를 풀 단서를 아시나요?
+Rabbit: 헉...! 역시 맞았어..!
+Rabbit: 그럼 마을의 저주를 풀 단서도 아시나요?!
 <<StopSpeak C_Rabbit>>
 Saso: 오오...! 당연히 알지... 알고말고...
 Saso: 거기 너, 악보조각들 있지?
@@ -770,7 +880,6 @@ Saso: 그 조각들, 나에게 줘.
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
 Saso: 행운을 빌지... 흐흐... 흐흐흐...
 <<Speak C_Rabbit>>
-Rabbit: ...항상 느끼는 거지만 정말 특이한 분이야...
 Rabbit: 이제 모든 건 너에게 달렸어..!
 Rabbit: 너만이 우리 마을을 구할 수 있어..! 부탁할게..!
 <<StopSpeak C_Rabbit>>
