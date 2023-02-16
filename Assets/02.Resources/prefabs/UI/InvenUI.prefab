@@ -29,6 +29,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025680030848629}
   m_Father: {fileID: 8556025680936280318}
@@ -118,6 +119,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8556025681042849407}
   m_RootOrder: 0
@@ -194,6 +196,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8556025679780800700}
   m_RootOrder: 0
@@ -313,6 +316,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025679581693157}
   - {fileID: 8556025681116603681}
@@ -374,7 +378,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8556025679835256825}
   - component: {fileID: 8556025679835256824}
-  - component: {fileID: 348163795}
   m_Layer: 0
   m_Name: InvenUI
   m_TagString: Untagged
@@ -392,6 +395,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 580, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025679780800700}
   m_Father: {fileID: 0}
@@ -399,7 +403,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8556025679835256824
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -412,23 +416,11 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &348163795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8556025679835256826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 352121b6d409c2042978e1b91488c159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeInven: 0
 --- !u!1 &8556025680030848630
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +449,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025680588010418}
   - {fileID: 8664957813648914304}
@@ -545,6 +538,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025681042849407}
   m_Father: {fileID: 8556025680936280318}
@@ -671,6 +665,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025679427033681}
   - {fileID: 8556025680451711241}
@@ -776,6 +771,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8556025679472773803}
   m_Father: {fileID: 8556025680451711241}
@@ -815,6 +811,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8556025679780800700}
   m_RootOrder: 2
@@ -906,7 +903,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348163795}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
@@ -947,6 +944,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8556025679780800700}
   m_RootOrder: 1
@@ -2361,14 +2359,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dd2605d1ed4f6f46a5573ff0be0f73a, type: 3}
---- !u!1 &8556025680588010419 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1080020854624781030, guid: 0dd2605d1ed4f6f46a5573ff0be0f73a, type: 3}
-  m_PrefabInstance: {fileID: 8664957813333553493}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8556025680588010418 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1080020854624781031, guid: 0dd2605d1ed4f6f46a5573ff0be0f73a, type: 3}
+  m_PrefabInstance: {fileID: 8664957813333553493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8556025680588010419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1080020854624781030, guid: 0dd2605d1ed4f6f46a5573ff0be0f73a, type: 3}
   m_PrefabInstance: {fileID: 8664957813333553493}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6075939070787347068

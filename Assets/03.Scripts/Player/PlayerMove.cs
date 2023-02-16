@@ -14,26 +14,50 @@ public class PlayerMove : MonoBehaviour
 
     //player UI
     public GameObject Recorder;
+    public GameObject inven;
+    public GameObject menuSet;
     public GameObject NextScene = null;
     public GameObject CurrScene = null;
 
     public bool notMove = false;
     public bool isRecOpen = false;
+    public bool activeInven = false;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
     void Update()
     {
+        // Open Menu Set
+        if (Input.GetButtonDown("Cancel"))
+            menuSet.SetActive(true);
+
+        //인벤 열기
+        //if (input.getkeydown(keycode.tab))
+        //{
+        //    input tab
+        //    if (activeinven == false)
+        //    {
+        //        inven.setactive(true);
+        //        anim.setbool("iskeydown", true);
+        //        activeinven = true;
+        //    }
+        //    else
+        //    {
+        //        anim.setbool("iskeydown", false);
+        //        activeinven = false;
+        //    }
+        //}
+
         // Open Recorder 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //input R
+            //input R 대화 진행
             if (!isRecOpen)
             {
                 anim.SetBool("isRecOpen", true);
