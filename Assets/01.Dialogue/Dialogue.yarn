@@ -31,7 +31,7 @@ Fairy: 당신이 가지고 있는 특별한 리코더로, 부디 저주에 걸�
 <<jump Choose>>
 ===
 title: Choose
-position: -57,-996
+position: -73,-1010
 ---
 //#1-5 선택지
 ->Player: 구한다
@@ -126,7 +126,7 @@ Rabbit: 그 쪽지의 내용은 바로... 바로...!
 <<jump BackToRecorderAcademy>>
 ===
 title:BackToRecorderAcademy
-position: 134,-827
+position: 182,-837
 ---
 //버치, 오리 기본으로 돌아오는 애니메이션
 <<zer_Off C_Rabbit>> <<six_On C_Rabbit>>
@@ -410,7 +410,7 @@ Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 ===
 //오리 슈 노래 연주 애니메이션
 title: PlaySueSong
-position: 454,-548
+position: 460,-553
 ---
 <<wait 3>>
 <<play 01PlaySue>>
@@ -430,7 +430,6 @@ Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어
 <<thr_On Sue>>
 <<flip Sue>>
 Sue: 보답으로 이걸 줄게
-빵 아이템 획득
 <<zer_Off C_Rabbit>>
 <<one_On C_Rabbit>>
 <<Speak C_Rabbit>>
@@ -443,7 +442,7 @@ Rabbit: 감사합니다 슈크림 씨!
 <<thr_Off Sue>>
 Sue: 아 참, 그리고 또 줄 게 있어
 Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 필요할 것 같아서...
-악보조각1 아이템 획득
+Sue_music_note 아이템 획득
 <<thr_On Sue>>
 Sue: 그럼, 조심히 가!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
