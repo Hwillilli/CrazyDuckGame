@@ -32,9 +32,12 @@ public class InventoryUI : MonoBehaviour
             }
         }
     }
+
     public void Exit()
     {
         anim.SetBool("isKeyDown", false);
         activeInven = false;
     }
+
+
 }
