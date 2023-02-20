@@ -1,5 +1,5 @@
 title: Commands
-position: -247,-1153
+position: -247,-1157
 ---
 //Command Npc name: C_Rabbit C_Saso C_Sue
 //Speaking animations
@@ -44,9 +44,9 @@ position: -73,-1010
     <<jump Choose>>
 ===
 //#1-6 오리등장 애니메이션
-//#2 요정과의 조우(숲)
+//#2 요정과의 조우(숲) #2,3 Forest_1
 title:FairyBirth
-position: 255,-996
+position: 187,-996
 ---
 <<wait 1>>
 <<Speak C_Fairy>>
@@ -61,7 +61,7 @@ Fairy: 이제 마을로 떠나봐요!
 ===
 //#3 버치 첫만남(숲)
 title:FirstSight
-position: 502,-1002
+position: 439,-994
 ---
 Rabbit: 저기요~
 Rabbit: 아무도 안 계시나요~
@@ -85,7 +85,7 @@ Rabbit: 좋아! 날 따라와!
 Player: ;;
 <<play #2,3.03FollowMeR>>
 ===
-//#4 리코더 아카데미
+//#4 리코더 아카데미 #4 Academy_in
 title: RecorderAcademy
 position: -251,-831
 ---
@@ -192,7 +192,7 @@ position: 626,-820
     <<wait 5>> <<jump PlayAgain>>
 <<moveAgain Player>>
 ===
-//#5 빵집입장
+//#5 빵집입장 #5 Bakery
 title: SadBakery
 position: -250,-671
 ---
@@ -272,7 +272,7 @@ Rabbit: 저희에게 맡겨주세요!
 <<one_Off Sue>>
 //Rabbit out
 ===
-//#6 노래를 찾는 길
+//#6 노래를 찾는 길 #6 MainVillage
 title: TheWayTofindASong
 position: 211,-673
 ---
@@ -320,7 +320,7 @@ Rabbit: 따라가보자!
 <<StopSpeak C_Rabbit>>
 <<play #6roadFollowR>>
 ===
-//#7 음표들의 고향으로
+//#7 음표들의 고향으로 #7 noteHome
 title: ToTheHomeOfMusicNote
 position: 391,-679
 ---
@@ -368,9 +368,11 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 <<StopSpeak C_Fairy>>
 <<stop>>
 ===
+//#7-1 noteHome clear
 title: Quest1Clear
 position: -6,-539
 ---
+Sue_music_note 아이템 획득
 <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>>
 <<wait 1>>
 <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
@@ -391,7 +393,7 @@ Rabbit: 이제 노래를 들려주러 가자!
 <<MoveAgain Player>>
 <<play #7.05LetsGoR>>
 ===
-//#8-1 퀘스트 보상
+//#8-1 퀘스트 보상 #8.BakeryClear
 title: ReadyBakery
 position: 235,-536
 ---
@@ -406,9 +408,10 @@ Sue: 고마워... 정말 고마워...!
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
+Sue_music_note 아이템 선택
 <<one_Off Sue>>
 ===
-//오리 슈 노래 연주 애니메이션
+//오리 슈 노래 연주 애니메이션 01SueSongPlay
 title: PlaySueSong
 position: 460,-553
 ---
@@ -421,6 +424,7 @@ position: 460,-553
 <<wait 1>>
 <<Load SueBackery>>
 ===
+//#8.BakeryClearEnding
 title: BakeryAward
 position: 700,-540
 ---
@@ -442,7 +446,7 @@ Rabbit: 감사합니다 슈크림 씨!
 <<thr_Off Sue>>
 Sue: 아 참, 그리고 또 줄 게 있어
 Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 필요할 것 같아서...
-Sue_music_note 아이템 획득
+Music_piece_0 아이템 획득
 <<thr_On Sue>>
 Sue: 그럼, 조심히 가!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
@@ -451,14 +455,14 @@ Rabbit: 안녕히계세요 슈크림 씨!
 <<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<thr_Off Sue>>
 ===
-//#9 강아지 등장
+//#9 강아지 등장 #9 Gottong
 title: GottongIn
 position: -218,-348
 ---
 <<wait 1>>
-//Gottong: 멍멍!
-//곳동 이동
-곳동 등장
+<<play #9Gottong>> <<wait 2>> //<<one_On Gottong>>
+Gottong: 멍멍!
+<<play #9GottongGo>> <<wait 3>>//곳동 이동
 <<Speak C_Rabbit>>
 Rabbit: 어라... 저 분은...!
 <<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
@@ -505,9 +509,9 @@ Rabbit: 그럼 가보자고~!
 <<StopSpeak C_Rabbit>>
 <<play #9RabbitGo~>>
 ===
-//#10 두 번째 퀘스트 
+//#10 두 번째 퀘스트 #10 noteHome 2
 title: Quest2
-position: -228,-209
+position: -228,-211
 ---
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 너만 믿을게! 파이팅!
@@ -527,6 +531,7 @@ title: Quest2Clear
 position: -3,-203
 ---
 <<wait 1>>
+Iseul_music_note 아이템 획득
 Player: 노래를 찾았어!
  <<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 좋아! 노래를 들려주러 가자
@@ -543,6 +548,7 @@ Geumhan: 오, 드디어...!
 <<Speak C_Rabbit>>
 Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
+Iseul_music_note 아이템 선택
 <<wait 1>>
 ===
 //playquestsong
@@ -567,7 +573,7 @@ Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!
 <<one_Off C_Geumhan>>
 <<StopSpeak C_Geumhan>> <<two_On C_Geumhan>>
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
-악보조각2 아이템 획득
+Music_piece_1 아이템 획득
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
 Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
 <<two_Off C_Geumhan>>
@@ -597,7 +603,7 @@ Geumhan: 엉덩이는 두 개...
 Geumhan: 엉덩이는 두 개...
 ===
 title: earhurt
-position: -409,-52
+position: -240,-50
 ---
 <<wait 1>>
 player: 귀에서 피가 나는 것 같아.....
@@ -606,7 +612,7 @@ Rabbit: 정말 무서웠어......
 <<jump Party>>
 ===
 title: Party
-position: -210,-46
+position: 1,-50
 ---
 <<wait 1>> <<one_On Player(Main)>>
 <<Speak C_Rabbit>> 
@@ -699,7 +705,7 @@ Rabbit: 좋아. 가자!
 ===
 //#14 릴리와의 만남 
 title: LillyHouse14
-position: 10,-54
+position: 235,-48
 ---
 Nico: 잠깐만, 릴리가 너희를 보고싶대!
 <<Speak C_Rabbit>>
@@ -707,6 +713,7 @@ Rabbit: 헉... 나 릴리 처음 봐... 너무 떨린다...!
 <<StopSpeak C_Rabbit>>
 ===
 title: ThankLilly
+position: 442,-56
 ---
 Lilly: 안녕하세요, 절 도와주신다고 들어서요..!
 <<Speak C_Rabbit>>
@@ -719,6 +726,7 @@ Rabbit: 맡겨만 주세요!
 Nico: 부탁할게!
 ===
 title: totheQuestMap3
+position: 663,-60
 ---
 <<Speak C_Rabbit>>
 Rabbit: 누군진 모르지만 릴리에게 저주를 내린 그 아이돌, 정말 못됐다...
@@ -727,15 +735,16 @@ Rabbit: 아자 아자 「전설의 리코더」~!
 <<StopSpeak C_Rabbit>>
 ===
 title: Find3
-position: 241,-53
+position: -230,105
 ---
+Rara_music_note 아이템 획득
 Player: 노래를 찾았어!
 <<Speak C_Rabbit>>
 Rabbit: 좋았어! 노래를 들려주러 가자!
 <<StopSpeak C_Rabbit>>
 ===
 title: QuestNpc3
-position: 471,-60
+position: 2,103
 ---
 <<Speak C_Rabbit>>
 Rabbit: 네코! 릴리! 노래를 찾았어요!
@@ -743,14 +752,17 @@ Rabbit: 네코! 릴리! 노래를 찾았어요!
 Nico: 헉 정말?!
 Nico: 역시 리코더 아카데미에 맡기길 잘했어!
 Nico: 릴리는 2층에 있어. 올라가자!
+<<play GoUpStairs>> <<wait 2.5>>
 ===
 title: Lilly
+position: 231,103
 ---
 Lilly: 헉... 노래를 찾으셨다고요?
 Nico: 너무 잘 됐다 릴리!
 <<Speak C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
 <<StopSpeak C_Rabbit>>
+Rara_music_note 아이템 선택
 ===
 title: PlayLillySong
 position: 210,-336
@@ -764,11 +776,11 @@ position: 210,-336
 <<Load LallaHome>>
 ===
 title: ThisSong
-position: 683,-54
+position: 446,94
 ---
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
-//눈물 도르륵.
+<<play Lalla>> <<wait 2>>
 Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
 Lilly: 오늘 일기에 꼭 써야겠어요!
@@ -776,91 +788,125 @@ Lilly: 오늘 일기에 꼭 써야겠어요!
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
 <<StopSpeak C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
+Music_piece_2 아이템 획득
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
 Lilly: 여러분이라면, 이 마을을 꼭 구할 수 있을 거예요!
 Nico: 행운을 빌어!!
 ===
 title: Wait
-position: 916,-57
+position: 676,95
 ---
+<<wait 1>>
 Nico: 잠깐만!!!!!!!!!!!!
 Nico: 깜빡하고 말 못 한 게 있어.
 Nico: 마을 주민들 중 가장 고요하고 지혜로운 동물... 그 동물을 찾아가면,
 Nico: 저주를 풀 단서를 얻는댔어!
 Nico: 제발... 마을의 저주를 풀어줘!
-NIco: 너희들이라면, 꼭 할 수 있을 거야!
+Nico: 너희들이라면, 꼭 할 수 있을 거야!
 <<Speak C_Rabbit>>
 Rabbit: 고마워 네코! 
 Rabbit: 우리가 꼭 이 마을의 저주를 풀어낼게!!!
 <<StopSpeak C_Rabbit>>
 ===
 title: WhoIsShe?
-position: 916,-57
+position: -233,253
 ---
 <<Speak C_Rabbit>>
 Rabbit: 가장 고요하고 지혜로운 동물이라...
 <<StopSpeak C_Rabbit>>
 Player: 일단 릴리랑 네코는 별 얘기가 없었으니 아닌 것 같아
 <<Speak C_Rabbit>>
-Rabbit: 그럼 남은 주민은 슈크림, 금한울자, 사소크라테스, 나, 너까지 다섯 명인데..
+Rabbit: 그럼 남은 주민은 슈크림, 금한울자, 사소크라테스, 나, 너까지 다섯 명인데...
 Rabbit: 여기서 가장 고요하고 지혜로운 동물이 누구일까?
 <<StopSpeak C_Rabbit>>
-->Player: 슈크림
-    Player: 슈크림 씨가 아닐까?
-    Rabbit: 으음.. 슈크림 씨는 스타니까, 가장 고요하지는 않을 것 같아.
-    ->Player:사소크라테스
-    ->Player: 금한울자
-    ->Player: 버치
-    ->Player: 나
-    ->Player: 잘 모르겠다
-->Player: 사소크라테스
-    Player: 왠지 사소크라테스님일 것 같은 느낌...!
-    Rabbit: 헉..!
-    Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스님이니까..
-    Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
-    Player: 좋았어! 그럼 음표들의 고향으로 가자!
-->Player: 금한울자
-    Player: 어딘가 범상치 않은 금한울자씨?
-    Rabbit: 헉...
-    Rabbit: 하지만 그분은 너무 무서운걸...
-    ->Player: 슈크림
-    ->Player:사소크라테스
-    ->Player: 버치
-    ->Player: 나
-    ->Player: 잘 모르겠다
-->Player: 버치
-    Player: 지금까지의 여정을 돌아봤을 때, 그런 동물은 너인 것 같아 버치.
-    Rabbit: 날 그렇게 생각했구나...!
-    Rabbit: 나...정말 감동이야...
-    Rabbit: 그렇지만 나, 저주를 푸는 방법은 몰라..
-    ->Player: 슈크림
-    ->Player: 사소크라테스
-    ->Player: 금한울자
-    ->Player: 나
-    ->Player: 잘 모르겠다
-->Player: 나
-    Player: 아무리 생각해 봐도 답은 하나, 바로 나야.
-    Rabbit: 헉...!
-    Rabbit: 그치만, 넌 「전설의 리코더 연주자」잖아...!
-    ->Player: 슈크림
-    ->Player:사소크라테스
-    ->Player: 금한울자
-    ->Player: 버치
-    ->Player: 잘 모르겠다
-->Player: 잘 모르겠다
-    Player: 잘... 모르겠는데...
-    Rabbit: 조금 더 고민해볼래?
-    Rabbit: 너라면 분명 알 수 있을 거야!
-    ->Player: 슈크림
-    ->Player: 사소크라테스
-    ->Player: 금한울자
-    ->Player: 버치
-    ->Player: 나
+<<jump LastChoose>>
+===
+title: LastChoose
+position: 3,253
+---
+->Player: 슈크림 <<if not visited("Sue")>>
+     <<jump Sue>>
+->Player: 사소크라테스 <<if not visited("Saso")>>
+    <<jump Saso>>
+->Player: 금한울자 <<if not visited("Geum")>>
+    <<jump Geum>>
+->Player: 버치 <<if not visited("Rabbit")>>
+    <<jump Rabbit>>
+->Player: 나 <<if not visited("Me")>>
+    <<jump Me>>
+->Player: 잘 모르겠다 <<if not visited("IDK")>>
+    <<jump IDK>>
+===
+title: Sue
+position: 262,255
+---
+Player: 슈크림 씨가 아닐까?
+<<Speak C_Rabbit>>
+Rabbit: 으음.. 슈크림 씨는 스타니까, 가장 고요하지는 않을 것 같아.
+<<StopSpeak C_Rabbit>>
+<<jump LastChoose>>
+===
+title: Saso
+position: 514,253
+---
+Player: 왠지 사소크라테스님일 것 같은 느낌...!
+<<Speak C_Rabbit>>
+Rabbit: 헉..!
+Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스님이니까..
+<<one_On C_Rabbit>>
+Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
+<<StopSpeak C_Rabbit>>
+Player: 좋았어! 그럼 음표들의 고향으로 가자!
+<<one_Off C_Rabbit>> <<end>>
+===
+title: Geum
+position: 761,254
+---
+Player: 어딘가 범상치 않은 금한울자씨?
+<<Speak C_Rabbit>>
+Rabbit: 헉...
+Rabbit: 하지만 그분은 너무 무서운걸...
+<<StopSpeak C_Rabbit>>
+<<jump LastChoose>>
+===
+title: Rabbit
+position: 264,418
+---
+Player: 지금까지의 여정을 돌아봤을 때, 그런 동물은 너인 것 같아 버치.
+<<Speak C_Rabbit>> <<one_On C_Rabbit>>
+Rabbit: 날 그렇게 생각했구나...!
+Rabbit: 나...정말 감동이야...
+<<one_Off C_Rabbit>>
+Rabbit: 그렇지만 나, 저주를 푸는 방법은 몰라..
+<<StopSpeak C_Rabbit>>
+<<jump LastChoose>>
+===
+title: Me
+position: 514,426
+---
+Player: 아무리 생각해 봐도 답은 하나.
+Player: 바로 나야.
+<<Speak C_Rabbit>>
+Rabbit: 헉...!
+Rabbit: 그치만, 넌 「전설의 리코더 연주자」잖아!
+<<StopSpeak C_Rabbit>>
+<<jump LastChoose>>
+===
+title: IDK
+position: 759,414
+---
+Player: 잘... 모르겠는데...
+<<Speak C_Rabbit>>
+Rabbit: 조금 더 고민해볼래?
+Rabbit: 너라면 분명 알 수 있을 거야!
+<<StopSpeak C_Rabbit>>
+<<jump LastChoose>>
 ===
 title: Again
-position: -196,170
+position: -234,594
 ---
+<<Appear C_Saso>>
 Saso: 오오… 그래, 또 너희구나.
 Saso: 이번엔 무슨 일이니...?
 <<Speak C_Rabbit>>
@@ -868,17 +914,22 @@ Rabbit: 혹시... 마을에서 가장 고요하고 지혜로운 분을 아시나
 <<StopSpeak C_Rabbit>>
 Saso: 그럼! 그건 바로... 바로...
 Saso: ............
+<<one_On C_Saso>> 
 Saso: ............나!!!!
-<<Speak C_Rabbit>>
+ <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 헉...! 역시 맞았어..!
 Rabbit: 그럼 마을의 저주를 풀 단서도 아시나요?!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<one_Off C_Saso>>
 Saso: 오오...! 당연히 알지... 알고말고...
 Saso: 거기 너, 악보조각들 있지?
 Saso: 그 조각들, 나에게 줘.
+Music_piece_0 Music_piece_1 Music_piece_2 아이템 선택, 삭제
+Music_noteX 아이템 획득
+<<one_On C_Saso>>
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
+<<one_Off C_Saso>>
 Saso: 행운을 빌지... 흐흐... 흐흐흐...
-<<Speak C_Rabbit>>
+<<Disappear C_Saso>> <<Speak C_Rabbit>>
 Rabbit: 이제 모든 건 너에게 달렸어..!
 Rabbit: 너만이 우리 마을을 구할 수 있어..! 부탁할게..!
 <<StopSpeak C_Rabbit>>
@@ -892,8 +943,9 @@ Rabbit: 힘들면 언제든 뒤를 돌아봐!
 <<StopSpeak C_Rabbit>>
 ===
 title: Finally
-position: 38,152
+position: 20,601
 ---
+Music_noteX 삭제, Final_music_note 아이템 획득
 <<Speak C_Rabbit>>
 Rabbit: 해냈구나..!!!
 Rabbit: 이겨내줘서 정말 고마워..!
@@ -902,12 +954,13 @@ Rabbit: 연주 준비가 되면 광장으로 와줘. 나는 주민들을 불러�
 <<StopSpeak C_Rabbit>>
 ===
 title: lastplay
-position: 281,142
+position: 271,589
 ---
 <<Speak C_Rabbit>>
 Rabbit: 아, 내가 다 떨린다...
 Rabbit: 그래도 이제 연주만 하면, 정말 마을의 저주가 풀리는 거야...!!
 Rabbit: 준비 됐지? 시작하자!
 <<StopSpeak C_Rabbit>>
+Final_music_note 아이템 선택
 //P.I
 ===

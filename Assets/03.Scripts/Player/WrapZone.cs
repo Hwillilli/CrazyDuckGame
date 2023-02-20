@@ -11,6 +11,7 @@ public class WrapZone : MonoBehaviour
     private PlayerMove thePlayer;
     //public Animator playerAnim;//캐릭터 애니메이션
     public bool isTower; //건물 확인
+    public bool isSend = true; //이동 확인
     public GameObject moveUI; //건물 이동 확인 이미지
     public PlayableDirector Timeline;
 
@@ -41,7 +42,8 @@ public class WrapZone : MonoBehaviour
                 if (Input.GetKey(KeyCode.W))//건물이면 버튼 입력으로 전환
                 {
                     Timeline.Play();
-                    Invoke("NextGame", 1f);
+                    if (isSend)
+                        Invoke("NextGame", 1f);
                 }
             }
         }
