@@ -69,6 +69,7 @@ public class Item : MonoBehaviour
 
             switch (myTarget)//ºÎµúÈù À½Ç¥
             {
+                //quest1
                 case "1.Item_R(Clone)"://1.Item_R(Clone) // Red , 7
                     TopNotePrefab.Instance.NoteActiveR();
                     break;
@@ -90,7 +91,44 @@ public class Item : MonoBehaviour
                 case "7.Item_P(Clone)":
                     TopNotePrefab.Instance.NoteActiveP();
                     break;
-               
+
+                //quest2
+                case "1.Item_R'(Clone)":
+                    TopNotePrefab.Instance.NoteActiveR();
+                    break;
+                case "1.Item_Y'(Clone)":
+                    TopNotePrefab.Instance.NoteActiveY();
+                    break;
+                case "1.Item_G'(Clone)":
+                    TopNotePrefab.Instance.NoteActiveG();
+                    break;
+                case "1.Item_B'(Clone)":
+                    TopNotePrefab.Instance.NoteActiveB();
+                    break;
+                case "1.Item_P'(Clone)":
+                    TopNotePrefab.Instance.NoteActiveP();
+                    break;
+                case "1.Item_Pink'(Clone)":
+                    TopNotePrefab.Instance.NoteActivePi();
+                    break;
+
+                //quest3
+                case "1.Item_O''(Clone)":
+                    TopNotePrefab.Instance.NoteActiveO();
+                    break;
+                case "1.Item_Y''(Clone)":
+                    TopNotePrefab.Instance.NoteActiveY();
+                    break;
+                case "1.Item_G''(Clone)":
+                    TopNotePrefab.Instance.NoteActiveG();
+                    break;
+                case "1.Item_S''(Clone)":
+                    TopNotePrefab.Instance.NoteActiveS();
+                    break;
+                case "1.Item_Pink''(Clone)":
+                    TopNotePrefab.Instance.NoteActivePi();
+                    break;
+
                 default:
                     break;
             }

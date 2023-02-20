@@ -12,7 +12,8 @@ public class TopNotePrefab : MonoBehaviour
     public GameObject TargetS;
     public GameObject TargetB;
     public GameObject TargetP;
-   
+
+    public GameObject TargetPi;
     //public BoxCollider Target;
 
     void Awake() {
@@ -81,5 +82,11 @@ public class TopNotePrefab : MonoBehaviour
     public void NoteActiveP()
     {
         TargetP.SetActive(true);
+    }
+
+    //ºÐÈ« À½Ç¥
+    public void NoteActivePi()
+    {
+        TargetPi.SetActive(true);
     }
 }
