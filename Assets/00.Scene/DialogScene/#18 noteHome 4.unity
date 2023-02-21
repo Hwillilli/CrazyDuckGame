@@ -6233,7 +6233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472371961952885999, guid: 7728077b075e83343917d6571c10a5c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.21
+      value: -19.2
       objectReference: {fileID: 0}
     - target: {fileID: 4472371962256766101, guid: 7728077b075e83343917d6571c10a5c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7328,11 +7328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8277639519656796231, guid: 3f833b6c9df21504aba36ab2ed4059e6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8277639519656796231, guid: 3f833b6c9df21504aba36ab2ed4059e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.94
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 8277639519656796231, guid: 3f833b6c9df21504aba36ab2ed4059e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7476,8 +7476,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1135919642}
   - {fileID: 2109997448}
+  - {fileID: 1135919642}
   - {fileID: 1046794652}
   m_Father: {fileID: 802142127}
   m_RootOrder: 1
@@ -7613,7 +7613,7 @@ PrefabInstance:
     - target: {fileID: 738791663541072136, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8670570185513830164, guid: 2901a59342dab0c4383421722d8fffb3, type: 3}
+      objectReference: {fileID: -8163460499673519506, guid: 2901a59342dab0c4383421722d8fffb3, type: 3}
     - target: {fileID: 4435301369345877383, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_Name
       value: C_Rabbit
@@ -7628,7 +7628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4798118632915597356, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.24
+      value: -3.99
       objectReference: {fileID: 0}
     - target: {fileID: 4798118632915597356, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8256,6 +8256,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 630332474, guid: 29e100d6a2c5c014ba8d7c45ef815bf3, type: 3}
+      propertyPath: messageBubbleOffset.y
+      value: 3.57
+      objectReference: {fileID: 0}
     - target: {fileID: 1248935344, guid: 29e100d6a2c5c014ba8d7c45ef815bf3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -8266,7 +8270,7 @@ PrefabInstance:
       objectReference: {fileID: 1116997990}
     - target: {fileID: 49752254734849056, guid: 29e100d6a2c5c014ba8d7c45ef815bf3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1309703207948509371, guid: 29e100d6a2c5c014ba8d7c45ef815bf3, type: 3}
       propertyPath: m_RootOrder

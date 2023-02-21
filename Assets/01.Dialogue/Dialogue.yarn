@@ -519,7 +519,7 @@ Rabbit: 너만 믿을게! 파이팅!
 Player: ㅡㅡ;
 ===
 title: totheQuestMap2
-position: 809,-699
+position: 831,-681
 ---
 <<wait 1>>
 //<<play #7.01recorderLight>>
@@ -720,7 +720,7 @@ Lilly: 안녕하세요, 절 도와주신다고 들어서요..!
 Rabbit: 앗, 네!
 <<StopSpeak C_Rabbit>>
 Lilly: 정말.. 정말 감사해요!
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<two_On C_Rabbit>> 
 Rabbit: 맡겨만 주세요!
 <<StopSpeak C_Rabbit>>
 Nico: 부탁할게!
@@ -728,9 +728,11 @@ Nico: 부탁할게!
 title: totheQuestMap3
 position: 663,-60
 ---
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
 Rabbit: 누군진 모르지만 릴리에게 저주를 내린 그 아이돌, 정말 못됐다...
+<<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 그럼 이번에도 파이팅! 난 여기서 기다리고 있을게!
+<<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 아자 아자 「전설의 리코더」~!
 <<StopSpeak C_Rabbit>>
 ===
@@ -759,7 +761,7 @@ position: 231,103
 ---
 Lilly: 헉... 노래를 찾으셨다고요?
 Nico: 너무 잘 됐다 릴리!
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
 <<StopSpeak C_Rabbit>>
 Rara_music_note 아이템 선택
@@ -780,13 +782,13 @@ position: 446,94
 ---
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
-<<play Lalla>> <<wait 2>>
+<<zer_Off C_Rabbit>> <<play Lalla>> <<thr_On C_Rabbit>>  <<wait 2>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
 Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
 Lilly: 오늘 일기에 꼭 써야겠어요!
-<<Speak C_Rabbit>>
+<<one_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
 Music_piece_2 아이템 획득
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
@@ -806,6 +808,7 @@ Nico: 제발... 마을의 저주를 풀어줘!
 Nico: 너희들이라면, 꼭 할 수 있을 거야!
 <<Speak C_Rabbit>>
 Rabbit: 고마워 네코! 
+<<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
 Rabbit: 우리가 꼭 이 마을의 저주를 풀어낼게!!!
 <<StopSpeak C_Rabbit>>
 ===
@@ -842,9 +845,9 @@ title: Sue
 position: 262,255
 ---
 Player: 슈크림 씨가 아닐까?
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<two_On C_Rabbit>>
 Rabbit: 으음.. 슈크림 씨는 스타니까, 가장 고요하지는 않을 것 같아.
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<jump LastChoose>>
 ===
 title: Saso
@@ -854,36 +857,36 @@ Player: 왠지 사소크라테스님일 것 같은 느낌...!
 <<Speak C_Rabbit>>
 Rabbit: 헉..!
 Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스님이니까..
-<<one_On C_Rabbit>>
+<<zer_Off C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
 <<StopSpeak C_Rabbit>>
 Player: 좋았어! 그럼 음표들의 고향으로 가자!
-<<one_Off C_Rabbit>> <<end>>
+<<one_Off C_Rabbit>> <<zer_On C_Rabbit>> <<end>>
 ===
 title: Geum
 position: 761,254
 ---
 Player: 어딘가 범상치 않은 금한울자씨?
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 헉...
 Rabbit: 하지만 그분은 너무 무서운걸...
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<jump LastChoose>>
 ===
 title: Rabbit
 position: 264,418
 ---
 Player: 지금까지의 여정을 돌아봤을 때, 그런 동물은 너인 것 같아 버치.
-<<Speak C_Rabbit>> <<one_On C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 날 그렇게 생각했구나...!
 Rabbit: 나...정말 감동이야...
-<<one_Off C_Rabbit>>
+<<one_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 그렇지만 나, 저주를 푸는 방법은 몰라..
 <<StopSpeak C_Rabbit>>
 <<jump LastChoose>>
 ===
 title: Me
-position: 514,426
+position: 510,435
 ---
 Player: 아무리 생각해 봐도 답은 하나.
 Player: 바로 나야.
@@ -897,10 +900,11 @@ title: IDK
 position: 759,414
 ---
 Player: 잘... 모르겠는데...
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<zer_Off C_Rabbit>>
 Rabbit: 조금 더 고민해볼래?
+<<for_On C_Rabbit>>
 Rabbit: 너라면 분명 알 수 있을 거야!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<jump LastChoose>>
 ===
 title: Again
@@ -911,16 +915,17 @@ Saso: 오오… 그래, 또 너희구나.
 Saso: 이번엔 무슨 일이니...?
 <<Speak C_Rabbit>>
 Rabbit: 혹시... 마을에서 가장 고요하고 지혜로운 분을 아시나요?
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<reflip C_Saso>>
 Saso: 그럼! 그건 바로... 바로...
 Saso: ............
 <<one_On C_Saso>> 
 Saso: ............나!!!!
- <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 헉...! 역시 맞았어..!
 Rabbit: 그럼 마을의 저주를 풀 단서도 아시나요?!
-<<StopSpeak C_Rabbit>> <<one_Off C_Saso>>
+<<StopSpeak C_Rabbit>> <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Saso: 오오...! 당연히 알지... 알고말고...
+<<flip C_Saso>>
 Saso: 거기 너, 악보조각들 있지?
 Saso: 그 조각들, 나에게 줘.
 Music_piece_0 Music_piece_1 Music_piece_2 아이템 선택, 삭제
@@ -929,16 +934,18 @@ Music_noteX 아이템 획득
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
 <<one_Off C_Saso>>
 Saso: 행운을 빌지... 흐흐... 흐흐흐...
-<<Disappear C_Saso>> <<Speak C_Rabbit>>
+<<Disappear C_Saso>> <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<two_On C_Rabbit>>
 Rabbit: 이제 모든 건 너에게 달렸어..!
 Rabbit: 너만이 우리 마을을 구할 수 있어..! 부탁할게..!
 <<StopSpeak C_Rabbit>>
 player: 근데... 혹시 만약에...
 Player: 내가 해내지 못하면...
 Player: ......
-<<Speak C_Rabbit>>
+<<two_Off C_Rabbit>> <<Speak C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 괜찮아! 몇 번이든 다시 도전하면 되지!
+<<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 천천히 해도 좋아. 난 여기서 널 응원하고 있을게!
+<<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 힘들면 언제든 뒤를 돌아봐!
 <<StopSpeak C_Rabbit>>
 ===
@@ -946,21 +953,24 @@ title: Finally
 position: 20,601
 ---
 Music_noteX 삭제, Final_music_note 아이템 획득
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 해냈구나..!!!
 Rabbit: 이겨내줘서 정말 고마워..!
+<<one_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 좋았어..! 이제 드디어 저주를 풀 수 있어!
+<<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 연주 준비가 되면 광장으로 와줘. 나는 주민들을 불러올게!
 <<StopSpeak C_Rabbit>>
 ===
 title: lastplay
 position: 271,589
 ---
+<<Appear C_Saso>>
 <<Speak C_Rabbit>>
 Rabbit: 아, 내가 다 떨린다...
 Rabbit: 그래도 이제 연주만 하면, 정말 마을의 저주가 풀리는 거야...!!
 Rabbit: 준비 됐지? 시작하자!
 <<StopSpeak C_Rabbit>>
 Final_music_note 아이템 선택
-//P.I
+<<play fadeOut>>
 ===
