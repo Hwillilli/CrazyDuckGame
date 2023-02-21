@@ -1,5 +1,5 @@
 title: Commands
-position: -247,-1157
+position: -229,-1156
 ---
 //Command Npc name: C_Rabbit C_Saso C_Sue
 //Speaking animations
@@ -413,7 +413,7 @@ Sue_music_note 아이템 선택
 ===
 //오리 슈 노래 연주 애니메이션 01SueSongPlay
 title: PlaySueSong
-position: 460,-553
+position: 465,-530
 ---
 <<wait 3>>
 <<play 01PlaySue>>
@@ -705,7 +705,7 @@ Rabbit: 좋아. 가자!
 ===
 //#14 릴리와의 만남 
 title: LillyHouse14
-position: 235,-48
+position: 235,-41
 ---
 Nico: 잠깐만, 릴리가 너희를 보고싶대!
 <<Speak C_Rabbit>>
@@ -974,5 +974,88 @@ Rabbit: 준비 됐지? 시작하자!
 Final_music_note 아이템 선택
 <<play fadeOut>>
 //연주 애니메이션
-
 ===
+title: LastSue
+position: -285,787
+---
+Sue: 지대로네 이 집~ 연주 너무 좋았어!
+Sue: 너희가 도와준 덕에 다시 내 빵들을 대량생산중이야!
+<<thr_On Sue>>
+Sue: 기회가 된다면 언제든 또 먹으러 와~ 특별할인도 해줄테니까!
+<<thr_Off Sue>>
+===
+title: LastSaso
+position: -285,787
+---
+Saso: 마침내 저주가 풀렸군…흐흐…
+Saso: 이렇게 어려운 저주를 풀어내다니...
+Saso: 너희는 정말로... 정말로...
+Saso: ...
+Saso: 하지만 이 사소크라테스에 비하면 아직은 아아아주 멀었어...
+Saso: 흐흐... 흐흐...
+===
+title: LastGeum
+position: -62,783
+---
+Geumhan: 컨디션은 좀 어떠신지요...?
+Geumhan: 그나저나... 혹시 엉두교에 대해 들어보셨습니까…? 
+-> player: 엉두송은...
+    player: 엉두송은 아는데...
+-> player: 엉두교는...
+    player: 엉두송은 내가 만들었는데 엉두교는 뭐야...
+Geumhan: 아아... 역시 엉두송의 창시자가 맞으셨군요!!  
+Geumhan: 제가 아는 아주 좋은 섬이 있는데... ‘그’곳으로 모시겠습니다... 
+Geumhan: 신도들이... 당신을... 기다립니다...
+===
+title: LastNico
+position: 161,801
+---
+Nico: 릴리를 도와줘서 고마워! 릴리의 웃는 모습을 다시 보게 돼서 다행이야...
+Nico: 아 참, 그리고 저번에 그 빵... 너무 맛있더라...
+Nico: 겉은 바삭하고 속은 촉촉하고 적당히 달달하면서도 고소한 게...
+Nico: 앗! 이런 얘기를 하려던 게 아닌데...
+Nico: 아무튼 다시 한 번 정말 고마워! 너희는 최고야!!
+===
+title: LastLilly
+position: 380,803
+---
+Lilly: 고생 많으셨어요!
+Lilly: 도와주신 덕분에 다시 악보를 볼 수 있게 됐어요!
+Lilly: 그리고 정말 정말 놀랍게도…
+Lilly: 저희 사장님께서 다시 저를 소속 가수로 받아주셨어요!
+Lilly: 저 혼자의 힘으로는 불가능했을 거예요... 정말 감사합니다!
+===
+title: LastGottong
+position: 605,804
+---
+Gottong: 왈왈!!
+Rabbit: 강쥐. 강쥐 조용. 
+Rabbit: 강쥐 너 혹시... 뭐 돼?
+Rabbit: 음 뭐 되지.
+Rabbit: 앗 얘는 마을 주민이 아니고 진짜 강아지야...
+===
+title: LastRabbit
+position: 827,814
+---
+<<if visited("LastSue") is true and visited("LastSaso") is true and visited("LastGeum") is true and visited("LastNico") is true and visited("LastLilly") is true and visited("LastGottong") is true>>
+    Rabbit: 다른 주민들이랑 얘기는 끝났어?
+    ->Player: 응. 충분한 것 같아
+        Rabbit: 그랬구나
+    ->Player: 아니 아직
+        Rabbit: 얘기 다 끝내고 와도 돼!
+<<else>>
+    Rabbit: 다른 주민들이랑 얘기는 끝났어?
+    ->Player: 응. 충분한 것 같아
+        Rabbit: 음.. 아닌 것 같은데...!
+        Rabbit: 얘기 다 끝내고 와도 돼!
+    ->Player: 아니 아직
+        Rabbit: 얘기 다 끝내고 와도 돼!
+<<endif>>
+===
+
+// 요정: 드디어…! 마을의 저주가 풀렸군요!
+// 요정: 이 여정을 함께 해주셔서 정말 감사드립니다!
+// 요정: 그동안 잘 즐기셨는지 모르겠네요, 후후
+// 요정: 그럼 언젠가, 다시 만날 그날까지…
+// 요정: 언제나 평안하시길…
+// 요정 알로 돌아가고 빛이 사방으로 퍼진다. 페이드 아웃 후 엔딩 크레딧

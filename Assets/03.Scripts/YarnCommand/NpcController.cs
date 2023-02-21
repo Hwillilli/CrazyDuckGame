@@ -10,6 +10,7 @@ public class NpcController : MonoBehaviour
     public Animator animator;
     private DialogueRunner dialogueRunner = null;
     public SpriteRenderer rend;
+    public string talkToNode = "";
     //[Header("Optional")]
     //public YarnProgram scriptToLoad;
 
@@ -19,6 +20,7 @@ public class NpcController : MonoBehaviour
         dialogueRunner = FindObjectOfType<DialogueRunner>();
         rend = GetComponent<SpriteRenderer>();
         //if (dialogueRunner.IsDialogueRunning == true)
+        
     }
     
     [YarnCommand("flip")]
@@ -28,11 +30,9 @@ public class NpcController : MonoBehaviour
         //if (rend = null;)
         //{
         //    animator.SetBool("isFlip", true);
-        //}
-  
-        Debug.Log($"{name} is Speaking");
-        
+        //}        
     }
+
     [YarnCommand("reflip")]
     public void reflip()
     {
