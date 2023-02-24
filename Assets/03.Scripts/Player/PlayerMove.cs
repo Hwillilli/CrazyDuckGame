@@ -23,6 +23,8 @@ public class PlayerMove : MonoBehaviour
     public bool isRecOpen = false;
     public bool activeInven = false;
 
+    bool IsPause;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -35,7 +37,25 @@ public class PlayerMove : MonoBehaviour
     {
         // Open Menu Set
         if (Input.GetButtonDown("Cancel"))
-            menuSet.SetActive(true);
+        {
+            if((IsPause == true) &&(menuSet.activeSelf))
+            {
+                menuSet.SetActive(false);
+                Time.timeScale = 1;
+                IsPause = false;
+                return;
+            }
+
+            else
+            {
+                menuSet.SetActive(true);
+                Time.timeScale = 0;
+                IsPause = true;
+                return;
+            }
+                
+        }
+            
 
         //인벤 열기
         //if (input.getkeydown(keycode.tab))
@@ -193,6 +213,14 @@ public class PlayerMove : MonoBehaviour
         notMove = false;
     }
 
+    public void Pause()
+    {
+        Time.timeScale = 1;
+        IsPause = false;
+        return;
+    }
+
+    //이동
     void FixedUpdate()
     {
         if (dialogueRunner != null && dialogueRunner.IsDialogueRunning == true)
