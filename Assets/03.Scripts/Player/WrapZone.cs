@@ -48,6 +48,7 @@ public class WrapZone : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.Space))//대화 켜기
                 {
+                    moveUI.SetActive(false);
                     Dialog.SetActive(true);
                 }
             }

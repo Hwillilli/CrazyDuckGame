@@ -198,9 +198,12 @@ MonoBehaviour:
   Recorder: {fileID: 1759725605516610005}
   inven: {fileID: 0}
   menuSet: {fileID: 1705892535003563291}
+  pauseSet: {fileID: 3412945685125930933}
+  settingSet: {fileID: 8568494654001627623}
+  controlSet: {fileID: 4488257988151019340}
   NextScene: {fileID: 0}
   CurrScene: {fileID: 0}
-  notMove: 1
+  notMove: 0
   isRecOpen: 0
   activeInven: 0
 --- !u!114 &1877358080370108830
@@ -631,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7600947156530305113, guid: ae9633f6a74bb5d499d38a59821e0210, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Pause
+      value: Reset
       objectReference: {fileID: 0}
     - target: {fileID: 7600947156530305113, guid: ae9633f6a74bb5d499d38a59821e0210, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

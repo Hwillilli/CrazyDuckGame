@@ -52,7 +52,7 @@ position: 187,-996
 <<Speak C_Fairy>>
 Fairy: S를 누르면 다음 대화로 넘어가요.
 Fairy: A, D로 이동할 수 있어요.
-Fairy: space로 
+Fairy: space로 대화를 선택할 수 있어요.
 Fairy: R을 누르면 리코더 연주를 할 수 있어요.
 Fairy: Tab을 누르면 가방이 열려요.
 Fairy: 완벽해요! 마을을 탐험할 모든 조건을 갖췄어요!
@@ -661,9 +661,9 @@ Rabbit: 당연하지!! 릴리 팬이 아닌 사람은 없을 걸?
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>> 
 Rabbit: 근데 요즘엔 활동을 안 해서... 다들 잊어가고 있지...
 <<StopSpeak C_Rabbit>> <<zer_Off C_Rabbit>> <<reflip C_Nico>>
-Nico: 있지, 실은... 릴리가 망돌저주에 걸리고 말았어...
+Nico: 있지, 실은... 릴리가 「망돌저주」에 걸리고 말았어...
 <<thr_On C_Rabbit>> <<Speak C_Rabbit>> 
-Rabbit: 망돌저주?!
+Rabbit: 「망돌저주」?!
 <<StopSpeak C_Rabbit>>
 <<flip C_Nico>> <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
 Nico: 릴리를 항상 질투하던 무명 아이돌이 있었어...
@@ -685,7 +685,7 @@ Nico: ???
 Rabbit: ???
 Player: ???
 <<two_Off C_Nico>> <<flip C_Nico>> <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
-Nico: 아무튼, 그 저주로 한순간에 망돌이 되어버린 릴리는 충격 때문에...
+Nico: 아무튼, 그 저주로 한순간에 망돌이 되어버린 릴리는 그 충격 때문에...
 Nico: 급격히 늙어버렸어...
 Nico: 게다가 이 마을의 저주까지 겹쳐서 하필 유전병이 있는 페르시안 고양이가 되어버려서...
 <<one_On C_Nico>> 

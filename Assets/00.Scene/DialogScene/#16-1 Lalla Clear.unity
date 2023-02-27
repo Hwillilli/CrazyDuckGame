@@ -9511,7 +9511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeComplete.m_PersistentCalls.m_Calls.Array.size
@@ -9519,7 +9519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onCommand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -9547,7 +9547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -9568,7 +9568,7 @@ PrefabInstance:
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1519068235}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -9631,7 +9631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: 
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -9676,7 +9676,7 @@ PrefabInstance:
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 590146548}
+      objectReference: {fileID: 1519068235}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
@@ -9819,7 +9819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onCommand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -9839,7 +9839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 495159165610942720, guid: c29722097ddb3bc46bbfe9e877e0e825, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -10632,6 +10632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1311412808}
   rend: {fileID: 1311412809}
+  talkToNode: 
 --- !u!114 &1311412807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11782,6 +11783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1792860323}
   rend: {fileID: 0}
+  talkToNode: 
 --- !u!95 &1792860323 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2625091370241364890, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
@@ -11838,6 +11840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1830544975}
   rend: {fileID: 0}
+  talkToNode: 
 --- !u!95 &1830544975 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2625091370241364890, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
