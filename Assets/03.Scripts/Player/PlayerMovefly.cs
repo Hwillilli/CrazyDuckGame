@@ -21,6 +21,13 @@ public class PlayerMovefly : MonoBehaviour
     public SgameManager manager;
     private AudioSource audioSource;
 
+    public GameObject menuSet;
+    public GameObject pauseSet;
+    public GameObject settingSet;
+    public GameObject controlSet;
+
+    bool IsPause;
+
     Animator anim;
     Rigidbody2D rigid;
 
@@ -37,6 +44,39 @@ public class PlayerMovefly : MonoBehaviour
         Move();
         Fire();
         Reload();
+        OpenMenu();
+    }
+
+    // Open Menu Set
+    void OpenMenu()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if ((IsPause == true) && (menuSet.activeSelf))
+            {
+                menuSet.SetActive(false);
+                Time.timeScale = 1;
+                IsPause = false;
+                controlSet.SetActive(false);
+                settingSet.SetActive(false);
+                pauseSet.SetActive(true);
+                return;
+            }
+
+            else
+            {
+                menuSet.SetActive(true);
+                Time.timeScale = 0;
+                IsPause = true;
+                return;
+            }
+        }
+    }
+
+    public void Reset()
+    {
+        Time.timeScale = 1;
+        IsPause = false;
     }
 
     void Move()

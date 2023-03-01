@@ -16,12 +16,17 @@ public class PlayerMove : MonoBehaviour
     public GameObject Recorder;
     public GameObject inven;
     public GameObject menuSet;
+    public GameObject pauseSet;
+    public GameObject settingSet;
+    public GameObject controlSet;
     public GameObject NextScene = null;
     public GameObject CurrScene = null;
 
     public bool notMove = false;
     public bool isRecOpen = false;
     public bool activeInven = false;
+
+    bool IsPause;
 
     void Awake()
     {
@@ -33,26 +38,23 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        // Open Menu Set
-        if (Input.GetButtonDown("Cancel"))
-            menuSet.SetActive(true);
-
-        //인벤 열기
-        //if (input.getkeydown(keycode.tab))
-        //{
-        //    input tab
-        //    if (activeinven == false)
-        //    {
-        //        inven.setactive(true);
-        //        anim.setbool("iskeydown", true);
-        //        activeinven = true;
-        //    }
-        //    else
-        //    {
-        //        anim.setbool("iskeydown", false);
-        //        activeinven = false;
-        //    }
-        //}
+        OpenMenu();
+//        인벤 열기
+//        if (input.getkeydown(keycode.tab))
+//        {
+//            input tab
+//            if (activeinven == false)
+//            {
+//                inven.setactive(true);
+//                anim.setbool("iskeydown", true);
+//                activeinven = true;
+//            }
+//            else
+//            {
+//                anim.setbool("iskeydown", false);
+//                activeinven = false;
+//            }
+//        }
 
         // Open Recorder 
         if (Input.GetKeyDown(KeyCode.R))
@@ -181,6 +183,38 @@ public class PlayerMove : MonoBehaviour
             //return;
     }
 
+    // Open Menu Set
+    void OpenMenu()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if ((IsPause == true) && (menuSet.activeSelf))
+            {
+                menuSet.SetActive(false);
+                Time.timeScale = 1;
+                IsPause = false;
+                controlSet.SetActive(false);
+                settingSet.SetActive(false);
+                pauseSet.SetActive(true);
+                return;
+            }
+
+            else
+            {
+                menuSet.SetActive(true);
+                Time.timeScale = 0;
+                IsPause = true;
+                return;
+            }
+        }
+    }
+
+    public void Reset()
+    {
+        Time.timeScale = 1;
+        IsPause = false;
+    }
+
     [YarnCommand("MoveClear")] //play Timeline
     public void MoveClear()
     {
@@ -193,6 +227,14 @@ public class PlayerMove : MonoBehaviour
         notMove = false;
     }
 
+    public void Pause()
+    {
+        Time.timeScale = 1;
+        IsPause = false;
+        return;
+    }
+
+    //이동
     void FixedUpdate()
     {
         if (dialogueRunner != null && dialogueRunner.IsDialogueRunning == true)
