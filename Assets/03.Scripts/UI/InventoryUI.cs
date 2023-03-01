@@ -7,6 +7,11 @@ public class InventoryUI : MonoBehaviour
     //public GameObject inventoryPanel;
     Animator anim;
     public bool activeInven = false;
+    public InventoryUI instance;
+
+    void start() {
+        instance = this;
+    }
 
     void Awake()
     {
@@ -38,6 +43,5 @@ public class InventoryUI : MonoBehaviour
         anim.SetBool("isKeyDown", false);
         activeInven = false;
     }
-
 
 }

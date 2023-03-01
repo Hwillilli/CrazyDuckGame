@@ -408,19 +408,6 @@ Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
 <<one_Off Sue>>
 ===
-//오리 슈 노래 연주 애니메이션
-title: PlaySueSong
-position: 454,-548
----
-<<wait 3>>
-<<play 01PlaySue>>
-<<Splay SueSong>>
-<<wait 28>>
-<<play fadeOut>>
-<<stop 01PlaySue>>
-<<wait 1>>
-<<Load SueBackery>>
-===
 title: BakeryAward
 position: 700,-540
 ---
