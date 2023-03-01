@@ -409,24 +409,21 @@ Sue: 고마워... 정말 고마워...!
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
-Sue_music_note 아이템 선택
+//Sue_music_note 아이템 선택
 <<one_Off Sue>>
-//<<set $Music_of_Sue to 0>>
 ===
 //오리 슈 노래 연주 애니메이션 01SueSongPlay
 title: PlaySueSong
 position: 465,-530
 ---
-//<<if $Music_of_Sue is 1>>
-    <<wait 3>>
-    <<play 01PlaySue>>
-    <<Splay SueSong>>
-    <<wait 28>>
-    <<play fadeOut>>
-    <<stop 01PlaySue>>
-    <<wait 1>>
-    <<Load SueBackery>> 
-//<<endif>>
+<<wait 3>>
+<<play 01PlaySue>>
+<<Splay SueSong>>
+<<wait 28>>
+<<play fadeOut>>
+<<stop 01PlaySue>>
+<<wait 1>>
+<<Load SueBackery>> 
 ===
 //#8.BakeryClearEnding
 title: BakeryAward
@@ -450,7 +447,8 @@ Rabbit: 감사합니다 슈크림 씨!
 <<thr_Off Sue>>
 Sue: 아 참, 그리고 또 줄 게 있어
 Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 필요할 것 같아서...
-Music_piece_0 아이템 획득
+//Music_piece_0 아이템 획득
+<<setActP0 Sue>>
 <<thr_On Sue>>
 Sue: 그럼, 조심히 가!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
@@ -535,7 +533,7 @@ title: Quest2Clear
 position: -3,-203
 ---
 <<wait 1>>
-Iseul_music_note 아이템 획득
+//Iseul_music_note 아이템 획득
 Player: 노래를 찾았어!
  <<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 좋아! 노래를 들려주러 가자
@@ -552,7 +550,7 @@ Geumhan: 오, 드디어...!
 <<Speak C_Rabbit>>
 Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
-Iseul_music_note 아이템 선택
+//Iseul_music_note 아이템 선택
 <<wait 1>>
 ===
 //playquestsong
@@ -577,7 +575,8 @@ Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!
 <<one_Off C_Geumhan>>
 <<StopSpeak C_Geumhan>> <<two_On C_Geumhan>>
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
-Music_piece_1 아이템 획득
+//Music_piece_1 아이템 획득
+<<setActP1 C_Rabbit>>
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
 Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
 <<two_Off C_Geumhan>>

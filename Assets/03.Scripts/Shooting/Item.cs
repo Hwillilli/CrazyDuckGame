@@ -93,39 +93,39 @@ public class Item : MonoBehaviour
                     break;
 
                 //quest2
-                case "1.Item_R'(Clone)":
+                case "1.Item_R`(Clone)":
                     TopNotePrefab.Instance.NoteActiveR();
                     break;
-                case "1.Item_Y'(Clone)":
+                case "2.Item_Y`(Clone)":
                     TopNotePrefab.Instance.NoteActiveY();
                     break;
-                case "1.Item_G'(Clone)":
+                case "3.Item_G`(Clone)":
                     TopNotePrefab.Instance.NoteActiveG();
                     break;
-                case "1.Item_B'(Clone)":
+                case "4.Item_B`(Clone)":
                     TopNotePrefab.Instance.NoteActiveB();
                     break;
-                case "1.Item_P'(Clone)":
+                case "5.Item_P`(Clone)":
                     TopNotePrefab.Instance.NoteActiveP();
                     break;
-                case "1.Item_Pink'(Clone)":
+                case "6.Item_Pink`(Clone)":
                     TopNotePrefab.Instance.NoteActivePi();
                     break;
 
                 //quest3
-                case "1.Item_O''(Clone)":
+                case "1.Item_O``(Clone)":
                     TopNotePrefab.Instance.NoteActiveO();
                     break;
-                case "1.Item_Y''(Clone)":
+                case "2.Item_Y``(Clone)":
                     TopNotePrefab.Instance.NoteActiveY();
                     break;
-                case "1.Item_G''(Clone)":
+                case "3.Item_G``(Clone)":
                     TopNotePrefab.Instance.NoteActiveG();
                     break;
-                case "1.Item_S''(Clone)":
+                case "4.Item_S``(Clone)":
                     TopNotePrefab.Instance.NoteActiveS();
                     break;
-                case "1.Item_Pink''(Clone)":
+                case "5.Item_Pink``(Clone)":
                     TopNotePrefab.Instance.NoteActivePi();
                     break;
 

@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testCliec : MonoBehaviour
+public class ItemActive : MonoBehaviour
 {
-    public int Music_of_Sue = 0;
+    //public int Music_of_Sue = 0;
+    public GameObject QuestObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class testCliec : MonoBehaviour
     }
     public void ClickUse()
     {
-        Music_of_Sue = 1;
+        QuestObject.SetActive(true);
+        //Music_of_Sue = 1;
     }
 }
