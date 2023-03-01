@@ -217,4 +217,13 @@ public class NpcController : MonoBehaviour
         animator.SetBool("iswalking", true);
         // walk the character to 'position'
     }
+
+    /*[YarnCommand("Test")] //test
+    public void TestToYarn(GameObject destination)
+    {
+        var position = destination.transform.position;
+
+        animator.SetBool("iswalking", true);
+        // walk the character to 'position'
+    }*/
 }
