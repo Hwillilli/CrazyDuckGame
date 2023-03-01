@@ -203,7 +203,12 @@ public class NpcController : MonoBehaviour
         itemImage.SetActive(true);
         //animator.SetBool("isTen", false);
     }
-
+    //setActP2
+    [YarnCommand("setActP2")]
+    public void setActP2()
+    {
+        itemImage.SetActive(true);
+    }
     //IEnumerator Speak()
     //{
     //    anim.SetBool("isTalking", true);

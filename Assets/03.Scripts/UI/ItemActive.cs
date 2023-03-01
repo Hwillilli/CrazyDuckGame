@@ -6,6 +6,7 @@ public class ItemActive : MonoBehaviour
 {
     //public int Music_of_Sue = 0;
     public GameObject QuestObject;
+    //public InventoryUI invenUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,8 @@ public class ItemActive : MonoBehaviour
     }
     public void ClickUse()
     {
+        //invenUI.activeInven = false;
+        InventoryUI.activeInven = false;
         QuestObject.SetActive(true);
         //Music_of_Sue = 1;
     }

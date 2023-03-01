@@ -767,7 +767,7 @@ Nico: 너무 잘 됐다 릴리!
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
 <<StopSpeak C_Rabbit>>
-Rara_music_note 아이템 선택
+//Rara_music_note 아이템 선택
 ===
 title: PlayLillySong
 position: 210,-336
@@ -793,7 +793,8 @@ Lilly: 오늘 일기에 꼭 써야겠어요!
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
 <<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
-Music_piece_2 아이템 획득
+//Music_piece_2 아이템 획득
+<<setActP2 C_Rabbit>>
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
 Lilly: 여러분이라면, 이 마을을 꼭 구할 수 있을 거예요!

@@ -6,7 +6,7 @@ public class InventoryUI : MonoBehaviour
 {
     //public GameObject inventoryPanel;
     Animator anim;
-    public bool activeInven = false;
+    public static bool activeInven = false;
     public InventoryUI instance;
 
     void start() {
