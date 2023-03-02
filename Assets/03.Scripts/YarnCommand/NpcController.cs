@@ -13,7 +13,6 @@ public class NpcController : MonoBehaviour
     public string talkToNode = "";
     //[Header("Optional")]
     //public YarnProgram scriptToLoad;
-    public GameObject itemImage;
 
     void Awake()
     {
@@ -189,20 +188,6 @@ public class NpcController : MonoBehaviour
     {
         animator.SetBool("isTen", false);
     }
-    //setActP0
-    [YarnCommand("setActP0")]
-    public void setActP0()
-    {
-        itemImage.SetActive(true);
-        //animator.SetBool("isTen", false);
-    }
-    //setActP1
-    [YarnCommand("setActP1")]
-    public void setActP1()
-    {
-        itemImage.SetActive(true);
-        //animator.SetBool("isTen", false);
-    }
 
     //IEnumerator Speak()
     //{
@@ -232,13 +217,4 @@ public class NpcController : MonoBehaviour
         animator.SetBool("iswalking", true);
         // walk the character to 'position'
     }
-
-    /*[YarnCommand("Test")] //test
-    public void TestToYarn(GameObject destination)
-    {
-        var position = destination.transform.position;
-
-        animator.SetBool("iswalking", true);
-        // walk the character to 'position'
-    }*/
 }
