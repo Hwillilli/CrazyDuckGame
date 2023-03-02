@@ -14,6 +14,10 @@ public class NpcController : MonoBehaviour
     //[Header("Optional")]
     //public YarnProgram scriptToLoad;
     public GameObject itemImage;
+    private ButtonActive buttonActive;
+    public GameObject Button01;
+    public GameObject Button02;
+    public GameObject Button03;
 
     void Awake()
     {
@@ -209,6 +213,24 @@ public class NpcController : MonoBehaviour
     {
         itemImage.SetActive(true);
     }
+
+    [YarnCommand("setActBtn")]
+    public void setActBtn()
+    {
+        Button01.SetActive(true);
+        Button02.SetActive(true);
+        Button03.SetActive(true);
+
+        /*PieceImage01.SetActive(false);
+        PieceImage02.SetActive(false);
+        PieceImage03.SetActive(false);*/
+    }
+
+    /*[YarnCommand("setActNoteX")]
+    public void setActNoteX()
+    {
+        
+    }*/
     //IEnumerator Speak()
     //{
     //    anim.SetBool("isTalking", true);
