@@ -13,11 +13,6 @@ public class NpcController : MonoBehaviour
     public string talkToNode = "";
     //[Header("Optional")]
     //public YarnProgram scriptToLoad;
-    public GameObject itemImage;
-    private ButtonActive buttonActive;
-    public GameObject Button01;
-    public GameObject Button02;
-    public GameObject Button03;
 
     void Awake()
     {
@@ -193,44 +188,7 @@ public class NpcController : MonoBehaviour
     {
         animator.SetBool("isTen", false);
     }
-    //setActP0
-    [YarnCommand("setActP0")]
-    public void setActP0()
-    {
-        itemImage.SetActive(true);
-        //animator.SetBool("isTen", false);
-    }
-    //setActP1
-    [YarnCommand("setActP1")]
-    public void setActP1()
-    {
-        itemImage.SetActive(true);
-        //animator.SetBool("isTen", false);
-    }
-    //setActP2
-    [YarnCommand("setActP2")]
-    public void setActP2()
-    {
-        itemImage.SetActive(true);
-    }
 
-    [YarnCommand("setActBtn")]
-    public void setActBtn()
-    {
-        Button01.SetActive(true);
-        Button02.SetActive(true);
-        Button03.SetActive(true);
-
-        /*PieceImage01.SetActive(false);
-        PieceImage02.SetActive(false);
-        PieceImage03.SetActive(false);*/
-    }
-
-    /*[YarnCommand("setActNoteX")]
-    public void setActNoteX()
-    {
-        
-    }*/
     //IEnumerator Speak()
     //{
     //    anim.SetBool("isTalking", true);
@@ -259,13 +217,4 @@ public class NpcController : MonoBehaviour
         animator.SetBool("iswalking", true);
         // walk the character to 'position'
     }
-
-    /*[YarnCommand("Test")] //test
-    public void TestToYarn(GameObject destination)
-    {
-        var position = destination.transform.position;
-
-        animator.SetBool("iswalking", true);
-        // walk the character to 'position'
-    }*/
 }

@@ -373,7 +373,7 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 title: Quest1Clear
 position: -6,-539
 ---
-//Sue_music_note 아이템 획득
+Sue_music_note 아이템 획득
 <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>>
 <<wait 1>>
 <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
@@ -740,7 +740,7 @@ Rabbit: 아자 아자 「전설의 리코더」~!
 title: Find3
 position: -230,105
 ---
-//Rara_music_note 아이템 획득
+Rara_music_note 아이템 획득
 Player: 노래를 찾았어!
 <<Speak C_Rabbit>>
 Rabbit: 좋았어! 노래를 들려주러 가자!
@@ -765,7 +765,7 @@ Nico: 너무 잘 됐다 릴리!
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
 <<StopSpeak C_Rabbit>>
-//Rara_music_note 아이템 선택
+Rara_music_note 아이템 선택
 ===
 title: PlayLillySong
 position: 210,-336
@@ -791,8 +791,7 @@ Lilly: 오늘 일기에 꼭 써야겠어요!
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
 <<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
-//Music_piece_2 아이템 획득
-<<setActP2 C_Rabbit>>
+Music_piece_2 아이템 획득
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
 Lilly: 여러분이라면, 이 마을을 꼭 구할 수 있을 거예요!
@@ -930,11 +929,8 @@ Saso: 오오...! 당연히 알지... 알고말고...
 <<flip C_Saso>>
 Saso: 거기 너, 악보조각들 있지?
 Saso: 그 조각들, 나에게 줘.
-//Music_piece_0 Music_piece_1 Music_piece_2 아이템 선택, 삭제
-<<setActBtn C_Saso>>
-//Music_noteX 아이템 획득
-//Saso: 흠... 이렇게... 저렇게..!
-//<<setActNoteX C_Saso>>
+Music_piece_0 Music_piece_1 Music_piece_2 아이템 선택, 삭제
+Music_noteX 아이템 획득
 <<one_On C_Saso>>
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
 <<one_Off C_Saso>>
@@ -957,7 +953,7 @@ Rabbit: 힘들면 언제든 뒤를 돌아봐!
 title: Finally
 position: 20,601
 ---
-//Music_noteX 삭제, Final_music_note 아이템 획득
+Music_noteX 삭제, Final_music_note 아이템 획득
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 해냈구나..!!!
 Rabbit: 이겨내줘서 정말 고마워..!
@@ -1046,7 +1042,6 @@ position: 827,814
     Rabbit: 다른 주민들이랑 얘기는 끝났어?
     ->Player: 응. 충분한 것 같아
         Rabbit: 그랬구나
-        <<setActP0 C_Rabbit>>
     ->Player: 아니 아직
         Rabbit: 얘기 다 끝내고 와도 돼!
 <<else>>
