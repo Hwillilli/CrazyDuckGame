@@ -17,9 +17,7 @@ public class Item : MonoBehaviour
     Animator anim;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-
-    private string myTarget;
-
+  
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -27,6 +25,7 @@ public class Item : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         soundSource = GetComponent<AudioSource>();
+
     }
     void OnHit()
     {
@@ -61,77 +60,6 @@ public class Item : MonoBehaviour
             soundSource.clip = sound_effect[1];
             soundSource.Play();
             //ItemUI.sprite = sprites;
-
-            //음표 상단 UI 변경(채우기) 20230219
-            myTarget = this.gameObject.name;
-
-            //Debug.Log("myTarget(부딪힌 음표 이름) : " + myTarget);
-
-            switch (myTarget)//부딪힌 음표
-            {
-                //quest1
-                case "1.Item_R(Clone)"://1.Item_R(Clone) // Red , 7
-                    TopNotePrefab.Instance.NoteActiveR();
-                    break;
-                case "2.Item_O(Clone)":
-                    TopNotePrefab.Instance.NoteActiveO();
-                    break;
-                case "3.Item_Y(Clone)": //노란 음표 프리팹 추가
-                    TopNotePrefab.Instance.NoteActiveY();
-                    break;
-                case "4.Item_G(Clone)":
-                    TopNotePrefab.Instance.NoteActiveG();
-                    break;
-                case "5.Item_S(Clone)":
-                    TopNotePrefab.Instance.NoteActiveS();
-                    break;
-                case "6.Item_B(Clone)":
-                    TopNotePrefab.Instance.NoteActiveB();
-                    break;
-                case "7.Item_P(Clone)":
-                    TopNotePrefab.Instance.NoteActiveP();
-                    break;
-
-                //quest2
-                case "1.Item_R`(Clone)":
-                    TopNotePrefab.Instance.NoteActiveR();
-                    break;
-                case "2.Item_Y`(Clone)":
-                    TopNotePrefab.Instance.NoteActiveY();
-                    break;
-                case "3.Item_G`(Clone)":
-                    TopNotePrefab.Instance.NoteActiveG();
-                    break;
-                case "4.Item_B`(Clone)":
-                    TopNotePrefab.Instance.NoteActiveB();
-                    break;
-                case "5.Item_P`(Clone)":
-                    TopNotePrefab.Instance.NoteActiveP();
-                    break;
-                case "6.Item_Pink`(Clone)":
-                    TopNotePrefab.Instance.NoteActivePi();
-                    break;
-
-                //quest3
-                case "1.Item_O``(Clone)":
-                    TopNotePrefab.Instance.NoteActiveO();
-                    break;
-                case "2.Item_Y``(Clone)":
-                    TopNotePrefab.Instance.NoteActiveY();
-                    break;
-                case "3.Item_G``(Clone)":
-                    TopNotePrefab.Instance.NoteActiveG();
-                    break;
-                case "4.Item_S``(Clone)":
-                    TopNotePrefab.Instance.NoteActiveS();
-                    break;
-                case "5.Item_Pink``(Clone)":
-                    TopNotePrefab.Instance.NoteActivePi();
-                    break;
-
-                default:
-                    break;
-            }
         }
     }
 }
