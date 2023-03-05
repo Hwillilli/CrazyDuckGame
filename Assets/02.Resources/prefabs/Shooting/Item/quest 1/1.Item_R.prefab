@@ -32,6 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,6 +48,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -100,11 +102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Item
-  ItemUI: {fileID: 5889920829698990817, guid: 1459b58ec9146d14d9297a82fd852251, type: 3}
-  sprites: {fileID: 21300000, guid: e7feb2a86bf4d1045b1b7fdab999a563, type: 3}
   sound_effect:
   - {fileID: 8300000, guid: 685cd2dfb45c4214a866c8cbcba6e6db, type: 3}
   - {fileID: 8300000, guid: a1ed5595de0d2904fa6db32049bdd317, type: 3}
+  Target: {fileID: 1235642436053844485, guid: 94833523ed054b3419720f5e8ee848fd, type: 3}
 --- !u!82 &365227216912482898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -271,7 +272,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!95 &365227216912482894
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -284,6 +285,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
