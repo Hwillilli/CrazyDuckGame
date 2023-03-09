@@ -937,8 +937,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1071078606}
   m_HandleRect: {fileID: 1071078605}
   m_Direction: 2
-  m_Value: 1.0000036
-  m_Size: 0.97001773
+  m_Value: 1
+  m_Size: 0.9700176
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1710,6 +1710,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 639362173672094301, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36d2df517102f2d46b76c6c6dfa79a52, type: 3}
     - target: {fileID: 639362173672094302, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.26
@@ -2491,7 +2495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970271146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.514654, y: -0.21000004, z: -10}
+  m_LocalPosition: {x: -6.706667, y: -0.21000004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4144,7 +4148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352121b6d409c2042978e1b91488c159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeInven: 0
   instance: {fileID: 0}
 --- !u!95 &1452215693
 Animator:
