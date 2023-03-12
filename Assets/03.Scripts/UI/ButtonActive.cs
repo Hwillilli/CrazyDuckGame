@@ -12,12 +12,12 @@ public class ButtonActive : MonoBehaviour
     public GameObject PieceImage02;
     public GameObject PieceImage03;
     public GameObject noteX;
-    int pieceCnt = 0;
+    public int pieceCnt = 0;
+    public GameObject dialogue;
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -42,22 +42,32 @@ public class ButtonActive : MonoBehaviour
         PieceImage01.SetActive(false);
         Button01.SetActive(false);
         pieceCnt += 1;
-        if (pieceCnt == 3) noteX.SetActive(true);
+        if (pieceCnt == 3) {
+            dialogue.SetActive(true);
+            //noteX.SetActive(true); 
+        }
     }
     public void ClickBtn02()
     {
         PieceImage02.SetActive(false);
         Button02.SetActive(false);
         pieceCnt += 1;
-        if (pieceCnt == 3) noteX.SetActive(true);
+        if (pieceCnt == 3) {
+            dialogue.SetActive(true);
+            //noteX.SetActive(true); 
+        }
     }
     public void ClickBtn03()
     {
         PieceImage03.SetActive(false);
         Button03.SetActive(false);
         pieceCnt += 1;
-        if (pieceCnt == 3) noteX.SetActive(true);
+        if (pieceCnt == 3) {
+            dialogue.SetActive(true);
+            //noteX.SetActive(true); 
+        }
     }
+
     /*public void setActNoteX() {
         noteX.SetActive(true);
     }*/

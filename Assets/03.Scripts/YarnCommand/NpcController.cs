@@ -19,6 +19,12 @@ public class NpcController : MonoBehaviour
     public GameObject Button02;
     public GameObject Button03;
 
+    public GameObject ButtonX;
+
+    public GameObject dialogue;
+
+    private ButtonActive buttonAct;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -226,10 +232,35 @@ public class NpcController : MonoBehaviour
         PieceImage03.SetActive(false);*/
     }
 
-    /*[YarnCommand("setActNoteX")]
+    [YarnCommand("actFalseRunner")]
+    public void actFalseRunner()
+    {
+        Debug.Log("dialogue active false");
+        dialogue.SetActive(false);
+    }
+
+    [YarnCommand("setActNoteX")]
     public void setActNoteX()
     {
-        
+        itemImage.SetActive(true);
+    }
+
+    [YarnCommand("setActNoteXBtn")]
+    public void setActNoteXBtn()
+    {
+        ButtonX.SetActive(true);
+    }
+
+    /*[YarnCommand("actTrueRunner")]
+    public void actTrueRunner()
+    {
+        if (buttonAct.pieceCnt == 3) { 
+            dialogue.SetActive(true);
+            break;
+        }
+        else {
+            actTrueRunner(); 
+        }
     }*/
     //IEnumerator Speak()
     //{
