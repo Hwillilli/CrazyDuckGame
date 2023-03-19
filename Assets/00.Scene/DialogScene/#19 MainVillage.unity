@@ -1979,6 +1979,8 @@ MonoBehaviour:
   PieceImage02: {fileID: 1808111650}
   PieceImage03: {fileID: 141467592}
   noteX: {fileID: 0}
+  pieceCnt: 0
+  dialogue: {fileID: 0}
 --- !u!4 &289691607
 Transform:
   m_ObjectHideFlags: 0
@@ -2710,7 +2712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374482884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.063566, y: -0.28997064, z: -9}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3040,6 +3042,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!114 &476178614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,7 +4783,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_TargetDisplay: 0
 --- !u!1001 &813884817
 PrefabInstance:
@@ -6141,7 +6145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116997987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.063566, y: -0.28997064, z: -9}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6903,6 +6907,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!95 &1210569089
 Animator:
   serializedVersion: 4
@@ -7357,6 +7363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1312496911
 Transform:
   m_ObjectHideFlags: 1
@@ -15934,8 +15941,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 471997870}
   m_HandleRect: {fileID: 471997869}
   m_Direction: 2
-  m_Value: 0.9999964
-  m_Size: 0.9700176
+  m_Value: 0.99999285
+  m_Size: 0.9700173
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
