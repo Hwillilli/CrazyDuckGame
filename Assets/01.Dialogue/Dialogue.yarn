@@ -940,13 +940,15 @@ Saso: 거기 너, 악보조각들 있지?
 Saso: 그 조각들, 나에게 줘.
 //Music_piece_0 Music_piece_1 Music_piece_2 아이템 선택, 삭제
 <<setActBtn C_Saso>>
-===
+<<actFalseRunner C_Saso>>
 //Music_noteX 아이템 획득
-title: LastNote
+//<<actTrueRunner C_Saso>>
+===
+title: Again2
 position: -234,594
 ---
-//Saso: 흠... 이렇게... 저렇게..!
-//<<setActNoteX C_Saso>>
+Saso: 흠... 이렇게... 저렇게..!
+<<setActNoteX C_Saso>>
 <<one_On C_Saso>>
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
 <<one_Off C_Saso>>
@@ -965,6 +967,7 @@ Rabbit: 천천히 해도 좋아. 난 여기서 널 응원하고 있을게!
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 힘들면 언제든 뒤를 돌아봐!
 <<StopSpeak C_Rabbit>>
+<<setActNoteXBtn C_Rabbit>>
 ===
 title: Finally
 position: 20,601
