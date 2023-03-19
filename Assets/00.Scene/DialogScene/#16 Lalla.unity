@@ -786,7 +786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231462898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.322496, y: 0.041399956, z: -10}
+  m_LocalPosition: {x: -12.319999, y: 0.041399956, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1174,6 +1174,10 @@ PrefabInstance:
     - target: {fileID: 639362173672094302, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113340675869232537, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
@@ -3559,6 +3563,10 @@ PrefabInstance:
     - target: {fileID: 639362173013285967, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113340675869232537, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
@@ -6343,8 +6351,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 865737124}
   m_HandleRect: {fileID: 865737123}
   m_Direction: 2
-  m_Value: 0.9999964
-  m_Size: 0.97001755
+  m_Value: 1
+  m_Size: 0.9700176
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6722,11 +6730,11 @@ Camera:
     y: 0
     width: 1920
     height: 1080
-  near clip plane: 0.001
-  far clip plane: 5000
-  field of view: 98
+  near clip plane: 0.1
+  far clip plane: 20
+  field of view: 65
   orthographic: 1
-  orthographic size: 5.4
+  orthographic size: 4.84
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -6750,7 +6758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970271146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.769367, y: 0.041399956, z: -10}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6853,6 +6861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &981864537
 Transform:
   m_ObjectHideFlags: 1
@@ -8243,6 +8252,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!114 &1311412807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9939,6 +9950,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!95 &1792860323 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2625091370241364890, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
@@ -10005,6 +10018,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!95 &1830544975 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2625091370241364890, guid: e7312f9eb1acd6947849a730b562e591, type: 3}

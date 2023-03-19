@@ -2045,6 +2045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WarpZone
       objectReference: {fileID: 0}
+    - target: {fileID: 4113340675869232537, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
 --- !u!1001 &757474400
@@ -8389,10 +8393,10 @@ Camera:
     width: 16
     height: 9
   near clip plane: 0.1
-  far clip plane: 10.7
-  field of view: 75.49514
+  far clip plane: 20
+  field of view: 65
   orthographic: 0
-  orthographic size: 11
+  orthographic size: 4.84
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -8416,7 +8420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116997987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3892996, y: -0.038999796, z: -8}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9678,6 +9682,10 @@ PrefabInstance:
     - target: {fileID: 639362173013285967, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113340675869232537, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
@@ -11543,8 +11551,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 530805997}
   m_HandleRect: {fileID: 530805996}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.97001773
+  m_Value: 0.99999285
+  m_Size: 0.97001743
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
