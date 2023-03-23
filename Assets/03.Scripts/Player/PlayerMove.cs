@@ -39,22 +39,6 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         OpenMenu();
-//        인벤 열기
-//        if (input.getkeydown(keycode.tab))
-//        {
-//            input tab
-//            if (activeinven == false)
-//            {
-//                inven.setactive(true);
-//                anim.setbool("iskeydown", true);
-//                activeinven = true;
-//            }
-//            else
-//            {
-//                anim.setbool("iskeydown", false);
-//                activeinven = false;
-//            }
-//        }
 
         // Open Recorder 
         if (Input.GetKeyDown(KeyCode.R))
