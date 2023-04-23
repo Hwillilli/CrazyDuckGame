@@ -8,11 +8,16 @@ using UnityEngine.Audio;
 
 public class PasswordCheck : MonoBehaviour
 {
-    private string password = "지컨";
+    private string password = "이지경";
     public InputField UserInput;
     public string USERINPUT;
+    private AudioSource soundSource;
 
-    
+    void Awake()
+    {
+        soundSource = GetComponent<AudioSource>();
+    }
+
     public void CheckPassword ()
     {
         USERINPUT = UserInput.text;
@@ -24,6 +29,7 @@ public class PasswordCheck : MonoBehaviour
         }
         else
         {
+            soundSource.Play();
             //FindObjectOfType<AudioManager>().Play("access-denied");
             Debug.Log("다시 시도하세요");
         }
