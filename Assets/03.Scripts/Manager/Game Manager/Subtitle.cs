@@ -22,18 +22,14 @@ public class Subtitle : MonoBehaviour
 
     private void Update()
     {   //S입력 후 다음 문장
-        if (Input.GetKeyDown(KeyCode.S) && isEnd == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isEnd == true)
         {
             anim.SetBool("Next", true);
 
             if (isLoad == true)
             {
-                //FormerSubtitle.gameObject.SetActive(false);
-                Scene scene = SceneManager.GetActiveScene();
-
-                int curScene = scene.buildIndex;
-                int nextScene = curScene + 1;
-                SceneManager.LoadScene(nextScene);
+                Invoke("load", 1f);
+                
             }
 
         }
@@ -51,5 +47,15 @@ public class Subtitle : MonoBehaviour
     public void IsEnd()
     {
         isEnd = true;
+    }
+
+    public void load()
+    {
+        //FormerSubtitle.gameObject.SetActive(false);
+        Scene scene = SceneManager.GetActiveScene();
+
+        int curScene = scene.buildIndex;
+        int nextScene = curScene + 1;
+        SceneManager.LoadScene(nextScene);
     }
 }
