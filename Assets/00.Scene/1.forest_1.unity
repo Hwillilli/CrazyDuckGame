@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352121b6d409c2042978e1b91488c159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeInven: 0
   instance: {fileID: 0}
 --- !u!1001 &49131866
 PrefabInstance:
@@ -5134,10 +5135,10 @@ Camera:
     width: 16
     height: 9
   near clip plane: 0.1
-  far clip plane: 20
-  field of view: 65
+  far clip plane: 10.7
+  field of view: 70
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 11
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5161,7 +5162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116997987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.588518, y: -0.29148078, z: -9}
+  m_LocalPosition: {x: 30.5, y: -0.038999796, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7278,6 +7279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352121b6d409c2042978e1b91488c159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeInven: 0
   instance: {fileID: 0}
 --- !u!95 &1450073455
 Animator:
@@ -8719,51 +8721,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 498609641}
   targetPos: {x: -18.57, y: -3.439, z: 0}
---- !u!1 &1839971179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1839971181}
-  - component: {fileID: 1839971180}
-  m_Layer: 0
-  m_Name: PlayBGMSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1839971180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839971179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc77b5e82a7e28745ae5aa4d614eb5f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playMusicTrack: 1
---- !u!4 &1839971181
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839971179}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 802.57574, y: 261.44714, z: -0.19282717}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873182067
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,6 +9645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352121b6d409c2042978e1b91488c159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeInven: 0
   instance: {fileID: 0}
 --- !u!1 &2071233747
 GameObject:

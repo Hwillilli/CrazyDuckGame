@@ -9,7 +9,6 @@ using UnityEngine.Audio;
 public class PasswordCheck : MonoBehaviour
 {
     private string password = "지컨";
-    private string password2 = "이지경";
     public InputField UserInput;
     public string USERINPUT;
 
@@ -19,7 +18,7 @@ public class PasswordCheck : MonoBehaviour
         USERINPUT = UserInput.text;
         
 
-        if (USERINPUT == password || USERINPUT == password2)
+        if (USERINPUT == password)
         {
             SceneManager.LoadScene("03.on-air");
         }

@@ -5,9 +5,6 @@ using Yarn.Unity;
 
 public class PlayerMove : MonoBehaviour
 {
-    //audio
-    AudioSource audioSource;
-
     //static public PlayerMove instance;
     private DialogueRunner dialogueRunner = null;
     public float maxSpeed;
@@ -33,8 +30,6 @@ public class PlayerMove : MonoBehaviour
 
     void Awake()
     {
-        audioSource = this.gameObject.GetComponent<AudioSource>();
-
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
@@ -179,23 +174,13 @@ public class PlayerMove : MonoBehaviour
 
             //Animation
             if (Mathf.Abs(rigid.velocity.x) > 0.3)
-            {
                 anim.SetBool("isWalking", true);
-                audioSource.mute = false;
-            }
             else
-            {
-                Debug.Log("isWalking false");
                 anim.SetBool("isWalking", false);
-                audioSource.mute = true;
-            }
         }
         else
-        {
             anim.SetBool("isWalking", false);
-            audioSource.mute = true;
             //return;
-        }
     }
 
     // Open Menu Set
