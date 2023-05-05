@@ -8,9 +8,6 @@ using UnityEngine.Audio;
 
 public class PasswordCheck : MonoBehaviour
 {
-<<<<<<< HEAD
-    private string password = "이지경";
-=======
     private string password = "지컨";
     private string password2 = "이지경";
 >>>>>>> parent of 2317d1d (Revert "BGM추가")
