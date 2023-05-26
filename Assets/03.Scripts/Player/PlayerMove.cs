@@ -185,7 +185,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                Debug.Log("isWalking false");
+                //Debug.Log("isWalking false");
                 anim.SetBool("isWalking", false);
                 audioSource.mute = true;
             }
