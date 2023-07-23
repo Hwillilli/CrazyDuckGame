@@ -6,6 +6,8 @@ using UnityEngine.Playables;
 
 public class NpcController : MonoBehaviour
 {
+    PlayBGM playBGM;
+
     Animator anim;
     public Animator animator;
     private DialogueRunner dialogueRunner = null;
@@ -24,6 +26,11 @@ public class NpcController : MonoBehaviour
     public GameObject dialogue;
 
     private ButtonActive buttonAct;
+
+    void Start()
+    {
+        playBGM = FindObjectOfType<PlayBGM>();
+    }
 
     void Awake()
     {
@@ -250,6 +257,13 @@ public class NpcController : MonoBehaviour
     {
         ButtonX.SetActive(true);
     }
+
+    [YarnCommand("playMusic")]
+    public void playMusic()
+    {
+        playBGM.PlayMusic(10);
+    }
+
 
     /*[YarnCommand("actTrueRunner")]
     public void actTrueRunner()

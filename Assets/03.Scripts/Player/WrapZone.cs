@@ -13,7 +13,7 @@ public class WrapZone : MonoBehaviour
     public bool isTower; //건물 확인
     public bool isSend = true; //이동 확인
     public GameObject moveUI; //건물 이동 확인 이미지
-    public GameObject Dialog;
+    public GameObject Dialog = null;
     public PlayableDirector Timeline;
 
     void Start()
