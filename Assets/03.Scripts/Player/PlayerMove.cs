@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
     public GameObject CurrScene = null;
 
     public bool notMove = false;
+    public bool noPlay = false;
     public bool isRecOpen = false;
     public bool activeInven = false;
 
@@ -43,6 +44,11 @@ public class PlayerMove : MonoBehaviour
         // Open Recorder 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            if (noPlay) //리코더열지마
+            {
+                return;
+            }
+
             //input R 대화 진행
             if (!isRecOpen)
             {
@@ -209,8 +215,8 @@ public class PlayerMove : MonoBehaviour
     public void MoveAgain()
     {
         notMove = false;
+        noPlay = false;
     }
-
     public void Pause()
     {
         Time.timeScale = 1;

@@ -8,6 +8,7 @@ public class Subtitle : MonoBehaviour
 {
     public GameObject FormerSubtitle;
     public GameObject NextSubtitle;
+    public GameObject fade;
     Animator anim;
     public float nextDelay;
     public bool isEnd = false;
@@ -17,25 +18,26 @@ public class Subtitle : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("Next", false);
+
         //NextSubtitle.SetActive(false);
     }
 
     private void Update()
     {   //S입력 후 다음 문장
-        if (Input.GetKeyDown(KeyCode.S) && isEnd == true)
+        if (isEnd == true)
         {
-            anim.SetBool("Next", true);
-
-            if (isLoad == true)
+            if (Input.anyKeyDown)
             {
-                //FormerSubtitle.gameObject.SetActive(false);
-                Scene scene = SceneManager.GetActiveScene();
+                anim.SetBool("Next", true);
 
-                int curScene = scene.buildIndex;
-                int nextScene = curScene + 1;
-                SceneManager.LoadScene(nextScene);
+                if (isLoad == true)
+                {
+                    fade.SetActive(true);
+                    Invoke("Load", 1f);
+                }
+
             }
-
+            
         }
     }
 
@@ -47,9 +49,17 @@ public class Subtitle : MonoBehaviour
         }
         
     }
-
     public void IsEnd()
     {
         isEnd = true;
+    }
+    public void Load()
+    {
+        //FormerSubtitle.gameObject.SetActive(false);
+        Scene scene = SceneManager.GetActiveScene();
+
+        int curScene = scene.buildIndex;
+        int nextScene = curScene + 1;
+        SceneManager.LoadScene(nextScene);
     }
 }

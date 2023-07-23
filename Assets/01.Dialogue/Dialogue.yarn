@@ -15,39 +15,6 @@ position: -229,-1156
 //금한: 1눈물, 2웃음, 3공포, 4당황..
 
 ===
-title: OnAir
-position: -245,-1000
----
-
-===
-//#1-5 게임시작분기
-title: WorrierDuck
-position: -245,-1000
----
-<<Speak C_Fairy>>
-Fairy: 안녕하세요! 저는 당신의 수호 캐릭터입니다! 
-Fairy: 저와 함께 유튭각을, 아니 마을을 구하러 가지 않으시겠어요?!
-<<StopSpeak C_Fairy>>
-//#1-5 세계관 설명 애니메이션
-<<Speak C_Fairy>>
-Fairy: 이 마을을 구할 수 있는 사람은 당신뿐이에요!! 
-Fairy: 당신이 가지고 있는 특별한 리코더로, 부디 저주에 걸린 마을을 구해주세요!
-<<StopSpeak C_Fairy>>
-<<jump Choose>>
-===
-title: Choose
-position: -73,-1010
----
-//#1-5 선택지
-->Player: 구한다
-    <<Speak C_Fairy>>
-    Fairy: 당신의 선택에 감사드립니다.
-    //화면 흔들림, 암전 애니메이션
-->Player: 구하지 않는다
-    Fairy: 정말이에요...?
-    Fairy: 다시 생각해보지 않을래요...?
-    <<jump Choose>>
-===
 //#1-6 오리등장 애니메이션
 //#2 요정과의 조우(숲) #2,3 Forest_1
 title:FairyBirth
@@ -82,13 +49,18 @@ Rabbit: 듣자마자 느껴졌어... 영재의 기운...!!
 Rabbit: 너... 리코더 아카데미에 들어오지 않을래?
 <<StopSpeak C_Rabbit>>
 ->Player: 좋아
+    <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
+    <<Speak C_Rabbit>>
+    Rabbit: 아싸, 성공이다!!
+    Rabbit: 좋아! 날 따라와!
+    <<StopSpeak C_Rabbit>>
 ->Player: 싫어
-<<one_Off C_Rabbit>> <<for_On C_Rabbit>>
-<<Speak C_Rabbit>>
-Rabbit: 뭐어? 좋다고? 아싸, 성공이다!!
-Rabbit: 좋아! 날 따라와!
-<<StopSpeak C_Rabbit>>
-Player: ;;
+    <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
+    <<Speak C_Rabbit>>
+    Rabbit: 뭐어? 좋다고? 아싸, 성공이다!!
+    Rabbit: 좋아! 날 따라와!
+    <<StopSpeak C_Rabbit>>
+    Player: ;;
 <<play #2,3.03FollowMeR>>
 ===
 //#4 리코더 아카데미 #4 Academy_in
@@ -100,16 +72,13 @@ position: -251,-831
 Rabbit: 여기가 리코더 아카데미야. 아주 근사하지?
 <<StopSpeak C_Rabbit>>
 ->Player: 정말 멋지다!
-    <<for_On C_Rabbit>>
-    <<Speak C_Rabbit>>
+    <<for_On C_Rabbit>> <<Speak C_Rabbit>>
     Rabbit: 그렇지?! 내가 전부 만들었어!
     <<for_Off C_Rabbit>>
 ->Player: 별론데...
-    <<two_On C_Rabbit>>
-    <<Speak C_Rabbit>>
+    <<two_On C_Rabbit>> <<Speak C_Rabbit>>
     Rabbit: 뭐? 지금보다 훠얼씬 근사해질 거야!
-    <<StopSpeak C_Rabbit>>
-    <<two_Off C_Rabbit>>
+    <<StopSpeak C_Rabbit>> <<two_Off C_Rabbit>>
     Player: 내 마음 속에 별로...★☆★☆
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: [nomarkup]...흠흠. 우선 우리 [리코더 아카데미]는 마을의 저주를 풀기 위해서 탄생했어![/nomarkup]
@@ -121,7 +90,7 @@ Rabbit: [nomarkup]...흠흠. 우선 우리 [리코더 아카데미]는 마을의
 title:TheBeginningOfTheLegend
 position: -58,-830
 ---
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>> 
 Rabbit: 때는 어제였어...
 Rabbit: 난 여느 때와 같이 감자톡을 먹고 있었지...
 Rabbit: 그런데 갑자기 무언가 내 머리 위에 떨어지는 거야!
@@ -135,12 +104,12 @@ title:BackToRecorderAcademy
 position: 182,-837
 ---
 //버치, 오리 기본으로 돌아오는 애니메이션
-<<zer_Off C_Rabbit>> <<six_On C_Rabbit>>
+<<two_Off C_Rabbit>> <<zer_Off C_Rabbit>> <<six_On C_Rabbit>> <<Shake DialogCam>> <<two_On Player(Main)>>
 Rabbit: 마을이 잃어버린 노래를 찾아!!
 <<six_Off C_Rabbit>>
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 평소 리코더에 관심이 많았던 난 바로 알 수 있었어.
-<<two_On C_Rabbit>>
+<<zer_Off C_Rabbit>> <<two_On C_Rabbit>> <<two_Off Player(Main)>>
 Rabbit: 이건... 리코더 아카데미를 세워서 마을의 저주를 풀라는 신의 계시다!!!
 <<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 큼큼... 어쨌든, 리코더를 꺼내볼래?
@@ -155,8 +124,8 @@ position: 428,-828
 <<Speak C_Rabbit>>
 Rabbit: 아니... 그건?!
 <<StopSpeak C_Rabbit>>
-->Player: 크큭... 맞아.
-    Player: 크큭... 맞아. 이것이 바로 「전설의 리코더」다...
+->Player: 크큭.. 맞아.
+    Player: 크큭.. 맞아. 이것이 바로 「전설의 리코더」다...
     <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
     Rabbit: ...
     Player: ...
@@ -170,7 +139,7 @@ Rabbit: 아니... 그건?!
 Rabbit: 이미 알고 있겠지만, 오늘은 첫 시간이니까 연주법을 배워보자!
 Rabbit: 숫자 버튼을 누르거나 리코더 구멍을 손가락으로 막으면 연주를 할 수 있어.
 <<zer_Off C_Rabbit>> <<one_On C_Rabbit>>
-Rabbit: [nomarkup]들려줘! 너의 연주를~♬[/nomarkup]
+Rabbit: [nomarkup]들려줘! 너의 연주를~![/nomarkup]
 <<StopSpeak C_Rabbit>>
 <<jump PlayAgain>>
 ===
@@ -191,7 +160,7 @@ position: 626,-820
     <<for_On C_Rabbit>>
     Rabbit: 어쨌든, 오늘 수업은 끝!
     <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
-    Rabbit: 이제 마을 소개를 해줄게
+    Rabbit: 이제 마을 소개를 해줄게.
     Rabbit: 마을로 가자!
     <<StopSpeak C_Rabbit>> <<stop>>
 ->Player: 지금부터가 시작
@@ -229,7 +198,7 @@ position: -48,-670
 <<wait 2>> <<zer_Off C_Rabbit>>
 Sue: 아.. 버치 왔구나...
 <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
-Rabbit: 슈크림님 무슨 일이에요!
+Rabbit: 슈크림 씨 무슨 일이에요!
 <<StopSpeak C_Rabbit>>
 <<play flipRabbit>> <<wait 1>> <<play reflipRabbit>> <<Speak C_Rabbit>>
 Rabbit: 빵들은... 다 어디간거죠?
@@ -249,9 +218,9 @@ Sue: 하지만... 플래시 세상이 닫혔다는 건 알고있니?
 Rabbit: 플래시 세상이요?? 거기가 왜...
 <<StopSpeak C_Rabbit>>
 Sue: 그곳의 사람들은 모두 대피했어. 
-Sue: 본가가 플래시 세상인 나도 소식을 듣자마다 빠르게 짐을 챙겨 나왔지.
-Sue: 하지만 실수로... 내 빵에게 노래를 들려줄 요술봉을 잃어버리고 말았어...
-Sue: 내가 빵을 만드는 방법은 다른 빵들과 다른 점이 없어.
+Sue: 나도 소식을 듣자마자 빠르게 짐을 챙겨 나왔지.
+Sue: 하지만 실수로... 빵에게 노래를 들려줄 요술봉을 잃어버리고 말았어...
+Sue: 내가 빵을 만드는 방법은 다른 빵들과 다를게 없어.
 Sue: 하지만 단 하나...
 Sue: 난 빵이 다 구워지면 항상 노래를 불러줘.
 Sue: 그 노래에는 빵을 더욱 달고 맛있게 만드는 힘이 있거든...
@@ -284,7 +253,7 @@ position: 211,-673
 ---
 <<wait 1>> <<zer_On C_Rabbit>>
 <<Speak C_Rabbit>>
-Rabbit: 그런데... 노래를 어디서 찾지?
+Rabbit: 그런데... 노래를 어떻게 찾지?
 <<StopSpeak C_Rabbit>>
 Saso: 노래를 찾는다고?
 <<Appear C_Saso>>
@@ -301,11 +270,10 @@ Saso: 잘 알지... 아주 잘 알고 있어...
 <<Speak C_Rabbit>>
 Rabbit: 어떻게 해야하ㅈ //no input
 <<StopSpeak C_Rabbit>>
-<<one_On C_Saso>> <<zer_Off C_Rabbit>>
+<<one_On C_Saso>> <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>> <<Shake DialogCam>> <<two_On Player(Main)>>
 Saso: 음표들의 고향!!!
-<<thr_On C_Rabbit>>
 <<wait 1>>
-<<thr_Off C_Rabbit>>
+<<thr_Off C_Rabbit>> <<two_Off Player(Main)>>
 Saso: 음표들의 고향으로 가면... 노래를 찾을 수 있지...
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 음표들의 고향...!
@@ -319,7 +287,7 @@ Saso: 음표들의 흔적... 흔적을... //animation smile
 <<play #6NoteRoad>>
 <<play reflipRabbit>>
 <<wait 1>> <<zer_Off C_Rabbit>>
-<<thr_On C_Rabbit>> <<Speak C_Rabbit>>
+<<thr_On C_Rabbit>> <<Speak C_Rabbit>> 
 Rabbit: 우와! 길에 흔적이 나타났어!
 <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 따라가보자!
@@ -366,10 +334,10 @@ position: -245,-543
 Fairy: 음표들의 고향에 도착했군요!
 Fairy: 이곳은 모든 음표들이 존재하는 곳이에요.
 Fairy: 원하는 노래는 뭐든지 알 수 있는 곳이죠!
-Fairy: 찾고 싶은 노래가 있다면 마음속에 그 노래를 간절히 부르면서... 리코더로 음표를 부르면 돼요.
+Fairy: 마음속에 찾고 싶은 노래를 간절히 속삭이면서... 리코더로 음표를 부르면 돼요.
 Fairy: 찾는 음표가 맞다면 맑은 소리로 대답해 줄 거예요!
-Fairy: 모든 음표를 다 모아야 해요.
-Fairy: 한 번 놓치면 처음부터 다시 모아야 하니 이걸 꼭 명심하세요. 행운을 빌어요!
+Fairy: 꼭 모든 음표를 다 모아야 해요.
+Fairy: 하나라도 놓치면 처음부터 다시 모아야 하니 이걸 꼭 명심하세요. 행운을 빌어요!
 <<play #7.04Q1goneFairy>>
 Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 세 번...
 <<StopSpeak C_Fairy>>
@@ -379,8 +347,10 @@ Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 �
 title: Quest1Clear
 position: -6,-539
 ---
+<<wait 1>> <<GetItem SfxManager>>
 //Sue_music_note 아이템 획득
 <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>>
+슈크림 씨의 악보를 얻었다
 <<wait 1>>
 <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 헉...
@@ -389,7 +359,7 @@ Rabbit: 갑자기 빛이 번쩍하더니...
 Rabbit: 무슨 일이 일어난 거지?! //animaiton blink
 <<StopSpeak C_Rabbit>>
 //<<if $Quest1 is 1>>
-player: 노래를 알아냈어!!!
+player: 악보를 찾아냈어!!!
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 뭐? 정말?!
 <<thr_Off C_Rabbit>> <<for_On C_Rabbit>>
@@ -415,6 +385,7 @@ Sue: 고마워... 정말 고마워...!
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 슈크림 씨에게 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
+가방에서 악보를 꺼내자
 //Sue_music_note 아이템 선택
 <<one_Off Sue>>
 ===
@@ -436,25 +407,24 @@ title: BakeryAward
 position: 700,-540
 ---
 //슈 요술봉 변신 애니메이션
-<<wait 1>>
+<<one_On Sue>> <<wait 1>>
+Sue: 맞아... 바로 이거였어...!
+Sue: 나는야... 아바타스타...!!
+<<play SueMagic>> <<wait 10>> <<one_Off Sue>>//play timeline 
 Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어!
-<<thr_On Sue>>
-<<flip Sue>>
+<<thr_On Sue>> <<flip Sue>>
 Sue: 보답으로 이걸 줄게
-<<zer_Off C_Rabbit>>
-<<one_On C_Rabbit>>
-<<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<one_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 우와아! 슈크림 씨의 빵...!
 <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 감사합니다 슈크림 씨!
 <<StopSpeak C_Rabbit>>
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
-<<reflip Sue>>
-<<thr_Off Sue>>
+<<reflip Sue>> <<thr_Off Sue>>
 Sue: 아 참, 그리고 또 줄 게 있어
-Sue: 내가 동물로 변할 때 얻었던 건데, 나보단 너희에게 더 필요할 것 같아서...
-//Music_piece_0 아이템 획득
-<<setActP0 Sue>>
+Sue: 내가 동물로 변할 때 얻은 건데, 너희에게 필요할 것 같아.
+<<setActP0 Sue>> <<GetItem SfxManager>>
+악보조각1을 얻었다
 <<thr_On Sue>>
 Sue: 그럼, 조심히 가!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
@@ -538,12 +508,14 @@ position: 831,-681
 title: Quest2Clear
 position: -3,-203
 ---
-<<wait 1>>
+<<wait 1>> <<GetItem SfxManager>>
 //Iseul_music_note 아이템 획득
 Player: 노래를 찾았어!
  <<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: 좋아! 노래를 들려주러 가자
 <<StopSpeak C_Rabbit>>    
+<<MoveAgain Player>>
+<<play #7.05LetsGoR>>
 ===
 //#11 두 번째 퀘스트 완료
 title: QuestNpc2
@@ -582,17 +554,21 @@ Geumhan: 우리엘레강스하고고져스한마치엘리자베스5세같은...!
 <<StopSpeak C_Geumhan>> <<two_On C_Geumhan>>
 Geumhan: 감사합니다.. 보답으로 이걸 드릴게요
 //Music_piece_1 아이템 획득
-<<setActP1 C_Rabbit>>
+<<setActP1 C_Rabbit>> <<GetItem SfxManager>>
+악보조각2를 얻었다
 Geumhan: 용도는 모르지만... 분명히 도움이 될 거예요
-Geumhan: 그건 그렇고.. 커피 한 잔 사주실 수 있나요...?
+Geumhan: 그건 그렇고.. 혹시 실례가 안된다면
+Geumhan: 커피 한 잔 사주실 수 있나요...?
 <<two_Off C_Geumhan>>
 Geumhan: 카페에 가서 진지하게 얘기 나눠보시죠...
 <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>>
 Geumhan: 제 마음 속의 엉두님께서 당신들을 원하시네요...
-<<thr_Off C_Rabbit>> <<sev_On C_Rabbit>> <<Speak C_Rabbit>>
+<<thr_Off C_Rabbit>> <<sev_On C_Rabbit>> 
+<<Speak C_Rabbit>>
 Rabbit: 어...저희는...괜찮아요...
 <<StopSpeak C_Rabbit>> <<thr_On C_Geumhan>>
-Geumhan: 아니요! 사양하지 마세요... 엉두님께서 여러분을 구원해 주실 거예요!!!
+Geumhan: 아니요! 사양하지 마세요!!
+Geumhan: 엉두님께서 여러분을 구원해 주실 거예요!!!!!!
 <<sev_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: ...튀어!!!
 <<StopSpeak C_Rabbit>>
@@ -616,7 +592,9 @@ position: -240,-50
 ---
 <<wait 1>>
 player: 귀에서 피가 나는 것 같아.....
+<<Speak C_Rabbit>> 
 Rabbit: 정말 무서웠어......
+<<StopSpeak C_Rabbit>>
 <<play eatingBread>>
 <<jump Party>>
 ===
@@ -685,7 +663,7 @@ Nico: 그리고... 그리고... 삼겹살만 보면 미친듯이 달려드는...
 <<thr_Off C_Rabbit>> <<two_On C_Rabbit>>
 Nico: 그런 무시무시한 사람이랬어...
 ->Player: 그러니까...
-    Player: 그러니까... 대충 삼겹살 집착광공이라는 거지? 하 설렌다...
+    Player: 그러니까... 대충 삼겹살 집착 광공이라는 거지? 하 설렌다...
 ->Player: 뭐야 그거...
     Player: 뭐야 그거... 그냥 내 이상형이잖아?
 <<reflip C_Nico>> <<two_On C_Nico>> <<thr_On C_Rabbit>>
@@ -738,21 +716,24 @@ title: totheQuestMap3
 position: 663,-60
 ---
 <<Speak C_Rabbit>> <<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
-Rabbit: 누군진 모르지만 릴리에게 저주를 내린 그 아이돌, 정말 못됐다...
+Rabbit: 누군지 몰라도 릴리에게 저주를 내린 그 아이돌, 정말 못됐다...
 <<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 그럼 이번에도 파이팅! 난 여기서 기다리고 있을게!
 <<zer_Off C_Rabbit>> <<for_On C_Rabbit>>
-Rabbit: 아자 아자 「전설의 리코더」~!
+Rabbit: 가자 「전설의 리코더」~!
 <<StopSpeak C_Rabbit>>
 ===
 title: Find3
 position: -230,105
 ---
+<<wait 1>> <<GetItem SfxManager>>
 //Rara_music_note 아이템 획득
 Player: 노래를 찾았어!
 <<Speak C_Rabbit>>
 Rabbit: 좋았어! 노래를 들려주러 가자!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>>    
+<<MoveAgain Player>>
+<<play #7.05LetsGoR>>
 ===
 title: QuestNpc3
 position: 2,103
@@ -799,8 +780,11 @@ Lilly: 오늘 일기에 꼭 써야겠어요!
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
 <<StopSpeak C_Rabbit>> <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Lilly: 감사의 의미로 이걸 드릴게요!
+<<GetItem SfxManager>>
+악보조각3을 얻었다
 //Music_piece_2 아이템 획득
-<<setActP2 C_Rabbit>>
+<<setActP2 C_Rabbit>> <<GetItem SfxManager>>
+악보조각3을 얻었다
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
 Lilly: 여러분이라면, 이 마을을 꼭 구할 수 있을 거예요!
@@ -856,7 +840,7 @@ position: 262,255
 ---
 Player: 슈크림 씨가 아닐까?
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<two_On C_Rabbit>>
-Rabbit: 으음.. 슈크림 씨는 스타니까, 가장 고요하지는 않을 것 같아.
+Rabbit: 으음.. 슈크림 씨는 아바타스타니까, 가장 고요하지는 않을 것 같아.
 <<StopSpeak C_Rabbit>> <<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
 <<jump LastChoose>>
 ===
@@ -871,12 +855,12 @@ Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스�
 Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
 <<StopSpeak C_Rabbit>>
 Player: 좋았어! 그럼 음표들의 고향으로 가자!
-<<one_Off C_Rabbit>> <<zer_On C_Rabbit>> <<end>>
+<<one_Off C_Rabbit>> <<zer_On C_Rabbit>> <<play Timeline>> <<end>>
 ===
 title: Geum
 position: 761,254
 ---
-Player: 어딘가 범상치 않은 금한울자씨?
+Player: 광기의 금한울자씨?
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
 Rabbit: 헉...
 Rabbit: 하지만 그분은 너무 무서운걸...
@@ -928,9 +912,9 @@ Rabbit: 혹시... 마을에서 가장 고요하고 지혜로운 분을 아시나
 <<StopSpeak C_Rabbit>> <<reflip C_Saso>>
 Saso: 그럼! 그건 바로... 바로...
 Saso: ............
-<<one_On C_Saso>> 
-Saso: ............나!!!!
-<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>>
+<<one_On C_Saso>> <<Shake DialogCam>> <<two_On Player(Main)>>
+Saso: 나!!!!!!!!!!
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>> <<two_Off Player(Main)>>
 Rabbit: 헉...! 역시 맞았어..!
 Rabbit: 그럼 마을의 저주를 풀 단서도 아시나요?!
 <<StopSpeak C_Rabbit>> <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
@@ -948,7 +932,8 @@ title: Again2
 position: -234,594
 ---
 Saso: 흠... 이렇게... 저렇게..!
-<<setActNoteX C_Saso>>
+<<setActNoteX C_Saso>> <<GetItem SfxManager>>
+비어있는 악보를 얻었다
 <<one_On C_Saso>>
 Saso: 자... 이 뒤는... 어떻게 하면 되는지 알고 있지?
 <<one_Off C_Saso>>
@@ -973,6 +958,8 @@ title: Finally
 position: 20,601
 ---
 //Music_noteX 삭제, Final_music_note 아이템 획득
+<<wait 1>> <<GetItem SfxManager>>
+마지막 악보를 얻었다
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 해냈구나..!!!
 Rabbit: 이겨내줘서 정말 고마워..!
@@ -980,7 +967,9 @@ Rabbit: 이겨내줘서 정말 고마워..!
 Rabbit: 좋았어..! 이제 드디어 저주를 풀 수 있어!
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 연주 준비가 되면 광장으로 와줘. 나는 주민들을 불러올게!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>>    
+<<MoveAgain Player>>
+<<play #7.05LetsGoR>>
 ===
 title: lastplay
 position: 271,589
@@ -998,52 +987,62 @@ Final_music_note 아이템 선택
 title: LastSue
 position: -285,787
 ---
+<<Walking Sue>>
 Sue: 지대로네 이 집~ 연주 너무 좋았어!
 Sue: 너희가 도와준 덕에 다시 내 빵들을 대량생산중이야!
-<<thr_On Sue>>
 Sue: 기회가 된다면 언제든 또 먹으러 와~ 특별할인도 해줄테니까!
-<<thr_Off Sue>>
+<<SWalking Sue>>
 ===
 title: LastSaso
 position: -285,787
 ---
+<<Walking C_Saso>>
 Saso: 마침내 저주가 풀렸군…흐흐…
 Saso: 이렇게 어려운 저주를 풀어내다니...
 Saso: 너희는 정말로... 정말로...
 Saso: ...
 Saso: 하지만 이 사소크라테스에 비하면 아직은 아아아주 멀었어...
 Saso: 흐흐... 흐흐...
+<<SWalking C_Saso>>
 ===
 title: LastGeum
 position: -62,783
 ---
+<<Walking C_Geumhan>>
 Geumhan: 컨디션은 좀 어떠신지요...?
 Geumhan: 그나저나... 혹시 엉두교에 대해 들어보셨습니까…? 
+<<SWalking C_Geumhan>>
 -> player: 엉두송은...
     player: 엉두송은 아는데...
 -> player: 엉두교는...
     player: 엉두송은 내가 만들었는데 엉두교는 뭐야...
+<<Walking C_Geumhan>>
 Geumhan: 아아... 역시 엉두송의 창시자가 맞으셨군요!!  
 Geumhan: 제가 아는 아주 좋은 섬이 있는데... ‘그’곳으로 모시겠습니다... 
 Geumhan: 신도들이... 당신을... 기다립니다...
+<<SWalking C_Geumhan>>
 ===
 title: LastNico
 position: 161,801
 ---
+<<reflip C_Nico>>
 Nico: 릴리를 도와줘서 고마워! 릴리의 웃는 모습을 다시 보게 돼서 다행이야...
 Nico: 아 참, 그리고 저번에 그 빵... 너무 맛있더라...
 Nico: 겉은 바삭하고 속은 촉촉하고 적당히 달달하면서도 고소한 게...
 Nico: 앗! 이런 얘기를 하려던 게 아닌데...
 Nico: 아무튼 다시 한 번 정말 고마워! 너희는 최고야!!
+<<flip C_Nico>>
 ===
 title: LastLilly
 position: 380,803
 ---
+<<Walking C_Liilly>>
 Lilly: 고생 많으셨어요!
 Lilly: 도와주신 덕분에 다시 악보를 볼 수 있게 됐어요!
 Lilly: 그리고 정말 정말 놀랍게도…
 Lilly: 저희 사장님께서 다시 저를 소속 가수로 받아주셨어요!
 Lilly: 저 혼자의 힘으로는 불가능했을 거예요... 정말 감사합니다!
+<<SWalking C_Liilly>>
 ===
 title: LastGottong
 position: 605,804
@@ -1059,17 +1058,22 @@ position: 827,814
 ---
 <<if visited("LastSue") is true and visited("LastSaso") is true and visited("LastGeum") is true and visited("LastNico") is true and visited("LastLilly") is true and visited("LastGottong") is true>>
     Rabbit: 다른 주민들이랑 얘기는 끝났어?
-    ->Player: 응. 충분한 것 같아
-        Rabbit: 그랬구나
+    -> Player: 응. 충분한 것 같아
+        Rabbit: 좋아!
+        Rabbit: 그동안 정말 고생 많았어!
+        Rabbit: 네가 아니었다면 이 마을의 저주는 풀 수 없었을거야!
+        Rabbit: 이제... 앞으로 어떻게 할거야?
+        -> Player: 마을을 떠날거야
+        //    Rabbit: 
         <<setActP0 C_Rabbit>>
-    ->Player: 아니 아직
+    -> Player: 아니 아직
         Rabbit: 얘기 다 끝내고 와도 돼!
 <<else>>
     Rabbit: 다른 주민들이랑 얘기는 끝났어?
-    ->Player: 응. 충분한 것 같아
+    -> Player: 응. 충분한 것 같아
         Rabbit: 음.. 아닌 것 같은데...!
         Rabbit: 얘기 다 끝내고 와도 돼!
-    ->Player: 아니 아직
+    -> Player: 아니 아직
         Rabbit: 얘기 다 끝내고 와도 돼!
 <<endif>>
 ===

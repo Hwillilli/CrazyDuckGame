@@ -29,29 +29,19 @@ public class NpcController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         dialogueRunner = FindObjectOfType<DialogueRunner>();
-        rend = GetComponent<SpriteRenderer>();
-        //if (dialogueRunner.IsDialogueRunning == true)
-        
+        rend = GetComponent<SpriteRenderer>();        
     }
     
     [YarnCommand("flip")]
     public void flip()
     {
-        rend.flipX = true;
-        //if (rend = null;)
-        //{
-        //    animator.SetBool("isFlip", true);
-        //}        
+        rend.flipX = true;      
     }
 
     [YarnCommand("reflip")]
     public void reflip()
     {
         rend.flipX = false;
-        //if (rend = null;)
-        //{
-        //    animator.SetBool("isFlip", false);
-        //}
         Debug.Log($"{name} is Speaking");
     }
 
@@ -78,15 +68,15 @@ public class NpcController : MonoBehaviour
     {
         animator.SetBool("isAppear", false);
     }
-    [YarnCommand("Waking")]
+    [YarnCommand("Walking")]
     public void Waking()
     {
-        animator.SetBool("isWaking", true);
+        animator.SetBool("isWalking", true);
     }
-    [YarnCommand("SWaking")]
+    [YarnCommand("SWalking")]
     public void SWaking()
     {
-        animator.SetBool("isWaking", false);
+        animator.SetBool("isWalking", false);
     }
     [YarnCommand("zer_On")]
     public void zerOn()

@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.924544, y: 33, z: 17.720318}
-  m_Center: {x: -0.09640837, y: 0, z: -2.046605}
+  m_Size: {x: 9.924544, y: 33, z: 26.141125}
+  m_Center: {x: -0.09640843, y: 0, z: -6.2570095}
 --- !u!1001 &3313850128551608660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284,13 +284,29 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.57
       objectReference: {fileID: 0}
+    - target: {fileID: 2730272214574204359, guid: aebb59d01185cba409d3b565adf42017, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730272214574204359, guid: aebb59d01185cba409d3b565adf42017, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730272214574204359, guid: aebb59d01185cba409d3b565adf42017, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730272214574204359, guid: aebb59d01185cba409d3b565adf42017, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.26
+      objectReference: {fileID: 0}
     - target: {fileID: 3474060212612064571, guid: aebb59d01185cba409d3b565adf42017, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 3474060212612064571, guid: aebb59d01185cba409d3b565adf42017, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.335
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 3829027245979147200, guid: aebb59d01185cba409d3b565adf42017, type: 3}
       propertyPath: m_Color.b
@@ -316,6 +332,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.17
       objectReference: {fileID: 0}
+    - target: {fileID: 5059491346031835763, guid: aebb59d01185cba409d3b565adf42017, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6980616442136115852, guid: aebb59d01185cba409d3b565adf42017, type: 3}
       propertyPath: m_IsActive
       value: 1

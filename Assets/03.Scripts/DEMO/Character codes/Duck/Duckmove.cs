@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Duckmove : MonoBehaviour
 {
-    private Camera camera;
+    private Camera cameraa;
     private Animator animator;
 
     private bool isMove;
@@ -12,16 +12,9 @@ public class Duckmove : MonoBehaviour
 
     private void Awake()
     {
-        camera = Camera.main;
+        cameraa = Camera.main;
         animator = GetComponent<Animator>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -29,7 +22,7 @@ public class Duckmove : MonoBehaviour
             Debug.Log("click");
             Debug.Log(Input.mousePosition);
             RaycastHit hit;
-            if(Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out hit))
+            if(Physics.Raycast(cameraa.ScreenPointToRay(Input.mousePosition), out hit))
             {
                 SetDestination(hit.point);
             }
