@@ -336,8 +336,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 698350726}
   m_HandleRect: {fileID: 698350725}
   m_Direction: 2
-  m_Value: 0.9999964
-  m_Size: 0.9700176
+  m_Value: 0.99999285
+  m_Size: 0.9700173
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2814,7 +2814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374482884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.063566, y: -0.28997064, z: -9}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3148,6 +3148,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!114 &476178614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5229,7 +5231,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_TargetDisplay: 0
 --- !u!1001 &813884817
 PrefabInstance:
@@ -6184,6 +6186,8 @@ MonoBehaviour:
   PieceImage02: {fileID: 186041488}
   PieceImage03: {fileID: 590734515}
   noteX: {fileID: 0}
+  pieceCnt: 0
+  dialogue: {fileID: 0}
 --- !u!114 &994165876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6217,6 +6221,51 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &998293972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998293974}
+  - component: {fileID: 998293973}
+  m_Layer: 0
+  m_Name: PlayBGMSound (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &998293973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998293972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc77b5e82a7e28745ae5aa4d614eb5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playMusicTrack: 1
+--- !u!4 &998293974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998293972}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 802.57574, y: 261.44714, z: -0.19282717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1084353949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6740,7 +6789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116997987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.063566, y: -0.28997064, z: -9}
+  m_LocalPosition: {x: 9.062074, y: -0.28997064, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7435,6 +7484,8 @@ MonoBehaviour:
   Button01: {fileID: 0}
   Button02: {fileID: 0}
   Button03: {fileID: 0}
+  ButtonX: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!95 &1210569089
 Animator:
   serializedVersion: 4
@@ -7989,6 +8040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1312496911
 Transform:
   m_ObjectHideFlags: 1
