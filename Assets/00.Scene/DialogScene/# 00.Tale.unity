@@ -1402,7 +1402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &342414011
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2068,7 +2068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &679744441
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2087,7 +2087,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 540}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 437.54, y: 70.01}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &679744442
 MonoBehaviour:
@@ -2423,7 +2423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &874379678
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2447,6 +2447,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 7451948857220613845, guid: 242a179fb6fe43a43b0b82c2e4e11869, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -1840898351489617171, guid: 0c52d5ee17aedb049a1772c8fe47f139, type: 2}
+    value: {fileID: 1383420860}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &874379679
@@ -5235,7 +5237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5560,7 +5562,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 228367561}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1456077957
 Animator:
@@ -6929,7 +6931,7 @@ Transform:
   - {fileID: 355203930}
   - {fileID: 809240602}
   m_Father: {fileID: 228367561}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1794350770
 PrefabInstance:
