@@ -4,101 +4,79 @@ using UnityEngine;
 
 public class playRecorder : MonoBehaviour
 {
-    private AudioSource audioSource;
-    [SerializeField] private AudioClip[] sound_effect;
-
-    void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    [SerializeField] private GameObject[] sound;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            audioSource.clip = sound_effect[0];
-            audioSource.Play();
+            sound[0].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha1))
         {
-            audioSource.clip = sound_effect[0];
-            audioSource.Stop();
+            sound[0].SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            audioSource.clip = sound_effect[1];
-            audioSource.Play();
+            sound[1].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha2))
         {
-            audioSource.clip = sound_effect[1];
-            audioSource.Stop();
+            sound[1].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            audioSource.clip = sound_effect[2];
-            audioSource.Play();
+            sound[2].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha3))
         {
-            audioSource.clip = sound_effect[2];
-            audioSource.Stop();
+            sound[2].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            audioSource.clip = sound_effect[3];
-            audioSource.Play();
+            sound[3].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha4))
         {
-            audioSource.clip = sound_effect[3];
-            audioSource.Stop();
+            sound[3].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            audioSource.clip = sound_effect[4];
-            audioSource.Play();
+            sound[4].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha5))
         {
-            audioSource.clip = sound_effect[4];
-            audioSource.Stop();
+            sound[4].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            audioSource.clip = sound_effect[5];
-            audioSource.Play();
+            sound[5].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha6))
         {
-            audioSource.clip = sound_effect[5];
-            audioSource.Stop();
+            sound[5].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
-            audioSource.clip = sound_effect[6];
-            audioSource.Play();
+            sound[6].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha7))
         {
-            audioSource.clip = sound_effect[6];
-            audioSource.Stop();
+            sound[6].SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            audioSource.clip = sound_effect[7];
-            audioSource.Play();
+            sound[7].SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Alpha8))
         {
-            audioSource.clip = sound_effect[7];
-            audioSource.Stop();
+            sound[7].SetActive(false);
         }
     }
 }

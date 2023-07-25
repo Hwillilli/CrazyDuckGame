@@ -140,7 +140,7 @@ Rabbit: 이미 알고 있겠지만, 오늘은 첫 시간이니까 연주법을 �
 Rabbit: 숫자 버튼을 누르거나 리코더 구멍을 손가락으로 막으면 연주를 할 수 있어.
 <<zer_Off C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: [nomarkup]들려줘! 너의 연주를~![/nomarkup]
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<Stopbgm bgm>>
 <<jump PlayAgain>>
 ===
 title: PlayAgain
@@ -165,7 +165,7 @@ position: 626,-820
     <<StopSpeak C_Rabbit>> <<stop>>
 ->Player: 지금부터가 시작
     <<wait 5>> <<jump PlayAgain>>
-<<moveAgain Player>>
+<<Playbgm bgm>> <<moveAgain Player>> 
 ===
 //#5 빵집입장 #5 Bakery
 title: SadBakery

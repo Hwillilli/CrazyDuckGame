@@ -5610,7 +5610,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 228367561}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1456077957
 Animator:
@@ -6220,7 +6220,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1720c7aacab710e4e979642cea00230a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6316,6 +6316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7257c12c8c06244ae08ddb1437dfa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroy: 1
 --- !u!4 &1605265761
 Transform:
   m_ObjectHideFlags: 0
@@ -7120,7 +7121,7 @@ Transform:
   - {fileID: 355203930}
   - {fileID: 809240602}
   m_Father: {fileID: 228367561}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1794350770
 PrefabInstance:
