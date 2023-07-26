@@ -76,7 +76,7 @@ namespace Yarn.Unity.Example
         /// </summary>
         void Update()
         {
-            // Remove all player control when we're in dialogue
+            //Remove all player control when we're in dialogue
             if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true)
             {
                 return;
@@ -119,7 +119,7 @@ namespace Yarn.Unity.Example
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene("MainMenu");
+                //SceneManager.LoadScene("MainMenu");
             }
 #endif
         }

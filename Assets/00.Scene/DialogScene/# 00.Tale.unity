@@ -1451,7 +1451,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
   m_audioClip: {fileID: 8300000, guid: eb13e985964637640a389df597c08740, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5208,7 +5208,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 10.7
-  field of view: 71
+  field of view: 68.90326
   orthographic: 0
   orthographic size: 11
   m_Depth: -1
@@ -6344,14 +6344,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -5753756145311319189, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
   m_audioClip: {fileID: 8300000, guid: dc36e52dbdfb24f45b0f10c9ecd71503, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -6418,7 +6418,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8223,7 +8223,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 71
+    FieldOfView: 68.90326
     OrthographicSize: 11
     NearClipPlane: 0.1
     FarClipPlane: 10.7
