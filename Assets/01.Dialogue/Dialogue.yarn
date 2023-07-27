@@ -219,7 +219,8 @@ Rabbit: 플래시 세상이요?? 거기가 왜...
 <<StopSpeak C_Rabbit>>
 Sue: 그곳의 사람들은 모두 대피했어. 
 Sue: 나도 소식을 듣자마자 빠르게 짐을 챙겨 나왔지.
-Sue: 하지만 실수로... 빵에게 노래를 들려줄 요술봉을 잃어버리고 말았어...
+Sue: 하지만 실수로...
+Sue: 빵에게 노래를 들려줄 요술봉을 잃어버리고 말았어...
 Sue: 내가 빵을 만드는 방법은 다른 빵들과 다를게 없어.
 Sue: 하지만 단 하나...
 Sue: 난 빵이 다 구워지면 항상 노래를 불러줘.
@@ -334,7 +335,8 @@ position: -245,-543
 Fairy: 음표들의 고향에 도착했군요!
 Fairy: 이곳은 모든 음표들이 존재하는 곳이에요.
 Fairy: 원하는 노래는 뭐든지 알 수 있는 곳이죠!
-Fairy: 마음속에 찾고 싶은 노래를 간절히 속삭이면서... 리코더로 음표를 부르면 돼요.
+Fairy: 마음속에 찾고 싶은 노래를 간절히 속삭이면서...
+Fairy: 리코더로 음표를 부르면 돼요.
 Fairy: 찾는 음표가 맞다면 맑은 소리로 대답해 줄 거예요!
 Fairy: 꼭 모든 음표를 다 모아야 해요.
 Fairy: 하나라도 놓치면 처음부터 다시 모아야 하니 이걸 꼭 명심하세요. 행운을 빌어요!
@@ -366,9 +368,7 @@ Rabbit: 뭐? 정말?!
 Rabbit: 역시 네가 해낼 줄 알았어! 내 안목은 정확하다니까~!
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 이제 노래를 들려주러 가자!
-<<StopSpeak C_Rabbit>>
-<<MoveAgain Player>>
-<<play #7.05LetsGoR>>
+<<StopSpeak C_Rabbit>> <<MoveAgain Player>> <<play #7.05LetsGoR(Timeline)>>
 ===
 //#8-1 퀘스트 보상 #8.BakeryClear
 title: ReadyBakery
@@ -400,7 +400,7 @@ position: 465,-530
 <<play fadeOut>>
 <<stop 01PlaySue>>
 <<wait 1>>
-<<Load SueBackery>> 
+<<Load SueBackery(WrapZone)>> 
 ===
 //#8.BakeryClearEnding
 title: BakeryAward
@@ -410,7 +410,7 @@ position: 700,-540
 <<one_On Sue>> <<wait 1>>
 Sue: 맞아... 바로 이거였어...!
 Sue: 나는야... 아바타스타...!!
-<<play SueMagic>> <<wait 10>> <<one_Off Sue>>//play timeline 
+<<play SueMagic>> <<wait 1>> <<one_Off Sue>> <<for_On Sue>> <<wait 9>> //play timeline 
 Sue: 정말 고마워..! 너희 덕분에 다시 빵을 만들 수 있게 됐어!
 <<thr_On Sue>> <<flip Sue>>
 Sue: 보답으로 이걸 줄게
@@ -515,7 +515,7 @@ Player: 노래를 찾았어!
 Rabbit: 좋아! 노래를 들려주러 가자
 <<StopSpeak C_Rabbit>>    
 <<MoveAgain Player>>
-<<play #7.05LetsGoR>>
+<<play #7.05LetsGoR(WrapZone)>>
 ===
 //#11 두 번째 퀘스트 완료
 title: QuestNpc2
@@ -540,7 +540,7 @@ position: 210,-336
 <<wait 49>>
 <<play fadeOut>>
 <<wait 1>>
-<<Load GeumVillage>>
+<<Load GeumVillage(WrapZone)>>
 ===
 title: QuestNpc2clear
 position: 442,-207
@@ -734,7 +734,7 @@ Player: 노래를 찾았어!
 Rabbit: 좋았어! 노래를 들려주러 가자!
 <<StopSpeak C_Rabbit>>    
 <<MoveAgain Player>>
-<<play #7.05LetsGoR>>
+<<play #7.05LetsGoR(WrapZone)>>
 ===
 title: QuestNpc3
 position: 2,103
@@ -766,14 +766,14 @@ position: 210,-336
 <<wait 31>>
 <<play fadeOut>>
 <<wait 1>>
-<<Load LallaHome>>
+<<Load LallaHome(WrapZone)>>
 ===
 title: ThisSong
 position: 446,94
 ---
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
-<<zer_Off C_Rabbit>> <<play Lalla>> <<thr_On C_Rabbit>>  <<wait 2>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
+<<zer_Off C_Rabbit>> <<play Lalla>> <<wait 1>> <<thr_On C_Rabbit>> <<two_On Player(Main)>> <<wait 1>> <<two_Off Player(Main)>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
 Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
 Lilly: 오늘 일기에 꼭 써야겠어요!
@@ -854,7 +854,7 @@ Rabbit: '음표들의 고향'에 대해 알려주신 것도 사소크라테스�
 Rabbit: 분명 마을의 저주를 풀 방법을 아실지도 몰라..!
 <<StopSpeak C_Rabbit>>
 Player: 좋았어! 그럼 음표들의 고향으로 가자!
-<<one_Off C_Rabbit>> <<zer_On C_Rabbit>> <<play Timeline>> <<end>>
+<<one_Off C_Rabbit>> <<zer_On C_Rabbit>> <<play Timeline>>
 ===
 title: Geum
 position: 761,254
@@ -962,14 +962,14 @@ position: 20,601
 마지막 악보를 얻었다
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<one_On C_Rabbit>>
 Rabbit: 해냈구나..!!!
-Rabbit: 이겨내줘서 정말 고마워..!
+Rabbit: 정말 고생 많았어..!
 <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 좋았어..! 이제 드디어 저주를 풀 수 있어!
 <<for_Off C_Rabbit>> <<zer_On C_Rabbit>>
 Rabbit: 연주 준비가 되면 광장으로 와줘. 나는 주민들을 불러올게!
 <<StopSpeak C_Rabbit>>    
 <<MoveAgain Player>>
-<<play #7.05LetsGoR>>
+<<play #7.05LetsGoR(WrapZone)>>
 ===
 title: lastplay
 position: 271,589
@@ -1131,6 +1131,6 @@ Fairy: 그동안 잘 즐기셨는지 모르겠네요, 후후
 <<play Fairygone>>
 Fairy: 그럼 언젠가, 다시 만날 그날까지…
 Fairy: 언제나 평안하시길…
-<<StopSpeak C_Fairy>> <<wait 1>>
+<<StopSpeak C_Fairy>> <<wait 2>>
 // 요정 알로 돌아가고 빛이 사방으로 퍼진다. 페이드 아웃 후 엔딩 크레딧
 ===

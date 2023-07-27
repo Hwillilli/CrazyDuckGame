@@ -12,7 +12,7 @@ public class TranSFX : MonoBehaviour
 
         if (destroy == true)
         {
-            Invoke("Exit", 3f);
+            Invoke("Exit", 10f);
         }
     }
 

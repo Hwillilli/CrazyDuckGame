@@ -901,16 +901,16 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dc478aa8ed35eb3488c1e49868cd729a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a70b71eb27a8ace4e9fedd61b5fa6890, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -977,7 +977,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2066,7 +2066,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292070588, guid: 613feebbfee99284eb0ae759a7b5fac3, type: 3}
       propertyPath: m_Volume
-      value: 0.8
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4167352525868189630, guid: 613feebbfee99284eb0ae759a7b5fac3, type: 3}
       propertyPath: m_Name
@@ -2970,7 +2970,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
   m_audioClip: {fileID: 8300000, guid: dc36e52dbdfb24f45b0f10c9ecd71503, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9708,8 +9708,6 @@ PlayableDirector:
     value: {fileID: 1942539655}
   - key: {fileID: -4720304242566241557, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 2033976019532054612, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -5523196408802452979, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
     value: {fileID: 1615482988}
   - key: {fileID: 5636496948129001893, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
@@ -9720,8 +9718,6 @@ PlayableDirector:
     value: {fileID: 458134237}
   - key: {fileID: -8153604162325969115, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
     value: {fileID: 1627679488}
-  - key: {fileID: 7787153734800619166, guid: 4fcadcc9e8fdfee4d8d4583073274afa, type: 2}
-    value: {fileID: 1169777790}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1942539654

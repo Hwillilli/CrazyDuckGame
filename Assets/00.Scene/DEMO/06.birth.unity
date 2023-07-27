@@ -533,7 +533,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 467937523}
   selectedCommands:
-  - {fileID: 467937526}
+  - {fileID: 467937521}
   variables: []
   description: 
   stepPause: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 185.23643
     y: 128.73184
-    width: 60
+    width: 88
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1084,9 +1084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 38.5661
+    x: 13.566101
     y: 129.51756
-    width: 112
+    width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1737,7 +1737,7 @@ RectTransform:
   m_GameObject: {fileID: 965730029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2029573183}
@@ -7285,14 +7285,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
   m_audioClip: {fileID: 8300000, guid: eb13e985964637640a389df597c08740, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -7359,7 +7359,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

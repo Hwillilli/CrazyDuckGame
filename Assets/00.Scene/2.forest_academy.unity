@@ -611,7 +611,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1869001011}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 11
@@ -1044,6 +1044,14 @@ PrefabInstance:
     - target: {fileID: 2460949728119187984, guid: 34568339db156684a84413c930708923, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313850128583156245, guid: 34568339db156684a84413c930708923, type: 3}
+      propertyPath: m_Size.x
+      value: 11.022545
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313850128583156245, guid: 34568339db156684a84413c930708923, type: 3}
+      propertyPath: m_Center.x
+      value: 0.452587
       objectReference: {fileID: 0}
     - target: {fileID: 3627451815389811633, guid: 34568339db156684a84413c930708923, type: 3}
       propertyPath: m_IsActive
@@ -3326,6 +3334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+--- !u!4 &1869001011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2625091370241364892, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+  m_PrefabInstance: {fileID: 1869001010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1878254110
 GameObject:
   m_ObjectHideFlags: 0

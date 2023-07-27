@@ -5729,7 +5729,6 @@ GameObject:
   - component: {fileID: 719415070}
   - component: {fileID: 719415069}
   - component: {fileID: 719415068}
-  - component: {fileID: 719415067}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -5737,21 +5736,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &719415067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719415066}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 719415069}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &719415068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5963,7 +5947,6 @@ GameObject:
   - component: {fileID: 879644522}
   - component: {fileID: 879644521}
   - component: {fileID: 879644520}
-  - component: {fileID: 879644519}
   m_Layer: 0
   m_Name: Dialog Cam
   m_TagString: Untagged
@@ -5971,21 +5954,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &879644519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879644518}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 879644521}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &879644520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7706,7 +7674,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

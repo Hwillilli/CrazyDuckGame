@@ -767,6 +767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521448096}
   - component: {fileID: 1521448095}
+  - component: {fileID: 1521448097}
   m_Layer: 0
   m_Name: Ending
   m_TagString: Untagged
@@ -841,6 +842,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1521448097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521448094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8433b689d36248140b9a6f3f306c080b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  load: 0
 --- !u!1 &1661727779
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +907,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 68.5
+    floatVal: 67
   durationOLD: 0
 --- !u!114 &1661727782
 MonoBehaviour:
@@ -925,7 +940,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 71
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -963,8 +978,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1661727783}
-  selectedCommands:
-  - {fileID: 1661727781}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

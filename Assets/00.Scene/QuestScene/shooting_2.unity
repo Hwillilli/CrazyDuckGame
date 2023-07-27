@@ -859,14 +859,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbdfceed58073274f86bb2862b8a2296, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -933,7 +933,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1903,6 +1903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1245386182
 Transform:
   m_ObjectHideFlags: 1
@@ -5403,7 +5404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2186799107625111006, guid: cedf943dbba60d343bee54e4f4ae11fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -301.1
+      value: -301.09998
       objectReference: {fileID: 0}
     - target: {fileID: 2186799107625111006, guid: cedf943dbba60d343bee54e4f4ae11fd, type: 3}
       propertyPath: m_AnchoredPosition.y

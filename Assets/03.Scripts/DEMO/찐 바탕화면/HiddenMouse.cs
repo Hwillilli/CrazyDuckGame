@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class HiddenMouse : MonoBehaviour
 {
     public string sceneName;
+    public bool load = true;
 
     IEnumerator LoadScene()
     {
@@ -18,8 +19,9 @@ public class HiddenMouse : MonoBehaviour
     void Update()
     {
         Cursor.visible = false;
-        StartCoroutine(LoadScene());
-        
-
+        if (load == true)
+        {
+            StartCoroutine(LoadScene());
+        }
     }
 }

@@ -1738,7 +1738,6 @@ GameObject:
   - component: {fileID: 805947828}
   - component: {fileID: 805947829}
   - component: {fileID: 805947831}
-  - component: {fileID: 805947830}
   m_Layer: 0
   m_Name: bgm
   m_TagString: Untagged
@@ -1771,7 +1770,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
-  m_audioClip: {fileID: 8300000, guid: fce533b81bf301b439328851487edcc6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 16b5c40e44ca61542a2ac435dfe699a5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -1857,26 +1856,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &805947830
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805947827}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a3efb4269adc6c4ca3b5a22a63e5e0b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &805947831
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1245,7 +1245,6 @@ GameObject:
   - component: {fileID: 674571842}
   - component: {fileID: 674571845}
   - component: {fileID: 674571844}
-  - component: {fileID: 674571843}
   m_Layer: 0
   m_Name: Dialog Cam
   m_TagString: Untagged
@@ -1269,21 +1268,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &674571843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674571841}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 674571845}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &674571844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6479,7 +6463,6 @@ GameObject:
   - component: {fileID: 1047578909}
   - component: {fileID: 1047578908}
   - component: {fileID: 1047578911}
-  - component: {fileID: 1047578910}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -6541,21 +6524,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1047578910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047578907}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 1047578908}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &1047578911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7697,6 +7665,10 @@ PlayableDirector:
     value: {fileID: 1079750724}
   - key: {fileID: 4897443205984335942, guid: 1e2f4ab85c8e5f5429e1dc8bf3221a02, type: 2}
     value: {fileID: 1079750727}
+  - key: {fileID: -1016170781679240066, guid: 1e2f4ab85c8e5f5429e1dc8bf3221a02, type: 2}
+    value: {fileID: 498609641}
+  - key: {fileID: -747268866190020629, guid: 1e2f4ab85c8e5f5429e1dc8bf3221a02, type: 2}
+    value: {fileID: 4495583686868631610}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1437007627
@@ -8047,16 +8019,16 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
-  m_audioClip: {fileID: 8300000, guid: fce533b81bf301b439328851487edcc6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0366be54fa40f724fb90cc08cb2d5c7d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -8123,7 +8095,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9219,6 +9191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f1900177fe2fd47a3b78fd8f79de60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4495583686868631610 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4495583687225075262, guid: 29e100d6a2c5c014ba8d7c45ef815bf3, type: 3}
+  m_PrefabInstance: {fileID: 4495583686868631605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6193772299554936069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9226,6 +9203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7774828747967253614, guid: f8d61ea4bedf7f843abc927610e87826, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7774828748559654849, guid: f8d61ea4bedf7f843abc927610e87826, type: 3}
       propertyPath: m_Name
       value: Map_NoteHome

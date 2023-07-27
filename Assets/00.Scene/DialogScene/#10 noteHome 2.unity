@@ -1234,21 +1234,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 639362173013285967, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
   m_PrefabInstance: {fileID: 1469768385}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1046794648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046794643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals: []
-    m_Events: []
 --- !u!1 &1079750724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1698,6 @@ GameObject:
   - component: {fileID: 1157034683}
   - component: {fileID: 1157034682}
   - component: {fileID: 1157034681}
-  - component: {fileID: 1157034680}
   m_Layer: 0
   m_Name: Dialog Cam
   m_TagString: Untagged
@@ -1721,21 +1705,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1157034680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157034679}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 1157034682}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &1157034681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,7 +2277,6 @@ GameObject:
   - component: {fileID: 1471149583}
   - component: {fileID: 1471149582}
   - component: {fileID: 1471149581}
-  - component: {fileID: 1471149580}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -2316,21 +2284,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1471149580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471149579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c05deec0e54643ae6e4fff9cd975e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinevirtual: {fileID: 1471149582}
-  tPlayer: {fileID: 0}
-  tFollowTarget: {fileID: 0}
 --- !u!114 &1471149581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7548,9 +7501,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1672707102000629901, guid: d799fa74974113048acf9c91ed0821aa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0366be54fa40f724fb90cc08cb2d5c7d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

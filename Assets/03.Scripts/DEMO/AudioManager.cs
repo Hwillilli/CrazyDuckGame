@@ -6,7 +6,6 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
-    // Start is called before the first frame update
     void Awake()
     {
         foreach (Sound s in sounds)
