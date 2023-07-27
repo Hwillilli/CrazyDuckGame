@@ -677,16 +677,16 @@ Nico: 급격히 늙어버렸어...
 Nico: 게다가 이 마을의 저주까지 겹쳐서 하필 유전병이 있는 페르시안 고양이가 되어버려서...
 <<one_On C_Nico>> 
 Nico: 릴리는 더이상 악보를 볼 수조차 없어...
-<<one_Off C_Nico>> 
+<<thr_On C_Nico>> 
 Nico: 그래서 말인데... 너희가 릴리의 노래를 리코더로 연주해 줄 수 있을까?
 <<reflip C_Nico>>
 Nico: 그 노래를 듣는다면 릴리는 다시 행복해질 수 있을 거야!
 <<Speak C_Rabbit>>
 Rabbit: 걱정마 네코, 우리에게 맡겨! 우리가 릴리의 노래를 찾아줄게!
 <<StopSpeak C_Rabbit>>
-<<flip C_Nico>> <<wait 1>> <<reflip C_Nico>> <<one_On C_Nico>>
+<<flip C_Nico>> <<wait 0.5>> <<reflip C_Nico>> <<wait 0.5>> <<for_On C_Nico>>
 Nico: 모두들... 고마워!!
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<for_Off C_Nico>>
 Rabbit: 좋아. 가자!
 <<StopSpeak C_Rabbit>> <<one_Off C_Nico>> <<one_Off Player(Main)>>
 <<play return>> <<stop NicoPop>>
@@ -706,7 +706,7 @@ position: 442,-56
 Lilly: 안녕하세요, 절 도와주신다고 들어서요..!
 <<Speak C_Rabbit>>
 Rabbit: 네!
-<<StopSpeak C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<two_On C_Liilly>>
 Lilly: 저, 완전 감동했어요! 정말.. 정말 감사해요!
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<two_On C_Rabbit>> 
 Rabbit: 맡겨만 주세요!
@@ -750,7 +750,9 @@ Nico: 릴리는 2층에 있어. 올라가자!
 title: Lilly
 position: 231,103
 ---
+<<two_On C_Liilly>>
 Lilly: 헉... 노래를 찾으셨다고요?
+<<for_On C_Nico>>
 Nico: 너무 잘 됐다 릴리!
 <<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 릴리에게 우리의 여언주를 들려주자!
@@ -771,11 +773,13 @@ position: 210,-336
 title: ThisSong
 position: 446,94
 ---
+<<two_On C_Liilly>>
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
-<<zer_Off C_Rabbit>> <<play Lalla>> <<wait 1>> <<thr_On C_Rabbit>> <<two_On Player(Main)>> <<wait 1>> <<two_Off Player(Main)>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
+<<two_Off C_Liilly>> <<zer_Off C_Rabbit>> <<play Lalla>> <<wait 1>> <<thr_On C_Rabbit>> <<two_On Player(Main)>> <<wait 1>> <<two_Off Player(Main)>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
 Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
+<<for_On C_Liilly>>
 Lilly: 오늘 일기에 꼭 써야겠어요!
 <<one_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
@@ -784,8 +788,10 @@ Lilly: 감사의 의미로 이걸 드릴게요!
 //Music_piece_2 아이템 획득
 <<setActP2 C_Rabbit>> <<GetItem SfxManager>>
 악보조각3을 얻었다
+<<for_Off C_Liilly>>
 Lilly: 제가 동물로 변하고 나서 얻은 조각이에요.
 Lilly: 용도는 알 수 없지만 마을의 저주와 관련된 건 확실해요!
+<<for_On C_Liilly>>
 Lilly: 여러분이라면, 이 마을을 꼭 구할 수 있을 거예요!
 Nico: 행운을 빌어!!
 ===

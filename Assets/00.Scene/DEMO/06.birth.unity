@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 467937526}
   - component: {fileID: 467937527}
   - component: {fileID: 467937528}
+  - component: {fileID: 467937529}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -531,9 +532,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 467937523}
+  - {fileID: 467937461}
   selectedCommands:
-  - {fileID: 467937521}
+  - {fileID: 467937459}
   variables: []
   description: 
   stepPause: 0
@@ -599,7 +600,7 @@ MonoBehaviour:
     animatorVal: {fileID: 1175868805}
   _parameterName:
     stringRef: {fileID: 0}
-    stringVal: isTalking
+    stringVal: smile
   value:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -619,7 +620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 185.23643
+    x: 184.23643
     y: 128.73184
     width: 88
     height: 40
@@ -632,6 +633,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 467937528}
   - {fileID: 467937459}
+  - {fileID: 467937529}
   - {fileID: 467937470}
   - {fileID: 467937469}
   - {fileID: 467937471}
@@ -1218,6 +1220,31 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &467937529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467937427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee63e642958494f1ebed8116ae4b1103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 116
+  indentLevel: 0
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1175868805}
+  _parameterName:
+    stringRef: {fileID: 0}
+    stringVal: isTalking
+  value:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
 --- !u!1 &502443015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,6 +2004,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.93059975
       objectReference: {fileID: 0}
+    - target: {fileID: 4409981742145673887, guid: a008476e1c6fdf54c862a7eaafcba73a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7996927224899608462, guid: c41d8b8bc87e67744a048b4c3a090dc7, type: 3}
     - target: {fileID: 4513850196260758455, guid: a008476e1c6fdf54c862a7eaafcba73a, type: 3}
       propertyPath: m_Bounds.m_Center.x
       value: 0.000000834465
