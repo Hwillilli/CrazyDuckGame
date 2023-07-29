@@ -10,7 +10,7 @@ public class HiddenMouse : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(8.0f);
+        yield return new WaitForSeconds(13.0f);
         SceneManager.LoadScene(sceneName);
         Debug.Log("오류 복구중");
         

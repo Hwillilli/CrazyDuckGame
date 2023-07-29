@@ -274,9 +274,9 @@ Rabbit: 어떻게 해야하ㅈ //no input
 <<one_On C_Saso>> <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>> <<Shake DialogCam>> <<two_On Player(Main)>>
 Saso: 음표들의 고향!!!
 <<wait 1>>
-<<thr_Off C_Rabbit>> <<two_Off Player(Main)>>
+<<thr_Off C_Rabbit>> 
 Saso: 음표들의 고향으로 가면... 노래를 찾을 수 있지...
-<<zer_On C_Rabbit>> <<Speak C_Rabbit>>
+<<zer_On C_Rabbit>> <<Speak C_Rabbit>> <<two_Off Player(Main)>>
 Rabbit: 음표들의 고향...!
 Rabbit: 거기가 어디죠?
 <<StopSpeak C_Rabbit>>
@@ -339,8 +339,10 @@ Fairy: 마음속에 찾고 싶은 노래를 간절히 속삭이면서...
 Fairy: 리코더로 음표를 부르면 돼요.
 Fairy: 찾는 음표가 맞다면 맑은 소리로 대답해 줄 거예요!
 Fairy: 꼭 모든 음표를 다 모아야 해요.
-Fairy: 하나라도 놓치면 처음부터 다시 모아야 하니 이걸 꼭 명심하세요. 행운을 빌어요!
-<<play #7.04Q1goneFairy>>
+Fairy: 하나라도 놓치면 처음부터 다시 모아야 하니 이걸 꼭 명심하세요.
+<<one_On C_Fairy>>
+Fairy: 그럼 행운을 빌어요. 파이팅!
+<<one_Off C_Fairy>> <<play #7.04Q1goneFairy>>
 Fairy: 아 그리고 기회는 세 번뿐... 기회는 세 번뿐... 기회는 세 번...
 <<StopSpeak C_Fairy>>
 <<stop>>
@@ -472,8 +474,7 @@ Geumhan: 그 노래는 정말...
 Geumhan: 정말신성하고엘레강스하고퍼펙트한이세상에단하나뿐인노래예요... 흑흑!
 <<Speak C_Geumhan>> <<Speak C_Rabbit>>
 Rabbit: 진정하시고, 노래에 대해 설명해주시면 저희가 도와드릴게요!
-<<StopSpeak C_Rabbit>>
-<<StopSpeak C_Geumhan>> <<one_Off C_Geumhan>>
+<<StopSpeak C_Rabbit>> <<StopSpeak C_Geumhan>> <<one_Off C_Geumhan>>
 Geumhan: 후… 감사합니다… 금한울자, 그만 울자!
 Geumhan: 그 노래의 대부분의 내용은 기억이 나지 않아요..
 Geumhan: 단지 노래 가사가… 둑왜, 둑왜, 했다는 것밖에…
@@ -776,10 +777,10 @@ position: 446,94
 <<two_On C_Liilly>>
 Lilly: 그래 맞아... 바로 이 노래였어...!
 Lilly: 시작해부앙...!
-<<two_Off C_Liilly>> <<zer_Off C_Rabbit>> <<play Lalla>> <<wait 1>> <<thr_On C_Rabbit>> <<two_On Player(Main)>> <<wait 1>> <<two_Off Player(Main)>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
+<<two_Off C_Liilly>> <<zer_Off C_Rabbit>> <<play Lalla>> <<wait 1>> <<thr_On C_Rabbit>> <<two_On Player(Main)>> <<wait 1>> <<thr_Off C_Rabbit>> <<one_On C_Rabbit>>
 Nico: 릴리..! 망돌저주가 풀렸어!!
 Lilly: 감사해요. 모두 여러분 덕분이에요!
-<<for_On C_Liilly>>
+<<for_On C_Liilly>> <<two_Off Player(Main)>>
 Lilly: 오늘 일기에 꼭 써야겠어요!
 <<one_Off C_Rabbit>> <<Speak C_Rabbit>> <<for_On C_Rabbit>>
 Rabbit: 하핫, 아녜요. 저희는 할 일을 했을 뿐인 걸요!
@@ -818,8 +819,9 @@ position: -233,253
 Rabbit: 가장 고요하고 지혜로운 동물이라...
 <<StopSpeak C_Rabbit>>
 Player: 일단 릴리랑 네코는 별 얘기가 없었으니 아닌 것 같아
-<<Speak C_Rabbit>>
+<<Speak C_Rabbit>> <<zer_Off C_Rabbit>> <<two_On C_Rabbit>>
 Rabbit: 그럼 남은 주민은 슈크림, 금한울자, 사소크라테스, 나, 너까지 다섯 명인데...
+<<two_Off C_Rabbit>> <<zer_On C_Rabbit>> 
 Rabbit: 여기서 가장 고요하고 지혜로운 동물이 누구일까?
 <<StopSpeak C_Rabbit>>
 <<jump LastChoose>>
@@ -919,10 +921,10 @@ Saso: 그럼! 그건 바로... 바로...
 Saso: ............
 <<one_On C_Saso>> <<Shake DialogCam>> <<two_On Player(Main)>>
 Saso: 나!!!!!!!!!!
-<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>> <<two_Off Player(Main)>>
+<<zer_Off C_Rabbit>> <<Speak C_Rabbit>> <<thr_On C_Rabbit>> 
 Rabbit: 헉...! 역시 맞았어..!
 Rabbit: 그럼 마을의 저주를 풀 단서도 아시나요?!
-<<StopSpeak C_Rabbit>> <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
+<<StopSpeak C_Rabbit>> <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>> <<two_Off Player(Main)>>
 Saso: 오오...! 당연히 알지... 알고말고...
 <<flip C_Saso>>
 Saso: 거기 너, 악보조각들 있지?
@@ -1034,10 +1036,9 @@ position: -62,783
         player: 엉두송은 내가 만들었는데 엉두교는 뭐야...
     <<Walking C_Geumhan>> <<Shake DialogCam>> <<two_On Player(Main)>>
     Geumhan: 아아... 역시 엉두송의 창시자가 맞으셨군요!!!!!  
-    <<two_Off Player(Main)>>
     Geumhan: 제가 아는 아주 좋은 섬이 있는데... ‘그’곳으로 모시겠습니다... 
     Geumhan: 신도들이... 당신을... 기다립니다...
-    <<SWalking C_Geumhan>>
+    <<SWalking C_Geumhan>> <<two_Off Player(Main)>>
 <<else>>
     Geumhan: '그'곳에 가실 마음이 드셨나요?
     player: 아뇨.
