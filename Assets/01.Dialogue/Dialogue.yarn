@@ -79,7 +79,7 @@ Rabbit: 여기가 리코더 아카데미야. 아주 근사하지?
     <<two_On C_Rabbit>> <<Speak C_Rabbit>>
     Rabbit: 뭐? 지금보다 훠얼씬 근사해질 거야!
     <<StopSpeak C_Rabbit>> <<two_Off C_Rabbit>>
-    Player: 내 마음 속에 별로...★☆★☆
+    Player: [nomarkup]내 마음 속에 별로...★☆★☆[/nomarkup]
 <<zer_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: [nomarkup]...흠흠. 우선 우리 [리코더 아카데미]는 마을의 저주를 풀기 위해서 탄생했어![/nomarkup]
 <<StopSpeak C_Rabbit>>
@@ -125,7 +125,7 @@ position: 428,-828
 Rabbit: 아니... 그건?!
 <<StopSpeak C_Rabbit>>
 ->Player: 크큭.. 맞아.
-    Player: 크큭.. 맞아. 이것이 바로 「전설의 리코더」다...
+    Player: [nomarkup]크큭.. 맞아. 이것이 바로 「전설의 리코더」다...[/nomarkup]
     <<thr_Off C_Rabbit>> <<zer_On C_Rabbit>>
     Rabbit: ...
     Player: ...
@@ -139,7 +139,7 @@ Rabbit: 아니... 그건?!
 Rabbit: 이미 알고 있겠지만, 오늘은 첫 시간이니까 연주법을 배워보자!
 Rabbit: 숫자 버튼을 누르거나 리코더 구멍을 손가락으로 막으면 연주를 할 수 있어.
 <<zer_Off C_Rabbit>> <<one_On C_Rabbit>>
-Rabbit: [nomarkup]들려줘! 너의 연주를~![/nomarkup]
+Rabbit: [nomarkup]들려줘! 너의 연주를~!♬[/nomarkup]
 <<StopSpeak C_Rabbit>> <<Stopbgm bgm>>
 <<jump PlayAgain>>
 ===
