@@ -19,8 +19,8 @@ public class PlayerMove : MonoBehaviour
     public GameObject pauseSet;
     public GameObject settingSet;
     public GameObject controlSet;
-    public GameObject NextScene = null;
     public GameObject CurrScene = null;
+    public GameObject NextScene = null;
 
     public bool notMove = false;
     public bool noPlay = false;
