@@ -28,16 +28,19 @@ public class Subtitle : MonoBehaviour
         {
             if (Input.anyKeyDown)
             {
-                anim.SetBool("Next", true);
+                if (Input.GetButtonDown("Cancel"))
+                    return;
 
-                if (isLoad == true)
+                else
                 {
-                    fade.SetActive(true);
-                    Invoke("Load", 1f);
+                    anim.SetBool("Next", true);
+                    if (isLoad == true)
+                    {
+                        fade.SetActive(true);
+                        Invoke("Load", 1f);
+                    }
                 }
-
             }
-            
         }
     }
 

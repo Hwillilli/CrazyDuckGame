@@ -173,6 +173,11 @@ public class PlayerMove : MonoBehaviour
             //return;
     }
 
+    public void RecClear() //리코더 열어
+    {
+        noPlay = false;
+    }
+
     // Open Menu Set
     void OpenMenu()
     {

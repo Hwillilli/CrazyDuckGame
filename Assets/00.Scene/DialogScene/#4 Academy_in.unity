@@ -2803,6 +2803,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8827343234296801934}
     m_Modifications:
+    - target: {fileID: 576629161678182530, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b84bb9c77d58224898d86f41992f078, type: 2}
     - target: {fileID: 5307683818551317345, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
       propertyPath: m_Name
       value: Dialogue Canvas
@@ -2927,6 +2931,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8810722893812334733, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b84bb9c77d58224898d86f41992f078, type: 2}
+    - target: {fileID: 8810722893812334733, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8709950350297702459, guid: 4b84bb9c77d58224898d86f41992f078, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
 --- !u!224 &1444063871 stripped
@@ -3774,6 +3786,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933067172}
   m_CullTransparentMesh: 1
+--- !u!82 &1951102431 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4378514520563704792, guid: 89c3e5eb6a632d948bc067d86e9bd2dc, type: 3}
+  m_PrefabInstance: {fileID: 4378514520832682605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2013348583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4202,6 +4219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2797757546203877682}
     m_Modifications:
+    - target: {fileID: 576629161678182530, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b84bb9c77d58224898d86f41992f078, type: 2}
     - target: {fileID: 4004340569652977853, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
       propertyPath: m_Padding.m_Top
       value: 30
@@ -4341,6 +4362,14 @@ PrefabInstance:
     - target: {fileID: 8810722893812334722, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810722893812334733, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b84bb9c77d58224898d86f41992f078, type: 2}
+    - target: {fileID: 8810722893812334733, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7eb189031e9aad4dbf1a6566dcf25cb, type: 3}
@@ -4501,6 +4530,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1877358080370108830, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: messageBubbleOffset.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364888, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_Name
       value: Player(Main)
@@ -4621,7 +4654,6 @@ GameObject:
   - component: {fileID: 7500421321322119785}
   - component: {fileID: 495159164973797879}
   - component: {fileID: 495159164973797873}
-  - component: {fileID: 3747015749318149293}
   m_Layer: 0
   m_Name: Dialogue Runner
   m_TagString: Untagged
@@ -4751,6 +4783,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262338949}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: MoveAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1951102431}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5099,21 +5143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3747015749318149293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495159164973797874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals: []
-    m_Events: []
 --- !u!114 &3766272899279239637
 MonoBehaviour:
   m_ObjectHideFlags: 0

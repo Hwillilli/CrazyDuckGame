@@ -5188,7 +5188,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 10.7
-  field of view: 70.00644
+  field of view: 68
   orthographic: 0
   orthographic size: 11
   m_Depth: -1
@@ -7341,15 +7341,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3746508235112018195, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_Color.a
-      value: 0.7058824
+      value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 4987182407647625876, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7058824
+    - target: {fileID: 3746508235112018195, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7394407272071303371, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7058824
+    - target: {fileID: 3746508235112018195, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746508235112018195, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
@@ -8212,7 +8216,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 70.00644
+    FieldOfView: 68
     OrthographicSize: 11
     NearClipPlane: 0.1
     FarClipPlane: 10.7
