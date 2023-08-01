@@ -1413,7 +1413,6 @@ GameObject:
   - component: {fileID: 663047965}
   - component: {fileID: 663047967}
   - component: {fileID: 663047966}
-  - component: {fileID: 663047969}
   - component: {fileID: 663047968}
   - component: {fileID: 663047970}
   m_Layer: 5
@@ -1556,21 +1555,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &663047969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663047964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
 --- !u!95 &663047970
 Animator:
   serializedVersion: 4

@@ -55,7 +55,7 @@ public class NpcController : MonoBehaviour
     public void StopSpeak()
     {
         animator.SetBool("isTalking", false);
-        Debug.Log($"{name} is stopped Speaking");
+        Debug.Log($"{name} stopped Speaking");
     }
 
     [YarnCommand("Appear")]

@@ -101,7 +101,7 @@ Rabbit: 그 쪽지의 내용은 바로... 바로...!
 <<jump BackToRecorderAcademy>>
 ===
 title:BackToRecorderAcademy
-position: 182,-837
+position: 182,-8370
 ---
 //버치, 오리 기본으로 돌아오는 애니메이션
 <<two_Off C_Rabbit>> <<zer_Off C_Rabbit>> <<six_On C_Rabbit>> <<Shake DialogCam>> <<two_On Player(Main)>>
@@ -303,7 +303,9 @@ position: 391,-679
 Rabbit: 우와... 이것 좀 봐~ 아름다워!
 Rabbit: 치즈마을에 이런 곳이 있었다니!
 <<StopSpeak C_Rabbit>>
-//음표들 도도돗도도 레레렐레레 미밈밈미미미
+note1: 도도돗도도
+note2: 레레렐레레
+note3: 미밈밈미미미
 <<Speak C_Rabbit>> <<one_Off C_Rabbit>>
 Rabbit: 이제 여기서 음표를 찾으면 되는 걸까?
 <<two_On C_Rabbit>>
@@ -477,8 +479,9 @@ Rabbit: 진정하시고, 노래에 대해 설명해주시면 저희가 도와드
 <<StopSpeak C_Rabbit>> <<StopSpeak C_Geumhan>> <<one_Off C_Geumhan>>
 Geumhan: 후… 감사합니다… 금한울자, 그만 울자!
 Geumhan: 그 노래의 대부분의 내용은 기억이 나지 않아요..
+<<for_On C_Geumhan>>
 Geumhan: 단지 노래 가사가… 둑왜, 둑왜, 했다는 것밖에…
-<<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>>
+<<zer_Off C_Rabbit>> <<for_On C_Rabbit>> <<Speak C_Rabbit>> <<for_Off C_Geumhan>>
 Rabbit: 음~ 좋아요! 저희가 도와드릴게요
 Rabbit: 이래봬도 저희 경력직이거든요~
 <<StopSpeak C_Rabbit>>

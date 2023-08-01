@@ -7405,6 +7405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 6952182140996889938, guid: 917ac7c367e9d8f4089f56afedfa0e15, type: 3}
+      propertyPath: clickMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917ac7c367e9d8f4089f56afedfa0e15, type: 3}
 --- !u!1 &549973451
@@ -15244,7 +15248,6 @@ GameObject:
   - component: {fileID: 970360140}
   - component: {fileID: 970360139}
   - component: {fileID: 970360145}
-  - component: {fileID: 970360142}
   - component: {fileID: 970360132}
   - component: {fileID: 970360137}
   - component: {fileID: 970360136}
@@ -15288,7 +15291,7 @@ MonoBehaviour:
   scrollPos: {x: 326.59427, y: 45.982437}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 695
+  blockViewHeight: 491
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -15299,7 +15302,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 970360130}
   selectedCommands:
-  - {fileID: 970360156}
+  - {fileID: 970360141}
   variables: []
   description: 
   stepPause: 0
@@ -15362,7 +15365,6 @@ MonoBehaviour:
   - {fileID: 970360155}
   - {fileID: 970360148}
   - {fileID: 970360143}
-  - {fileID: 970360142}
   - {fileID: 970360129}
   - {fileID: 970360152}
   - {fileID: 970360141}
@@ -15635,27 +15637,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &970360142
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970360127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 111
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &970360143
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15921,7 +15902,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &970360156
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

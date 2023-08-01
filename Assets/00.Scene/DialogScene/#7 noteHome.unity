@@ -5966,7 +5966,7 @@ Transform:
   - {fileID: 854355473}
   - {fileID: 1023756725}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969963987
 GameObject:
@@ -6385,7 +6385,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116997987
 GameObject:
@@ -6820,6 +6820,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341818469702919167, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341818469702919167, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
       propertyPath: m_SizeDelta.y
       value: 152.26001
       objectReference: {fileID: 0}
@@ -6828,6 +6832,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 498609643}
     - target: {fileID: 7500421320617095838, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
+      propertyPath: allCharacters.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500421320617095838, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
       propertyPath: allCharacters.Array.data[0]
       value: 
       objectReference: {fileID: 498609643}
@@ -6835,6 +6843,18 @@ PrefabInstance:
       propertyPath: allCharacters.Array.data[1]
       value: 
       objectReference: {fileID: 1063964153}
+    - target: {fileID: 7500421320617095838, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
+      propertyPath: allCharacters.Array.data[2]
+      value: 
+      objectReference: {fileID: 1514874447}
+    - target: {fileID: 7500421320617095838, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
+      propertyPath: allCharacters.Array.data[3]
+      value: 
+      objectReference: {fileID: 2008709377}
+    - target: {fileID: 7500421320617095838, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
+      propertyPath: allCharacters.Array.data[4]
+      value: 
+      objectReference: {fileID: 1917570811}
     - target: {fileID: 7839270539789787811, guid: d9271721b8177b64ca457f6a4571dba1, type: 3}
       propertyPath: m_Name
       value: ToTheHomeOfMusicNote
@@ -7414,6 +7434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1514874446}
+  - component: {fileID: 1514874447}
   m_Layer: 0
   m_Name: Note box
   m_TagString: Untagged
@@ -7437,6 +7458,21 @@ Transform:
   m_Father: {fileID: 950509186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514874447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514874445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: note1
+  messageBubbleOffset: {x: 0, y: 1, z: 0}
+  offsetUsesRotation: 0
 --- !u!1 &1579357358
 GameObject:
   m_ObjectHideFlags: 0
@@ -8168,6 +8204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917570810}
+  - component: {fileID: 1917570811}
   m_Layer: 0
   m_Name: Note box (3)
   m_TagString: Untagged
@@ -8191,6 +8228,21 @@ Transform:
   m_Father: {fileID: 950509186}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917570811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917570809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: note3
+  messageBubbleOffset: {x: 0, y: 1, z: 0}
+  offsetUsesRotation: 0
 --- !u!1 &1947463615
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,6 +8389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008709376}
+  - component: {fileID: 2008709377}
   m_Layer: 0
   m_Name: Note box (1)
   m_TagString: Untagged
@@ -8360,6 +8413,21 @@ Transform:
   m_Father: {fileID: 950509186}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2008709377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008709375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: note2
+  messageBubbleOffset: {x: 0, y: 1, z: 0}
+  offsetUsesRotation: 0
 --- !u!1 &2043886834
 GameObject:
   m_ObjectHideFlags: 0
