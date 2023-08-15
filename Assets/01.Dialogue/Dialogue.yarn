@@ -994,7 +994,12 @@ Rabbit: 준비됐지? 시작하자!
 <<StopSpeak C_Rabbit>>
 마지막 악보를 연주하자.
 //Final_music_note 아이템 선택
-<<play fadeOut>> <<wait 1>> <<Load #19MainVillage>>
+===
+title: lastSong
+position: 271,589
+---
+<<play fadeOut>> <<wait 1>>
+<<play LastSong>> <<wait 98>> <<Load #19MainVillage>>
 //연주 애니메이션
 ===
 title: LastSue

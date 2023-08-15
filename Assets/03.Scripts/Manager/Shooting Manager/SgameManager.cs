@@ -27,6 +27,7 @@ public class SgameManager : MonoBehaviour
     public GameObject gameOverSet;
     public GameObject gameClearSet;
     public PlayableDirector transition;
+    public PlayableDirector transition2;
     public PlayerMovefly Splayer;
 
     public GameObject tutorial = null;
@@ -109,7 +110,7 @@ public class SgameManager : MonoBehaviour
     public void GameOver()
     {
         transition.Play();
-        Invoke("GameRetry", 0.5f);
+        Invoke("GameRetry", 3.5f);
     }
 
     public void GameRetry()
@@ -120,7 +121,7 @@ public class SgameManager : MonoBehaviour
     }
     public void GameClear()
     {
-        transition.Play();
+        transition2.Play();
         Invoke("NextGame", 1f);
     }
     public void NextButton()

@@ -178,6 +178,11 @@ public class PlayerMove : MonoBehaviour
         noPlay = false;
     }
 
+    public void noMouse() //마우스 없음
+    {
+        Cursor.visible = false;
+    }
+
     // Open Menu Set
     void OpenMenu()
     {
