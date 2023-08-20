@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
     public bool isRecOpen = false;
     public bool activeInven = false;
 
-    bool IsPause;
+    public bool IsPause;
 
     void Awake()
     {

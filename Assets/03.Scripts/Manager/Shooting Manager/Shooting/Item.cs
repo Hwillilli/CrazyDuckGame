@@ -59,6 +59,7 @@ public class Item : MonoBehaviour
             anim.SetBool("Get_Note", true);
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             soundSource.clip = sound_effect[1];
+            soundSource.Stop();
             soundSource.Play();
             //ItemUI.sprite = sprites;
 

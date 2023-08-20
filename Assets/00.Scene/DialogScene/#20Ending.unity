@@ -6181,7 +6181,7 @@ GameObject:
   - component: {fileID: 1661727783}
   - component: {fileID: 1661727782}
   - component: {fileID: 1661727781}
-  - component: {fileID: 1661727780}
+  - component: {fileID: 1661727786}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6189,20 +6189,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1661727780
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661727779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 0
 --- !u!114 &1661727781
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6219,7 +6205,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 83
+    floatVal: 98
   durationOLD: 0
 --- !u!114 &1661727782
 MonoBehaviour:
@@ -6262,7 +6248,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1661727782}
   commandList:
   - {fileID: 1661727781}
-  - {fileID: 1661727780}
+  - {fileID: 1661727786}
   suppressAllAutoSelections: 0
 --- !u!114 &1661727784
 MonoBehaviour:
@@ -6291,7 +6277,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1661727783}
   selectedCommands:
-  - {fileID: 1661727781}
+  - {fileID: 1661727786}
   variables: []
   description: 
   stepPause: 0
@@ -6318,6 +6304,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661727786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661727779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: 21.Last main
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &2056950387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4575480773300432716, guid: 6b097374ecb50104a9429badf6ace76b, type: 3}
@@ -6545,7 +6550,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9.933575, y: 31.59}
+  m_Size: {x: 4.4900002, y: 31.171257}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

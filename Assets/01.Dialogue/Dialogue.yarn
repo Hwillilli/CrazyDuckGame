@@ -112,7 +112,7 @@ Rabbit: 평소 리코더에 관심이 많았던 난 바로 알 수 있었어.
 <<zer_Off C_Rabbit>> <<two_On C_Rabbit>> <<two_Off Player(Main)>>
 Rabbit: 이건... 리코더 아카데미를 세워서 마을의 저주를 풀라는 신의 계시다!!!
 <<two_Off C_Rabbit>> <<zer_On C_Rabbit>>
-Rabbit: 큼큼... 어쨌든, 리코더를 꺼내볼래?
+Rabbit: 큼큼... 어쨌든, R리코더를 꺼내볼래?
 <<StopSpeak C_Rabbit>>
 //player input "R"
 ===
@@ -150,7 +150,7 @@ position: 626,-820
 <<wait 5>>
 ->Player: 어때?
     <<one_Off C_Rabbit>> <<for_On C_Rabbit>>
-    <<Speak C_Rabbit>>
+    <<Speak C_Rabbit>> <<Playbgm bgm>>
     Rabbit: 완벽해! 너 정말 재능있구나?
     <<for_Off C_Rabbit>>
     <<two_On C_Rabbit>>
@@ -165,7 +165,7 @@ position: 626,-820
     <<StopSpeak C_Rabbit>> <<stop>>
 ->Player: 지금부터가 시작
     <<wait 5>> <<jump PlayAgain>>
-<<Playbgm bgm>> <<moveAgain Player>> 
+<<moveAgain Player>> 
 ===
 //#5 빵집입장 #5 Bakery
 title: SadBakery
@@ -224,7 +224,7 @@ Sue: 빵에게 노래를 들려줄 요술봉을 잃어버리고 말았어...
 Sue: 내가 빵을 만드는 방법은 다른 빵들과 다를게 없어.
 Sue: 하지만 단 하나...
 Sue: 난 빵이 다 구워지면 항상 노래를 불러줘.
-Sue: 그 노래에는 빵을 더욱 달고 맛있게 만드는 힘이 있거든...
+Sue: 그 노래는 빵을 더욱 달고 맛있게 만드는 힘이 있거든...
 <<one_On Sue>> //슈 눈물
 Sue: 노래가 없으면 난 더이상 빵을 만들지 못 해... 흐흑!
 <<Speak C_Rabbit>>
@@ -576,7 +576,7 @@ Geumhan: 아니요! 사양하지 마세요!!
 Geumhan: 엉두님께서 여러분을 구원해 주실 거예요!!!!!!
 <<sev_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>>
 Rabbit: ...튀어!!!
-<<StopSpeak C_Rabbit>> <<two_Off Player(Main)>>
+<<StopSpeak C_Rabbit>> <<two_Off Player(Main)>> <<Playbgm creepy>>
 <<play #12ComeHip>>
 <<thr_Off C_Geumhan>>
 ===
@@ -999,7 +999,7 @@ title: lastSong
 position: 271,589
 ---
 <<play fadeOut>> <<wait 1>>
-<<play LastSong>> <<wait 98>> <<Load #19MainVillage>>
+<<play LastSong>> <<wait 100>> <<Load #19MainVillage>>
 //연주 애니메이션
 ===
 title: LastSue
@@ -1104,7 +1104,7 @@ position: 605,804
 title: LastRabbit
 position: 827,814
 ---
-<<if visited("LastSue") is true and visited("LastSaso") is true and visited("LastGeum") is true and visited("LastNico") is true and visited("LastLilly") is true and visited("LastGottong") is true>>
+//<<if visited("LastSue") is true and visited("LastSaso") is true and visited("LastGeum") is true and visited("LastNico") is true and visited("LastLilly") is true and visited("LastGottong") is true>>
     <<Speak C_Rabbit>>
     Rabbit: 다른 주민들이랑 얘기는 끝났어?
     <<StopSpeak C_Rabbit>>
@@ -1118,24 +1118,24 @@ position: 827,814
         -> Player: 마을을 떠날거야
             Rabbit: 마지막 대사~~
             <<setActP0 Player(Main)>>
-    -> Player: 아니 아직
-        <<Speak C_Rabbit>>
-        Rabbit: 얘기 다 끝내고 와도 돼!
-        <<StopSpeak C_Rabbit>>
-<<else>>
-    <<Speak C_Rabbit>>
-    Rabbit: 다른 주민들이랑 얘기는 끝났어?
-    <<StopSpeak C_Rabbit>>
-    -> Player: 응. 충분한 것 같아
-        <<Speak C_Rabbit>>
-        Rabbit: 음.. 아닌 것 같은데...!
-        Rabbit: 얘기 다 끝내고 와도 돼!
-        <<StopSpeak C_Rabbit>>
-    -> Player: 아니 아직
-        <<Speak C_Rabbit>>
-        Rabbit: 얘기 다 끝내고 와도 돼!
-        <<StopSpeak C_Rabbit>>
-<<endif>>
+    // -> Player: 아니 아직
+    //     <<Speak C_Rabbit>>
+    //     Rabbit: 얘기 다 끝내고 와도 돼!
+    //     <<StopSpeak C_Rabbit>>
+// <<else>>
+//     <<Speak C_Rabbit>>
+//     Rabbit: 다른 주민들이랑 얘기는 끝났어?
+//     <<StopSpeak C_Rabbit>>
+//     -> Player: 응. 충분한 것 같아
+//         <<Speak C_Rabbit>>
+//         Rabbit: 음.. 아닌 것 같은데...!
+//         Rabbit: 얘기 다 끝내고 와도 돼!
+//         <<StopSpeak C_Rabbit>>
+//     -> Player: 아니 아직
+//         <<Speak C_Rabbit>>
+//         Rabbit: 얘기 다 끝내고 와도 돼!
+//         <<StopSpeak C_Rabbit>>
+// <<endif>>
 ===
 title: FairyEnd
 position: 827,814
