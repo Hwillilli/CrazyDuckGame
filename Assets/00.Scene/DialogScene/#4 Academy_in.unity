@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4149193807318235864, guid: b42673c183428fd41a6c9c1874797640, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4149193807482336377, guid: b42673c183428fd41a6c9c1874797640, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -3774,11 +3778,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933067172}
   m_CullTransparentMesh: 1
---- !u!82 &1951102431 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4378514520563704792, guid: 89c3e5eb6a632d948bc067d86e9bd2dc, type: 3}
-  m_PrefabInstance: {fileID: 4378514520832682605}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2013348583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4743,18 +4742,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1262338949}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: MoveAgain
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1951102431}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

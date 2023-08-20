@@ -533,7 +533,6 @@ Geumhan: 오, 드디어...!
 Rabbit: 울자님께 노래를 연주해드리자!
 <<StopSpeak C_Rabbit>>
 //Iseul_music_note 아이템 선택
-<<wait 1>>
 ===
 //playquestsong
 title: PlayGeumSong
@@ -572,11 +571,11 @@ Geumhan: 제 마음 속의 엉두님께서 당신들을 원하시네요...
 Rabbit: 어...저희는...괜찮아요...
 <<StopSpeak C_Rabbit>> <<thr_On C_Geumhan>>
 Geumhan: 아니요! 사양하지 마세요!!
-<<Shake DialogCam>> <<two_On Player(Main)>>
+<<Shake DialogCam>> <<two_On Player(Main)>> 
 Geumhan: 엉두님께서 여러분을 구원해 주실 거예요!!!!!!
-<<sev_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>>
+<<sev_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>> <<Playbgm creepy>>
 Rabbit: ...튀어!!!
-<<StopSpeak C_Rabbit>> <<two_Off Player(Main)>> <<Playbgm creepy>>
+<<StopSpeak C_Rabbit>> <<two_Off Player(Main)>> 
 <<play #12ComeHip>>
 <<thr_Off C_Geumhan>>
 ===
@@ -608,7 +607,7 @@ title: Party
 position: 1,-50
 ---
 <<wait 1>> <<one_On Player(Main)>>
-<<Speak C_Rabbit>> 
+<<Speak C_Rabbit>> <<thr_On Player(Main)>>
 Rabbit: 휴.. 우리 이제 빵 먹으면서 좀 쉴까?
 <<zer_Off C_Rabbit>> <<thr_On C_Rabbit>> 
 Rabbit: 헉! 이... 이건...!
@@ -693,7 +692,7 @@ Rabbit: 걱정마 네코, 우리에게 맡겨! 우리가 릴리의 노래를 찾
 Nico: 모두들... 고마워!!
 <<Speak C_Rabbit>> <<for_Off C_Nico>>
 Rabbit: 좋아. 가자!
-<<StopSpeak C_Rabbit>> <<one_Off C_Nico>> <<one_Off Player(Main)>>
+<<StopSpeak C_Rabbit>> <<thr_Off Player(Main)>> <<one_Off C_Nico>> <<one_Off Player(Main)>>
 <<play return>> <<stop NicoPop>>
 ===
 //#14 릴리와의 만남 
@@ -986,7 +985,6 @@ Rabbit: 연주 준비가 되면 광장으로 와줘. 나는 주민들을 불러�
 title: lastplay
 position: 271,589
 ---
-<<Appear C_Saso>>
 <<Speak C_Rabbit>>
 Rabbit: 아, 내가 다 떨린다...
 Rabbit: 그래도 이제 연주만 하면, 정말 마을의 저주가 풀리는 거야...!!
@@ -1007,9 +1005,11 @@ position: -285,787
 ---
 <<if visited("LastSue") is false>>
     <<Walking Sue>>
-    Sue: 지대로네 이 집~ 연주 너무 좋았어!
-    Sue: 너희가 도와준 덕에 다시 내 빵들을 대량생산중이야!
+    Sue: 정말 고마워! 덕분에 다시 사람으로 돌아왔어!
+    Sue: 연주도 정말 너무 좋았어!
+    Sue: 아 참, 너희가 도와준 덕에 다시 내 빵들을 대량생산중이야!
     Sue: 기회가 된다면 언제든 또 먹으러 와~ 특별할인도 해줄테니까!
+    Sue: 그럼 안녕!
     <<SWalking Sue>>
 <<else>>
     Sue: 그럼 안녕!
@@ -1026,6 +1026,7 @@ position: -285,787
     Saso: ...
     Saso: 하지만 이 사소크라테스에 비하면 아직은 아아아주 멀었어...
     Saso: 흐흐... 흐흐...
+    Saso: 그럼 안녕.
     <<SWalking C_Saso>>
 <<else>>
     Saso: 그럼 안녕.
@@ -1047,6 +1048,13 @@ position: -62,783
     Geumhan: 아아... 역시 엉두송의 창시자가 맞으셨군요!!!!!  
     Geumhan: 제가 아는 아주 좋은 섬이 있는데... ‘그’곳으로 모시겠습니다... 
     Geumhan: 신도들이... 당신을... 기다립니다...
+    <<SWalking C_Geumhan>>
+    -> player: ...
+        <<Walking C_Geumhan>> 
+        Geumhan: '그'곳에 가실 마음이 드셨나요?
+        <<SWalking C_Geumhan>>
+        player: 아뇨.
+        Geumhan: ...  
     <<SWalking C_Geumhan>> <<two_Off Player(Main)>>
 <<else>>
     Geumhan: '그'곳에 가실 마음이 드셨나요?
@@ -1059,7 +1067,9 @@ position: 161,801
 ---
 <<if visited("LastNico") is false>>
     <<reflip C_Nico>>
-    Nico: 릴리를 도와줘서 고마워! 릴리의 웃는 모습을 다시 보게 돼서 다행이야...
+    Nico: 저주를 풀어줘서 고마워! 역시 네가 해낼 줄 알았어!
+    Nico: 그리고 릴리를 도와줘서 정말 고마워! 
+    Nico: 릴리의 웃는 모습을 다시 보게 돼서 다행이야...
     Nico: 아 참, 그리고 저번에 그 빵... 너무 맛있더라...
     Nico: 겉은 바삭하고 속은 촉촉하고 적당히 달달하면서도 고소한 게...
     Nico: 앗! 이런 얘기를 하려던 게 아닌데...
@@ -1079,6 +1089,7 @@ position: 380,803
     Lilly: 그리고 정말 정말 놀랍게도…
     Lilly: 저희 사장님께서 다시 저를 소속 가수로 받아주셨어요!
     Lilly: 저 혼자의 힘으로는 불가능했을 거예요... 정말 감사합니다!
+    Lilly: 오늘 일기에 꼭 써야겠어요! 
     <<SWalking C_Liilly>>
 <<else>>
     Lilly: 오늘 일기에 꼭 써야겠어요! 
@@ -1095,6 +1106,10 @@ position: 605,804
     Rabbit: 강쥐 너 혹시... 뭐 돼?
     Rabbit: 음 뭐 되지.
     Rabbit: 앗 얘는 마을 주민이 아니고 진짜 강아지야...
+    <<StopSpeak C_Rabbit>>
+    Gottong: 왈왈.
+    <<Speak C_Rabbit>>
+    Rabbit: 집에 가고 싶어 하는 것 같아.
     <<StopSpeak C_Rabbit>>
 <<else>>
     Gottong: 왈왈.
@@ -1144,6 +1159,8 @@ position: 827,814
 Fairy: 드디어…! 마을의 저주가 풀렸군요!
 Fairy: 이 여정을 함께 해주셔서 정말 감사드립니다!
 Fairy: 그동안 잘 즐기셨는지 모르겠네요, 후후
+Fairy: 네? 왜 아직도 오리 모습이냐구요?
+Fairy: 푸흐, 당신은 이미 돌아왔는걸요?
 <<play Fairygone>>
 Fairy: 그럼 언젠가, 다시 만날 그날까지…
 Fairy: 언제나 평안하시길…

@@ -6635,11 +6635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971661070179907991, guid: ac38436e04d51c048b9f0004afc17f65, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 8971661070179907991, guid: ac38436e04d51c048b9f0004afc17f65, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 8971661070179907991, guid: ac38436e04d51c048b9f0004afc17f65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6647,7 +6647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971661070179907991, guid: ac38436e04d51c048b9f0004afc17f65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.53
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 8971661070179907991, guid: ac38436e04d51c048b9f0004afc17f65, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14436,7 +14436,7 @@ MonoBehaviour:
   m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4081fe073c092fc4d8d81c1b535f3c34, type: 2}
-  m_sharedMaterial: {fileID: -8008580057105796107, guid: c9d163344fd818b4992d67fb153dcef9, type: 2}
+  m_sharedMaterial: {fileID: -4401636180853411495, guid: 4081fe073c092fc4d8d81c1b535f3c34, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15799,7 +15799,7 @@ MonoBehaviour:
   audioSourceOLD: {fileID: 0}
 --- !u!114 &970360157
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -20831,6 +20831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638ce41b9a896124e8d9051540c394d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog: []
 --- !u!1 &1824058342
 GameObject:
   m_ObjectHideFlags: 0
@@ -22820,7 +22821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2082079483
 Transform:
   m_ObjectHideFlags: 0
@@ -22853,7 +22854,7 @@ MonoBehaviour:
   isTower: 1
   isSend: 0
   moveUI: {fileID: 1662334962}
-  Dialog: {fileID: 0}
+  Dialog: {fileID: 7839270541497279057}
   Timeline: {fileID: 0}
 --- !u!61 &2082079485
 BoxCollider2D:
@@ -23193,6 +23194,18 @@ MonoBehaviour:
       - m_Target: {fileID: 813884823}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: MoveClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 813884823}
+        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+        m_MethodName: reMouse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23660,6 +23673,18 @@ MonoBehaviour:
       - m_Target: {fileID: 813884823}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: MoveClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 813884823}
+        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+        m_MethodName: reMouse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24221,8 +24246,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5902503727785622069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: -0.97, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalPosition: {x: 1.6, y: -1.24, z: 0}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2797757545943619593}

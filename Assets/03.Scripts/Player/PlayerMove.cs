@@ -183,6 +183,11 @@ public class PlayerMove : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void reMouse() //마우스 돌려줌
+    {
+        Cursor.visible = true;
+    }
+
     // Open Menu Set
     void OpenMenu()
     {
