@@ -84,22 +84,22 @@ Rabbit: 여기가 리코더 아카데미야. 아주 근사하지?
 Rabbit: [nomarkup]...흠흠. 우선 우리 「리코더 아카데미」는 마을의 저주를 풀기 위해서 탄생했어![/nomarkup]
 <<StopSpeak C_Rabbit>>
 //Fade In,out
-<<jump TheBeginningOfTheLegend>>
+//<<jump TheBeginningOfTheLegend>>
 ===
-//#4 리코더 아카데미 쪽지소개 애니메이션
-title:TheBeginningOfTheLegend
-position: -58,-830
----
-<<zer_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>> 
-Rabbit: 때는 2년 전이었어...
-Rabbit: 난 여느 때와 같이 감자톡을 먹고 있었지...
-Rabbit: 그런데 갑자기 무언가 내 머리 위에 떨어지는 거야!
-Rabbit: 그건 바로 쪽지였고...
-Rabbit: 그 쪽지의 내용은 바로... 바로...!
-<<StopSpeak C_Rabbit>>
-//Dissolve
-<<jump BackToRecorderAcademy>>
-===
+// //#4 리코더 아카데미 쪽지소개 애니메이션
+// title:TheBeginningOfTheLegend
+// position: -58,-830
+// ---
+// <<zer_Off C_Rabbit>> <<two_On C_Rabbit>> <<Speak C_Rabbit>> 
+// Rabbit: 때는 2년 전이었어...
+// Rabbit: 난 여느 때와 같이 감자톡을 먹고 있었지...
+// Rabbit: 그런데 갑자기 무언가 내 머리 위에 떨어지는 거야!
+// Rabbit: 그건 바로 쪽지였고...
+// Rabbit: 그 쪽지의 내용은 바로... 바로...!
+// <<StopSpeak C_Rabbit>>
+// //Dissolve
+// <<jump BackToRecorderAcademy>>
+// ===
 title:BackToRecorderAcademy
 position: 182,-8370
 ---
