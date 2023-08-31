@@ -26,7 +26,7 @@ public class Subtitle : MonoBehaviour
     {   //S입력 후 다음 문장
         if (isEnd == true)
         {
-            if (Input.anyKeyDown)
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 if (Input.GetButtonDown("Cancel"))
                     return;

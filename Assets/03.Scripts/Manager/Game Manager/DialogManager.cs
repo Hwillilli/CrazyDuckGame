@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour
     //private Dialog theDialog;
     //private MoveObj MoveObject;
     public bool playOnAwake;
+    public bool anime = false;
     public GameObject Dialgoue = null;
     public GameObject nextDialgoue = null;
 
@@ -24,11 +25,16 @@ public class DialogManager : MonoBehaviour
  
     }
 
-    //private void Update()
-    //{
-    //    if (theDialog.isAction == false)
-    //        gameObject.GetComponent<MoveObj>().enabled = false;
-    //}
+    private void Update()
+    {
+        if (anime == true)
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                Dialgoue.SetActive(true);
+            }
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
