@@ -39,16 +39,19 @@ public class WrapZone : MonoBehaviour
         {
             if (isTower)//건물아니면 닿았을 시 자동 씬 전환
             {
-                moveUI.SetActive(true);
+                if (moveUI != null)
+                    moveUI.SetActive(true);
                 if (Input.GetKey(KeyCode.W))//건물이면 버튼 입력으로 전환
                 {
                     Timeline.Play();
                     if (isSend)
                         Invoke("NextGame", 1f);
                 }
+
                 if (Input.GetKey(KeyCode.Space))//대화 켜기
                 {
-                    moveUI.SetActive(false);
+                    if (moveUI != null)
+                        moveUI.SetActive(false);
                     Dialog.SetActive(true);
                 }
             }

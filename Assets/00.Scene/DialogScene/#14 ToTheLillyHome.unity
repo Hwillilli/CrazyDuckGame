@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1877358080370108830, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1877358080370108830, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: messageBubbleOffset.y
@@ -376,15 +376,15 @@ PrefabInstance:
     - target: {fileID: 2625091370241364891, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: pauseSet
       value: 
-      objectReference: {fileID: 1345933006}
+      objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364891, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: controlSet
       value: 
-      objectReference: {fileID: 324726186}
+      objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364891, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: settingSet
       value: 
-      objectReference: {fileID: 377081187}
+      objectReference: {fileID: 0}
     - target: {fileID: 2625091370241364892, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 142959807}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142959808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
   m_Name: 
@@ -645,16 +645,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c74bd8e8cf0d5409bd28bfd7f9ea94, type: 3}
---- !u!1 &324726186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8568494654001627623, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
-  m_PrefabInstance: {fileID: 142959807}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &377081187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4488257988151019340, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
-  m_PrefabInstance: {fileID: 142959807}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &496359582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 999452969}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
   m_Name: 
@@ -1260,6 +1250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 131653524003159109, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 131653524003159109, guid: e890bfe954373f043b8b4a328a7aaab6, type: 3}
       propertyPath: messageBubbleOffset.y
       value: 4.2
@@ -1336,7 +1330,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 846567152}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
   m_Name: 
@@ -1441,6 +1435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 656565195412365800, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 656565195412365800, guid: 3b3bc1da58d8cfe4ca577f4bdd4f7b72, type: 3}
       propertyPath: messageBubbleOffset.y
       value: 3
@@ -1810,11 +1808,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1345933006 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3412945685125930933, guid: e7312f9eb1acd6947849a730b562e591, type: 3}
-  m_PrefabInstance: {fileID: 142959807}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1578070664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2034,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1819208781}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 142959812}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 728521544}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 863394501}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
